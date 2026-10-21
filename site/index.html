@@ -338,7 +338,7 @@
       </div>
 
       <div class="field">
-        <label for="name">Name <span class="hint" style="text-transform:none;letter-spacing:0">(optional)</span></label>
+        <label for="name">Your name <span class="hint" style="text-transform:none;letter-spacing:0">(optional)</span></label>
         <input type="text" id="name" name="name" autocomplete="name">
       </div>
 
@@ -350,6 +350,25 @@
         <label class="check"><input type="checkbox" name="help" value="legal"> Nonprofit or cooperative law</label>
         <label class="check"><input type="checkbox" name="help" value="technical"> Running or building the software</label>
         <label class="check"><input type="checkbox" name="help" value="spread"> Spreading the word</label>
+      </fieldset>
+
+      <fieldset class="repeat" data-repeat="companions" data-max="10">
+        <legend>Your companions <span class="hint" style="text-transform:none;letter-spacing:0">(optional)</span></legend>
+        <div class="repeat-row" data-repeat-row>
+          <div class="field">
+            <label for="companions-0-name">Companion's name</label>
+            <input type="text" id="companions-0-name" name="companions-0-name" autocomplete="off">
+          </div>
+          <fieldset class="checks">
+            <legend>They might be willing to</legend>
+            <label class="check"><input type="checkbox" name="companions-0-help" value="advisory"> Serve on the companion advisory council</label>
+            <label class="check"><input type="checkbox" name="companions-0-help" value="story"> Share their story</label>
+            <label class="check"><input type="checkbox" name="companions-0-help" value="speak"> Speak for the project</label>
+            <label class="check"><input type="checkbox" name="companions-0-help" value="early"> Be among the first to move in</label>
+          </fieldset>
+          <button type="button" class="btn btn-quiet" data-repeat-remove hidden>Remove</button>
+        </div>
+        <button type="button" class="btn btn-quiet" data-repeat-add hidden>+ Add another companion</button>
       </fieldset>
 
       <div class="field">

@@ -13,7 +13,7 @@ configured; until then /login and /admin 404 and the page carries no admin marku
 import os
 from pathlib import Path
 
-from campaignlanding import Config, Language, create_app
+from campaignlanding import Config, Language, Repeat, create_app
 
 SITE_DIR = Path(os.environ.get("COMPANIONS_SITE", "/app/site"))
 DATA_DIR = Path(os.environ.get("COMPANIONS_DATA", "/data"))
@@ -43,6 +43,15 @@ app = create_app(
         help_choices=frozenset(
             {"updates", "story", "board", "legal", "technical", "spread"}
         ),
+        # A row per companion, each with what they might be willing to do. The
+        # data-max on the form's group matches max_rows.
+        repeats={
+            "companions": Repeat(
+                label="Companions",
+                choices=frozenset({"advisory", "story", "speak", "early"}),
+                max_rows=10,
+            ),
+        },
         # The rail's labels, hyphen-spaced, so /roadmap is something a reader can
         # share and it opens at that section.
         sections={

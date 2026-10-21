@@ -23,6 +23,7 @@ page on your own computer. You don't need to know how to code to open an issue.
 | `site/style.css` | This page's colours and headline width. Everything else comes from campaignlanding. |
 | `site/img/` | The mark and the character card illustration. |
 | `deploy/` | The small server that serves the page and receives the signup form. |
+| `COSTS.md` | What the service would cost to run, and how many members would cover it. Estimates, with every assumption listed. |
 
 The machinery behind the page is
 [campaignlanding](https://github.com/nelsonblaha/campaignlanding), which this

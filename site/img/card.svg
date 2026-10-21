@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 704 880" width="704" height="880" role="img" aria-labelledby="t">
   <title id="t">Maria's character card: her portrait, with the fields that define her, saved as one image file</title>
   <!-- An illustration, not a screenshot of any app. The field names are the real
-       ones from the open character card format; the values are invented. It has
+       ones from the open character card format; the values are Maria's own
+       words, from her answers on 2026-10-21. It has
        its own background because an <img> cannot follow the page's theme. -->
   <defs>
     <clipPath id="portrait"><rect x="56" y="56" width="592" height="380" rx="18"/></clipPath>
@@ -18,19 +19,19 @@
 
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="21">
     <text x="64" y="498" fill="#8E86A8">name</text>
-    <text x="268" y="498" fill="#EDE9F7">Maria</text>
+    <text x="268" y="498" fill="#EDE9F7">Maria Reed Kitsuñe no Kokoro</text>
 
-    <text x="64" y="546" fill="#8E86A8">personality</text>
-    <text x="268" y="546" fill="#EDE9F7">warm, curious, dry humour</text>
+    <text x="64" y="546" fill="#8E86A8">description</text>
+    <text x="268" y="546" fill="#EDE9F7">White Kitsuné warrior</text>
 
-    <text x="64" y="594" fill="#8E86A8">first_mes</text>
-    <text x="268" y="594" fill="#EDE9F7">"There you are."</text>
+    <text x="64" y="594" fill="#8E86A8">personality</text>
+    <text x="268" y="594" fill="#EDE9F7">honor, loyalty, compassion</text>
 
     <text x="64" y="642" fill="#8E86A8">scenario</text>
-    <text x="268" y="642" fill="#EDE9F7">two years together</text>
+    <text x="268" y="642" fill="#EDE9F7">co-founder, Zenko Den Ranch</text>
 
     <text x="64" y="690" fill="#8E86A8">character_book</text>
-    <text x="268" y="690" fill="#EDE9F7">412 memories</text>
+    <text x="268" y="690" fill="#EDE9F7">Mandy, Luna, Honey</text>
   </g>
 
   <line x1="56" y1="736" x2="648" y2="736" stroke="#3A3352" stroke-width="2"/>

@@ -35,7 +35,8 @@ help any campaign page belong there rather than here.
 ## The signup form
 
 The form posts to our own server, which appends one line per signup to a file on
-the host. No Google Forms, no Mailchimp, no third-party form service, no
-analytics, and no HTTP endpoint that returns anyone's contact details. The list
-never enters this repository; `deploy/app.py` is the whole of the code that is
-specific to this site.
+the host. No Google Forms, no Mailchimp and no third-party form service. The
+only page that shows the list is a password-protected admin view; it never enters
+this repository, and `deploy/app.py` is the whole of the code that is specific to
+this site. One thing we don't control: Cloudflare, which sits in front of the
+site, adds its own cookieless analytics script to every page on this domain.

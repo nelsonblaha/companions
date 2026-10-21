@@ -1,0 +1,35 @@
+/* This campaign's own stylesheet. The system it sits on is campaignlanding,
+   https://github.com/nelsonblaha/campaignlanding, the same one chucodata.org
+   runs on. Anything here that stops being about these particular words and
+   starts being about how a campaign page works belongs upstream instead.
+
+   What is here: the accent, which is violet rather than the system's amber, and
+   the headline's measured width. The token shape follows docs/theming.md in
+   that repo: the dark palette on bare :root, then only the tokens that change,
+   once for an unstated light preference and once for an explicit one. */
+
+:root {
+  /* How wide the headline runs per 1px of font size, measured in headless Chrome
+     at 1440px: 23.75 including the mark, so the system's 24.0 already fits.
+     The eyebrow line is longer than the system's example, so it needs its own
+     ratio or it runs off the right edge of a phone. */
+  --eyebrow-ratio: 32.5;
+
+  --accent:      #B39DF2;
+  --accent-soft: #2A2340;
+  --btn-ink:     #170F2E;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --accent:      #5E3FBF;
+    --accent-soft: #ECE6FB;
+    --btn-ink:     #FFFFFF;
+  }
+}
+
+:root[data-theme="light"] {
+  --accent:      #5E3FBF;
+  --accent-soft: #ECE6FB;
+  --btn-ink:     #FFFFFF;
+}

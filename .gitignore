@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+
+# never commit these: this repository is public
+*secret*
+*credential*
+*.pem
+*.key
+
+# signup data never belongs in the repo
+companions-data/
+data/
+*.jsonl

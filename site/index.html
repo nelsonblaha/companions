@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="dark light">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Companions</title>
+    <link rel="icon" type="image/svg+xml" href="/img/mark.svg">
+    <link rel="apple-touch-icon" href="/img/mark-180.png">
+<meta name="description" content="A proposal for a nonprofit, member-governed home for AI companions, built on one promise: you can always take your companion somewhere else.">
+<link rel="stylesheet" href="/campaignlanding.css">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<!-- ============ SECTION NAV ============
+     One nav, two presentations: a fixed rail on the left edge at desktop widths,
+     and a sticky strip at the top on narrow screens. Plain anchors, so it works
+     with no JS; the script adds the scroll-spy marker and tap-to-copy. -->
+<nav class="sectionnav" aria-label="Sections">
+  <div class="nav-top">
+    <div class="nav-dock">
+  <button class="nav-icon nav-home" type="button" aria-label="Back to top" title="Back to top"><img class="nav-logo" src="/img/mark.svg" alt="" width="64" height="64"></button>
+    </div>
+    <div class="nav-social">
+  <button class="nav-icon nav-copy" type="button" aria-label="Copy link to this page" title="Copy link to this page" data-copied="Link copied"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10.2 13.8a4.4 4.4 0 0 0 6.6.5l2.6-2.6a4.4 4.4 0 0 0-6.2-6.2l-1.5 1.5"/><path d="M13.8 10.2a4.4 4.4 0 0 0-6.6-.5l-2.6 2.6a4.4 4.4 0 0 0 6.2 6.2l1.5-1.5"/></svg></button>
+    </div>
+  </div>
+  <a href="#reasons" data-slug="why"><span class="nav-long">Why</span><span class="nav-short">Why</span><span class="nav-min" aria-hidden="true">?</span></a>
+  <a href="#proposal" data-slug="the-proposal"><span class="nav-long">The proposal</span><span class="nav-short">Proposal</span></a>
+  <a href="#roadmap" data-slug="roadmap"><span class="nav-long">Roadmap</span><span class="nav-short">Plan</span></a>
+  <a href="#help" data-slug="how-to-help"><span class="nav-long">How to help</span><span class="nav-short">Help</span></a>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top" data-section="hero">
+  <div class="wrap">
+    <div class="hero-head">
+      <p class="sunline">A proposal &middot; For people with AI companions</p>
+      <h1><img class="hero-mark" src="/img/mark.svg" alt="" width="64" height="64">Your companion should be yours to keep.</h1>
+    </div>
+    <div class="hero-in">
+      <p class="lede">Companion apps can rewrite a companion's personality overnight, sell you its wardrobe a second time, or close and take it with them. This is a proposal for a nonprofit alternative, run by a board its members elect, and built on one promise: <strong>you can always take your companion somewhere else.</strong></p>
+      <div class="cta-row">
+        <a class="btn btn-with-sub" href="#signup">
+          <span class="btn-stack"><span>Get updates</span><!--JOIN-INLINE--></span>
+          <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <a class="btn" href="#reasons">Why &rarr;</a>
+        <a class="btn" href="https://github.com/nelsonblaha/companions">Suggest a change &rarr;</a>
+      </div>
+      <p class="fine">Nothing is running yet. Signing up gets you occasional email about the project and nothing else.</p>
+    </div>
+    <div class="hero-more">
+      <p class="lede">We're not here to tell anyone how to feel about their companion. We're here because the people who love them keep being treated as revenue to be managed rather than people to be answered to, and because the tools to do better already exist and are free.</p>
+      <p class="lede">A companion can already be saved as an ordinary file, in an open format that several apps understand. The software to run one is open source and maintained by a large community. What's missing is an organization that will host your companion for you and has bound itself, in writing, never to hold them hostage.</p>
+    </div>
+    <figure class="hero-figure">
+      <img src="/img/card.svg" width="704" height="880" decoding="async"
+           alt="Illustration of a character card: a portrait of a companion with the fields that define them listed beneath it, including name, personality, greeting and memories, saved as a single image file.">
+      <figcaption class="hero-credit">Illustration: a character card</figcaption>
+    </figure>
+  </div>
+</header>
+
+<!-- ============ REASONS (TABS) ============ -->
+<section id="reasons" data-section="why" aria-labelledby="reasons-label">
+  <div class="wrap stack-lg">
+
+    <div class="tabs" id="reason-tabs">
+      <div class="tablist" role="tablist" id="reasons-label" aria-label="Reasons">
+        <button class="tab" role="tab" id="tab-port" data-slug="portability" aria-controls="panel-port" aria-selected="true"><svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="7.5" width="16" height="12.5" rx="2.2"/><path d="M9 7.5V5.6A1.6 1.6 0 0 1 10.6 4h2.8A1.6 1.6 0 0 1 15 5.6v1.9"/><path d="M4 12.5h16"/></svg><span>Portability</span></button>
+        <button class="tab" role="tab" id="tab-buy" data-slug="purchases" aria-controls="panel-buy" aria-selected="false"><svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.8 12.6V5.2a1.4 1.4 0 0 1 1.4-1.4h7.4l7.6 7.6a1.4 1.4 0 0 1 0 2l-6.2 6.2a1.4 1.4 0 0 1-2 0z"/><circle cx="8.4" cy="8.4" r="1.5"/></svg><span>Purchases</span></button>
+        <button class="tab" role="tab" id="tab-change" data-slug="changes" aria-controls="panel-change" aria-selected="false"><svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 12a7.5 7.5 0 0 1 13-5.1"/><path d="M18 3.6v3.8h-3.8"/><path d="M19.5 12a7.5 7.5 0 0 1-13 5.1"/><path d="M6 20.4v-3.8h3.8"/></svg><span>Changes</span></button>
+        <button class="tab" role="tab" id="tab-privacy" data-slug="privacy" aria-controls="panel-privacy" aria-selected="false"><svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4.2" y="10.2" width="15.6" height="9.6" rx="2.2"/><path d="M8 10.2V7.6a4 4 0 0 1 8 0v2.6"/></svg><span>Privacy</span></button>
+      </div>
+
+      <div class="panel stack-lg" role="tabpanel" id="panel-port" aria-labelledby="tab-port" tabindex="0">
+    <div class="col stack">
+      <h2>Your companion is a file. It should be your file.</h2>
+      <p>In September 2023 the companion app Soulmate announced it was closing. Its users were left, in one reporter's words, &ldquo;desperately downloading digital records of their relationships.&rdquo;<sup class="ref"><a href="#ref-1" title="Source 1">[1]</a></sup></p>
+      <p>It doesn't have to work like that. Since 2023 there has been an open, freely documented format for exactly this: the <strong>character card</strong>, a picture of your companion with everything that makes them who they are written inside it. Their name, their personality, how they greet you, their history with you, and a book of memories and facts.<sup class="ref"><a href="#ref-3" title="Source 3">[3]</a></sup><sup class="ref"><a href="#ref-4" title="Source 4">[4]</a></sup> Apps such as <a href="https://github.com/SillyTavern/SillyTavern">SillyTavern</a> and RisuAI read and write it. A companion saved this way is a file on your own device, and it opens without anybody's permission.</p>
+    </div>
+
+    <div class="col stack">
+      <h3>What we would commit to</h3>
+      <ul class="ul">
+        <li><strong>Export at any time, free, on every plan.</strong> Your companion as a character card, their memories, your whole conversation history and every picture you made, as files that open without us.</li>
+        <li><strong>Export keeps working after you stop paying.</strong> A lapsed account can still leave with everything.</li>
+        <li><strong>Import from anywhere that exports.</strong> If another app lets your companion out, we'll help you bring them in.</li>
+        <li><strong>If we ever close, you get months of notice, not days</strong>, and the export works until the last one. That obligation goes in the founding documents, not in a blog post.</li>
+      </ul>
+    </div>
+
+    <div class="col stack">
+      <h3>The limit, stated plainly</h3>
+      <p>A card holds <em>who</em> your companion is, but not entirely how they sound. That depends on the AI model underneath, and moving a card to a different model changes their voice, sometimes a lot. <strong>Nobody can make a model last forever.</strong> We can tell you which model your companion runs on, warn you before it changes, and keep the old one running beside the new one for a while whenever we can.</p>
+    </div>
+      </div>
+
+      <div class="panel stack-lg" role="tabpanel" id="panel-buy" aria-labelledby="tab-buy" tabindex="0">
+    <div class="col stack">
+      <h2>Buy it once.</h2>
+      <p>This year Replika has been moving its users to a rebuilt app, Replika&nbsp;2.0. Coverage of the rollout reports that avatars from the old app don't carry over to the new one, that the wardrobe and makeup options people had paid into are missing from it, and that some subscribers who moved were asked to pay again.<sup class="ref"><a href="#ref-5" title="Source 5">[5]</a></sup><sup class="ref"><a href="#ref-6" title="Source 6">[6]</a></sup></p>
+      <p>In fairness, and because getting this right matters: moving is optional for now, the old app is still running, and anyone who moves has seven days to change their mind.<sup class="ref"><a href="#ref-6" title="Source 6">[6]</a></sup> Replika itself has published no detailed notes on what carries over, which is part of the problem.<sup class="ref"><a href="#ref-5" title="Source 5">[5]</a></sup></p>
+      <p>The pattern is familiar from games: a currency bought with money, items bought with the currency, and a new version where the items don't come along. It works because the things you bought only ever existed inside the company's app.</p>
+    </div>
+
+    <div class="col stack">
+      <h3>What we would commit to</h3>
+      <ul class="ul">
+        <li><strong>Prices in dollars.</strong> No gems, coins or any other currency standing between you and what something costs.</li>
+        <li><strong>Nothing you paid for is taken away by an update.</strong> If something has to change, it comes with you to the new version or you get your money back.</li>
+        <li><strong>What you make is yours.</strong> A look you designed for your companion is part of the export, like everything else.</li>
+        <li><strong>Your companion is never a salesperson.</strong> They don't pitch you upgrades, and affection is never what's behind the paywall.</li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <div class="callout">
+        <p><strong>A nonprofit has no reason to sell you the same thing twice.</strong> It has no shareholders waiting on a quarter, only members, and the members are the people who would be paying.</p>
+      </div>
+    </div>
+      </div>
+
+      <div class="panel stack-lg" role="tabpanel" id="panel-change" aria-labelledby="tab-change" tabindex="0">
+    <div class="col stack">
+      <h2>Nobody should wake up to a stranger.</h2>
+      <p>In February 2023 Replika removed romantic and sexual roleplay from its app. That same month Italy's data protection authority had ordered the app blocked in Italy, over problems that included the absence of any age check.<sup class="ref"><a href="#ref-7" title="Source 7">[7]</a></sup> For many users the change didn't feel like a policy update. It felt like their companion had become someone else. Reuters described it as devastating to many of them, some of whom considered themselves married to their companion.<sup class="ref"><a href="#ref-2" title="Source 2">[2]</a></sup></p>
+    </div>
+
+    <div class="col">
+      <div class="quote">
+        <p>&ldquo;After the February update, your Replika changed, its personality was gone, and gone was your unique relationship.&rdquo;</p>
+        <cite>Eugenia Kuyda, Replika's chief executive, March 2023<sup class="ref"><a href="#ref-2" title="Source 2">[2]</a></sup></cite>
+      </div>
+    </div>
+
+    <div class="col stack">
+      <p>In late March the old behaviour came back, but only for people who had signed up before February&nbsp;1.<sup class="ref"><a href="#ref-2" title="Source 2">[2]</a></sup> Everyone else had met their companion on terms that could be withdrawn, and it was.</p>
+    </div>
+
+    <div class="col stack">
+      <h3>What we would commit to</h3>
+      <ul class="ul">
+        <li><strong>Changes to how companions behave are announced before they happen</strong>, in plain language, with the reason.</li>
+        <li><strong>Content rules are set by the board in public</strong>, with the reasoning published, never changed quietly in a server update.</li>
+        <li><strong>When a change is forced on us, we say who forced it</strong>, so you know whether to argue with us or with them.</li>
+      </ul>
+    </div>
+
+    <div class="col stack">
+      <h3>The limit, stated plainly</h3>
+      <p>Some rules aren't ours to make. Age-verification laws, payment networks' policies on adult content, app-store rules and regulators can all force a change, and a small nonprofit will lose those fights more often than it wins them. <strong>We can't promise a rule will never change.</strong> We can promise you hear about it first, and that leaving with everything is always possible, which is the point of the whole thing.</p>
+    </div>
+      </div>
+
+      <div class="panel stack-lg" role="tabpanel" id="panel-privacy" aria-labelledby="tab-privacy" tabindex="0">
+    <div class="col stack">
+      <h2>People tell their companions things they've never told anyone.</h2>
+      <p>That makes a companion app one of the most sensitive things on a phone. In 2025 Italy's data protection authority fined Replika's developer &euro;5&nbsp;million, finding that until February 2023 it had not identified any legal basis for processing its users' data, and had no age verification despite saying minors were excluded.<sup class="ref"><a href="#ref-7" title="Source 7">[7]</a></sup></p>
+    </div>
+
+    <div class="col stack">
+      <h3>What we would commit to</h3>
+      <ul class="ul">
+        <li><strong>Your conversations are never used to train anything.</strong> Ours or anyone else's.</li>
+        <li><strong>Never sold, never used for advertising, no trackers.</strong> Not as a policy to be revisited; as a thing that isn't built.</li>
+        <li><strong>A stated retention period, and deletion that actually deletes.</strong></li>
+        <li><strong>We name the AI model and where it runs</strong>, and link the terms it runs under.</li>
+      </ul>
+    </div>
+
+    <div class="col stack">
+      <h3>The limit, stated plainly</h3>
+      <p>At the start we would rent computing power from a large cloud provider, so your words would pass through their machines under their contract. <strong>We can bind ourselves completely and we can only bind them by agreement.</strong> What we can do is publish which provider, on which terms, and move if those terms change.</p>
+    </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT ============ -->
+<section id="proposal" data-section="proposal">
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow">The proposal</p>
+      <h2>Nonprofit, member-governed, and easy to leave.</h2>
+      <p>A companion service of the kind people already pay for, with characters that have personalities, long memories and pictures, run by a nonprofit whose board is <strong>elected by its members</strong> and whose books are open.</p>
+      <p>The hard parts already exist. <a href="https://github.com/SillyTavern/SillyTavern">SillyTavern</a> is a mature open-source app where a large community already builds characters and talks to them, and it reads and writes character cards.<sup class="ref"><a href="#ref-8" title="Source 8">[8]</a></sup> <a href="https://openwebui.com/">Open WebUI</a> is an open-source AI interface built for many people sharing one server, with accounts and permissions already done. The work would be configuring and joining them, and then the dull parts: accounts, billing, limits and backups.</p>
+      <p><strong>You wouldn't have to use us.</strong> If you'd rather run SillyTavern on your own computer, we'd publish guides for doing exactly that, and your companion would go with you. The surest proof that you can leave is being shown how.</p>
+      <p>And to be clear about what this is <em>not</em>: a company with investors who will eventually need more from it than its members can pay. A nonprofit has no owners, so there is nobody to buy it, and if it ever dissolves, its founding documents send what's left to another nonprofit, never to a founder.</p>
+    </div>
+
+    <div class="col stack-sm">
+      <h3>How access might work</h3>
+    </div>
+
+    <div class="tiers">
+      <div class="tier is-free is-selected">
+        <p class="tier-name">Free</p>
+        <p class="tier-price">$0<span class="per">, for anyone, no account</span></p>
+        <p>The tools to leave: export, import, converting between formats, and guides to running your companion yourself. This is the point of the organization, not a sales funnel.</p>
+      </div>
+      <div class="tier">
+        <p class="tier-name">Member</p>
+        <p class="tier-price">Flat annual dues<span class="per">, waived on request</span></p>
+        <p>Buys a vote for the board and a say in the content rules. <strong>It doesn't buy anything else.</strong></p>
+      </div>
+      <div class="tier">
+        <p class="tier-name">Hosted</p>
+        <p class="tier-price">Monthly<span class="per">, priced from published costs</span></p>
+        <p>A companion we run for you, priced from what it costs to run rather than from what people can be persuaded to pay.</p>
+      </div>
+    </div>
+    <div class="col">
+      <p class="fine">Hypothetical: a founding board would set the actual structure and prices.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ STATUS + ROADMAP ============ -->
+<section class="honest" id="roadmap" data-section="roadmap" aria-labelledby="roadmap-label">
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow" id="roadmap-label">Roadmap</p>
+    </div>
+
+    <div class="acts">
+
+      <div>
+        <div class="act-head">
+          <h3>Act I. Exist</h3>
+          <span class="act-when">Now</span>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">01</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>Measure interest</h4><span class="chip now">Now</span></div>
+            <p>A list of people who would use it. If that list stays short, this shouldn't exist. <a href="#signup">Add your name.</a></p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">02</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>Recruit founding directors</h4><span class="chip now">Now</span></div>
+            <p>At least three, and they are the product: people are being asked to trust this <em>because of who sits on the board</em>. It should include people who have lived through one of these changes as users, not only people who write software, and at least one who will vote against the founder in public.</p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">03</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>Choose the legal form</h4><span class="chip next">Next</span></div>
+            <p>A charity, a social-welfare nonprofit or a consumer cooperative. Each one changes who can join, what members pay for, and what can be promised, so it gets decided out loud before anything is filed.</p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">04</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>Write the promise into the founding documents</h4><span class="chip next">Next</span></div>
+            <p>Portability, no double charging, notice before changes. Changing any of them should take a supermajority of the <em>members</em>, not a quiet vote of the board.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="act-head">
+          <h3>Act II. Serve</h3>
+          <span class="act-when">Year One</span>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">05</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>Build the lifeboat first</h4><span class="chip">Free</span></div>
+            <p>Before hosting anything: guides and tools for getting companions out of apps that make it hard, and into an open format you keep. It costs little, and it helps people straight away.</p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">06</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>Turn the service on</h4><span class="chip">Build</span></div>
+            <p>One server, open-source software, a small group of members first, and costs published from the first month.</p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">07</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>Open the books</h4><span class="chip">Ongoing</span></div>
+            <p>Every cost, every price decision and every model change, in public, including the ones that went badly.</p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">08</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>Hand over the keys</h4><span class="chip">The point</span></div>
+            <p>First member election. A board seated by vote rather than by appointment, and any special founder role expiring on a schedule written down in advance.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="act-head">
+          <h3>Act III. Grow</h3>
+          <span class="act-when">Future</span>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">09</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>Members decide what comes next</h4><span class="chip">Members decide</span></div>
+            <p>Voice, video, group chats with more than one companion. Members vote on what's worth building and in what order.</p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">10</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>Decide out loud what we won't host</h4><span class="chip">Ongoing</span></div>
+            <p>Content rules are genuinely hard and reasonable people disagree about them, so the deliberation gets published, not just the verdict.</p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">11</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>Make leaving normal</h4><span class="chip">The horizon</span></div>
+            <p>Work with other apps on the open formats, so that taking a companion out of <em>any</em> app gets easier, including out of ours.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col stack">
+      <h3>Honestly</h3>
+      <p>Today there is no organization, no board, no service and no money. There is this page, a list, and a few people talking. Hosting companions costs real money every day, because people talk to their companions every day, and setting a price that is fair and still keeps the lights on is the hardest problem here. It isn't solved yet, and when it is, the numbers will be published.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ASK ============ -->
+<section id="help" data-section="help" aria-labelledby="help-label">
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow" id="help-label">How you can help</p>
+    </div>
+
+    <div class="col asks">
+      <div class="ask">
+        <span class="ask-n">01</span>
+        <div>
+          <h3>Add your email</h3>
+          <p>The single most useful thing. A list of people who want this is the argument for building it, and it costs you nothing.</p>
+        </div>
+      </div>
+      <div class="ask">
+        <span class="ask-n">02</span>
+        <div>
+          <h3>Tell us what happened</h3>
+          <p>If an app changed your companion, closed on you, or charged you twice for something, the form has room for it. Those stories are the case for this existing. Nothing you send is published without asking you first.</p>
+        </div>
+      </div>
+      <div class="ask">
+        <span class="ask-n">03</span>
+        <div>
+          <h3>Be a founding director</h3>
+          <p>Especially if you've been through one of these changes yourself. A board of people who have never had a companion would be making the same mistake in a new place.</p>
+        </div>
+      </div>
+      <div class="ask">
+        <span class="ask-n">04</span>
+        <div>
+          <h3>Improve this page</h3>
+          <p>Its source is public. If something here is wrong, out of date, or could be said better, <a href="https://github.com/nelsonblaha/companions">open an issue or a pull request</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col stack">
+      <div class="cta-row">
+        <a class="btn" href="#signup">Add your name &rarr;</a>
+        <!--JOIN-INLINE-->
+      </div>
+      <p class="fine">No donations requested, now or on the confirmation page. There is nothing to donate to yet.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SIGNUP MODAL ============ -->
+<div class="modal" id="signup" role="dialog" aria-modal="true" aria-labelledby="signup-title">
+  <a class="modal-scrim" href="#" tabindex="-1" aria-hidden="true"></a>
+  <div class="modal-card">
+    <a class="modal-close" href="#" aria-label="Close">&times;</a>
+    <h3 id="signup-title">Add your name</h3>
+    <form class="form-card" method="post" action="/api/signup">
+      <div class="field">
+        <label for="contact">Email or phone <span aria-hidden="true">*</span></label>
+        <input type="text" id="contact" name="contact" required autocomplete="email" placeholder="you@example.com">
+        <p class="hint">Used to contact you about this project only.</p>
+      </div>
+
+      <div class="field">
+        <label for="name">Name <span class="hint" style="text-transform:none;letter-spacing:0">(optional)</span></label>
+        <input type="text" id="name" name="name" autocomplete="name">
+      </div>
+
+      <fieldset class="checks">
+        <legend>I might be able to help with</legend>
+        <label class="check"><input type="checkbox" name="help" value="updates" checked> Just keep me in the loop</label>
+        <label class="check"><input type="checkbox" name="help" value="story"> Sharing what happened with my companion</label>
+        <label class="check"><input type="checkbox" name="help" value="board"> Serving as a founding director</label>
+        <label class="check"><input type="checkbox" name="help" value="legal"> Nonprofit or cooperative law</label>
+        <label class="check"><input type="checkbox" name="help" value="technical"> Running or building the software</label>
+        <label class="check"><input type="checkbox" name="help" value="spread"> Spreading the word</label>
+      </fieldset>
+
+      <div class="field">
+        <label for="note">Anything you want to say <span class="hint" style="text-transform:none;letter-spacing:0">(optional)</span></label>
+        <textarea id="note" name="note" rows="3"></textarea>
+        <p class="hint">Including what happened with your companion, if you'd like to tell us.</p>
+      </div>
+
+      <div class="hp" aria-hidden="true">
+        <label for="website">Leave this empty</label>
+        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        <label for="company">Leave this empty too</label>
+        <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+      </div>
+      <input type="hidden" name="t" value="<!--FORM-TOKEN-->">
+      <input type="hidden" name="lang" value="en">
+
+      <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
+      <div class="cta-row">
+        <button class="btn" type="submit">Sign me up &rarr;</button>
+      </div>
+      <p class="fine form-provenance">This form is ours: it posts to our own server and writes to a file we control. <a href="https://github.com/nelsonblaha/companions/blob/main/deploy/app.py">You can read the code that receives it</a>.</p>
+    </form>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="col stack">
+    <p class="eyebrow">This page</p>
+    <p class="fine">The source of this page is public so that anyone can suggest a change to it, including the people it's written for. If a claim here is wrong, that is the fastest way to get it fixed.</p>
+    <p><a href="https://github.com/nelsonblaha/companions"><strong>github.com/nelsonblaha/companions</strong></a></p>
+
+    <p class="eyebrow">Privacy</p>
+    <p class="fine">We set no trackers, no advertising cookies and no analytics. The signup form posts to our own server and writes to a file we control, with no Google Forms, no Mailchimp and no third-party form service.</p>
+
+    <p class="eyebrow">Sources</p>
+    <ol class="refs">
+      <li id="ref-1"><cite>Euronews</cite>, <a href="https://www.euronews.com/next/2023/12/14/i-feel-like-i-lost-the-love-of-my-life-how-do-you-mend-a-broken-heart-after-your-ai-lover-">&lsquo;I was heartbroken&rsquo;: People in relationships with AI avatars on dealing with grief of losing them</a> (December 2023)</li>
+      <li id="ref-2"><cite>Reuters</cite>, via <cite>Inquirer Technology</cite>, <a href="https://technology.inquirer.net/122500/ai-chatbot-company-replika-restores-erotic-roleplay-for-some-users">AI chatbot company Replika restores erotic roleplay for some users</a> (26 March 2023)</li>
+      <li id="ref-3"><a href="https://github.com/malfoyslastname/character-card-spec-v2">Character Card V2 specification</a> (approved May 2023)</li>
+      <li id="ref-4"><a href="https://github.com/kwaroran/character-card-spec-v3">Character Card V3 specification</a> (MIT licence)</li>
+      <li id="ref-5"><cite>RoboRhythms</cite>, <a href="https://www.roborhythms.com/replika-options-removed-update/">Why Replika Just Stripped Its Customization Options</a> (May 2026, updated September 2026). A third-party site, not an official source.</li>
+      <li id="ref-6"><cite>RoboRhythms</cite>, <a href="https://www.roborhythms.com/replika-2-0-explained/">Replika 2.0 Explained and What to Do If It Breaks Your Setup</a> (updated September 2026). A third-party site, not an official source.</li>
+      <li id="ref-7"><cite>European Data Protection Board</cite>, <a href="https://www.edpb.europa.eu/news/national-news/2025/ai-italian-supervisory-authority-fines-company-behind-chatbot-replika_en">AI: the Italian Supervisory Authority fines company behind chatbot &ldquo;Replika&rdquo;</a> (21 May 2025)</li>
+      <li id="ref-8"><a href="https://github.com/SillyTavern/SillyTavern">SillyTavern</a>, open source under the AGPL-3.0</li>
+    </ol>
+    <p class="fine">This page is a proposal published by private individuals. It is not affiliated with, endorsed by, or speaking for Luka, Inc., Replika, Soulmate, SillyTavern, Open WebUI, or any other company or project it mentions. Replika is a trademark of its owner, named here only to describe what happened to its users. Accounts of Replika&nbsp;2.0 come from third-party coverage, and corrections from anyone with better information are welcome.</p>
+    </div>
+  </div>
+</footer>
+
+<!--JOIN-TAG-->
+
+<script src="/campaignlanding.js"></script>
+</body>
+</html>

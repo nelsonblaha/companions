@@ -1,0 +1,44 @@
+# companions.blaha.io, on the same pattern as chucodata.org: join infra-net,
+# declare VIRTUAL_HOST, and nginx-proxy + acme-companion handle routing and TLS.
+# *.blaha.io already wildcards to Cloudflare, so no DNS record is needed.
+#
+# Deploy from the repo root:
+#   docker compose -f deploy/docker-compose.yml up -d --build
+
+name: companions
+
+networks:
+  infra-net:
+    external: true
+
+services:
+  companions:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    container_name: companions
+    restart: unless-stopped
+    # Run as the host user that owns the data directory, so signups.jsonl can be
+    # read over plain SSH without sudo.
+    user: "1000:1000"
+    networks:
+      - infra-net
+    environment:
+      - VIRTUAL_HOST=companions.blaha.io
+      - VIRTUAL_PORT=8100
+      - LETSENCRYPT_HOST=companions.blaha.io
+      - LETSENCRYPT_EMAIL=nelson.blaha@gmail.com
+    # Admin credentials, if any, live in deploy/.env on the host, which is
+    # gitignored. Absent the file's values, /login and /admin 404.
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      # Signups land here. Not in the repo, not in the image.
+      - /home/ben/companions-data:/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request;urllib.request.urlopen('http://127.0.0.1:8100/healthz')"]
+      interval: 60s
+      timeout: 5s
+      retries: 3
+      start_period: 10s

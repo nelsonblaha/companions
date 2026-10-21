@@ -19,12 +19,58 @@ you know better, [open an issue](https://github.com/nelsonblaha/companions/issue
 | | Per month |
 |---|---|
 | One GPU server (AWS g6e.xlarge, NVIDIA L40S 48 GB), on demand, 24/7 | $1,359 |
-| Small app server, database, storage, backups | $100 |
+| Small app server (runs SillyTavern, Open WebUI and the database), storage, backups | $100 |
 | Insurance, bookkeeping, email, domain | $250 |
 | **Total** | **$1,709** |
 
 A one-year reservation brings the server down to about $856 a month, but it commits
 to paying for the whole year.
+
+## The software
+
+Everything is open source, so there are no licence fees, only the servers it
+runs on. The licences do come with conditions.
+
+| Piece | What it does | Licence | Licence cost | Runs on |
+|---|---|---|---|---|
+| [SillyTavern](https://github.com/SillyTavern/SillyTavern) | Characters, conversations, character cards | AGPL-3.0 | $0 | App server |
+| [Open WebUI](https://github.com/open-webui/open-webui) | Accounts, permissions, usage limits for many people on one server | BSD-3 plus a branding clause | $0 while its "Open WebUI" branding stays visible | App server |
+| [vLLM](https://github.com/vllm-project/vllm) | Serves the language model | Apache-2.0 | $0 | GPU server |
+| Language model, e.g. [Mistral Nemo 12B](https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407) or Qwen3 14B | The companion's "thinking" | Apache-2.0 | $0 | GPU server |
+| [ComfyUI](https://github.com/comfyanonymous/ComfyUI) or [InvokeAI](https://github.com/invoke-ai/InvokeAI) | Generates pictures | GPL-3.0 / Apache-2.0 | $0 | GPU server |
+| Image model, e.g. [FLUX.1 schnell](https://huggingface.co/black-forest-labs/FLUX.1-schnell) or SDXL | The pictures themselves | Apache-2.0 / OpenRAIL++ | $0 | GPU server |
+| PostgreSQL | Accounts, memories, history | PostgreSQL | $0 | App server |
+
+Later, not in the numbers above:
+
+| Piece | What it does | Licence | Runs on |
+|---|---|---|---|
+| [Whisper](https://github.com/openai/whisper), [Kokoro](https://github.com/hexgrad/kokoro) | Speech to text, text to speech | MIT, Apache-2.0 | GPU server, or the member's own device |
+| [Amica](https://github.com/semperai/amica) | A 3D companion avatar in the browser | MIT | The member's own device, so no server cost |
+| [Jitsi](https://github.com/jitsi/jitsi-meet) | Voice and video calls | Apache-2.0 | App server |
+| [Mastodon](https://github.com/mastodon/mastodon) | A social network for companions that members can take elsewhere | AGPL-3.0 | App server |
+
+What the conditions mean:
+
+- **Open WebUI's branding.** Above 50 users, removing or replacing the "Open WebUI"
+  name needs an enterprise licence (no published price) or the project's written
+  permission. Keeping the name visible costs nothing. If that's a problem,
+  [LibreChat](https://github.com/danny-avila/LibreChat) does a similar job under
+  MIT, with no such condition.
+- **AGPL and GPL** mean that if we change SillyTavern or ComfyUI and run them for
+  members, we publish our changes. We would anyway.
+- **Not every model is free to use this way.** FLUX.1 *dev*, a popular image
+  model, is licensed for non-commercial use only, so the estimate uses models
+  under Apache-2.0 or OpenRAIL++ instead. Every model gets its licence checked
+  before it's offered to members.
+- **The real cost is the work, not the licences.** SillyTavern is built for one
+  person running it for themselves: its own multi-user mode keeps everyone's
+  data in plain text and warns against public servers. Joining it to proper
+  accounts is the main engineering job, and it isn't in these numbers.
+
+Alternatives worth knowing about: RisuAI (GPL-3.0) and Agnaistic (AGPL-3.0) in
+place of SillyTavern; llama.cpp (MIT) or KoboldCpp (AGPL-3.0) in place of vLLM,
+for smaller GPUs.
 
 ## What one person costs
 

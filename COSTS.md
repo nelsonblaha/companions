@@ -39,14 +39,20 @@ plus an image model for pictures.
 
 ## How many members cover it
 
-Measured against what people already pay Replika, as a yardstick:
+The $1,709 is the same whether one person signs up or 250 do. So the number of
+members needed is that, divided by what each member brings in a month after card
+fees. Measured against what people already pay Replika, as a yardstick:
 
-| If members paid… | Members to break even | Of whom paying |
-|---|---|---|
-| What a heavy Replika spender pays (~$27.50/month) | ~65 | ~65 |
-| Replika's Plus plan ($79.99/year) | ~265 | ~265 |
-| A mix: 10% heavy, 30% Plus, 60% free | ~375 | ~150 |
-| A worse mix: 3% heavy, 12% Plus, 85% free | ~1,100 | ~165 |
+| If members paid… | Per month | Per year | Members to break even | Of whom paying |
+|---|---|---|---|---|
+| What a heavy Replika spender pays | ~$27.50 | ~$330 | ~65 | ~65 |
+| Replika's Plus plan | ~$6.67 | $79.99 | ~265 | ~265 |
+| A mix: 10% heavy, 30% Plus, 60% free | ~$4.75 on average | ~$57 | ~375 | ~150 |
+| A worse mix: 3% heavy, 12% Plus, 85% free | ~$1.62 on average | ~$19 | ~1,100 | ~165 |
+
+A heavy spender pays about four times what a Plus subscriber does, so it takes
+about a quarter as many of them. All four fit on the one server, so the $1,709
+doesn't grow before break-even in any of them.
 
 Or the other way round: what an **at-cost** price would be if everyone paid the
 same, for typical usage, billed yearly.

@@ -1,0 +1,29 @@
+{
+  "_about": "What the server and the page's script say in this language. A machine-assisted draft that no native speaker has reviewed yet; corrections are welcome. review_notes lists the choices most worth checking.",
+  "review_notes": "'Comprou, é seu.' for 'Buy it once.'; h1 'Seu companheiro deveria ser seu, para sempre.'; 'estatuto de fundação'; 'US$ 0'; 'o Replika' masculine; 'roleplay romântico' loanword; 'pessoas físicas'; gender-neutral form labels; 'Especificação Character Card V2/V3' since those are descriptions, not article titles.",
+  "strings": {
+    "too_fast": "Isso foi enviado mais rápido do que uma pessoa consegue digitar. Tente de novo.",
+    "rate": "Muitas inscrições vindas deste endereço. Tente de novo mais tarde.",
+    "required": "É preciso informar um e-mail ou um número de telefone.",
+    "invalid": "Isso não parece um e-mail nem um número de telefone.",
+    "links": "Por favor, não inclua links nessa mensagem.",
+    "stale": "Este formulário ficou aberto por muito tempo. Recarregue a página e tente de novo.",
+    "oops_title": "Algo deu errado",
+    "thanks_title": "Você está na lista.",
+    "thanks_body": "É isso. Vamos mandar um e-mail quando houver algo concreto para contar: um conselho diretor, uma decisão, um serviço que você possa usar de verdade.",
+    "back": "Voltar para a proposta",
+    "sending": "Enviando…",
+    "ok": "Você está na lista. Vamos escrever quando houver algo concreto para contar.",
+    "failed": "Não deu certo. Tente de novo daqui a pouco.",
+    "unreachable": "Não foi possível conectar ao servidor. Tente de novo daqui a pouco.",
+    "signedUp": "Inscrição feita",
+    "tiers": "Níveis de acesso",
+    "close": "Fechar",
+    "copied": "Copiado para a área de transferência"
+  },
+  "join_words": {
+    "lead": "junte-se a",
+    "one": "outra pessoa",
+    "many": "outras pessoas"
+  }
+}

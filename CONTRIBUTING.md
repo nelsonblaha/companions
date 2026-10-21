@@ -15,6 +15,23 @@ If you'd rather describe the problem than fix it, open an
 [issue](https://github.com/nelsonblaha/companions/issues) instead. That's just as
 helpful.
 
+## Translations
+
+The page is in English, Spanish, Brazilian Portuguese, Indonesian, Japanese and
+Traditional Chinese. **Every translation is a machine-assisted draft that no
+native speaker has reviewed yet**, and each page says so in its footer. If you
+speak one of them, you're the person this repository most needs:
+
+- The page itself is `site/<language>/index.html` (`es`, `pt`, `id`, `ja`, `zh`).
+  Change the words; leave the tags and attributes alone.
+- The form's messages and button labels are in `deploy/strings/<language>.json`.
+  Its `review_notes` lists the choices the draft was least sure of.
+- Maria's card (`site/img/card-<language>.svg`) shows her own words, translated.
+  The field names on it (`name`, `personality` and so on) stay in English: they're
+  the open format's own names.
+- When a translation has been read through by a native speaker, say so in your
+  pull request, and the "draft" line can come out of that page's footer.
+
 ## Previewing on your own computer
 
 You need Python 3.11 or newer.

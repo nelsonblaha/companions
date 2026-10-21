@@ -1,0 +1,29 @@
+{
+  "_about": "What the server and the page's script say in this language. A machine-assisted draft that no native speaker has reviewed yet; corrections are welcome. review_notes lists the choices most worth checking.",
+  "review_notes": "Form uses 'aku' for the user's voice; loanwords 'file', 'roleplay romantis', 'cloud', tier 'Dihosting'; act names 'Terbentuk / Melayani / Bertumbuh'; 'Harga dalam dolar' literal.",
+  "strings": {
+    "too_fast": "Formulir ini terkirim lebih cepat daripada kecepatan orang mengetik. Coba lagi.",
+    "rate": "Terlalu banyak pendaftaran dari alamat ini. Coba lagi nanti.",
+    "required": "Alamat email atau nomor telepon wajib diisi.",
+    "invalid": "Sepertinya itu bukan alamat email atau nomor telepon.",
+    "links": "Mohon jangan sertakan tautan dalam pesan itu.",
+    "stale": "Formulir ini sudah terbuka cukup lama. Muat ulang halaman, lalu coba lagi.",
+    "oops_title": "Terjadi kesalahan",
+    "thanks_title": "Kamu sudah masuk daftar.",
+    "thanks_body": "Itu saja. Kami akan mengirim email kalau ada hal nyata yang bisa dilaporkan: dewan pengurus, sebuah keputusan, layanan yang benar-benar bisa kamu pakai.",
+    "back": "Kembali ke usulan",
+    "sending": "Mengirim…",
+    "ok": "Kamu sudah masuk daftar. Kami akan mengabarimu kalau ada hal nyata yang bisa dilaporkan.",
+    "failed": "Pengiriman gagal. Coba lagi sebentar lagi.",
+    "unreachable": "Tidak dapat terhubung ke server. Coba lagi sebentar lagi.",
+    "signedUp": "Sudah mendaftar",
+    "tiers": "Tingkat akses",
+    "close": "Tutup",
+    "copied": "Disalin ke papan klip"
+  },
+  "join_words": {
+    "lead": "bergabung bersama",
+    "one": "orang lainnya",
+    "many": "orang lainnya"
+  }
+}

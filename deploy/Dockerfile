@@ -6,6 +6,7 @@ COPY deploy/requirements.txt /app/requirements.txt
 RUN pip install --no-cache-dir -r /app/requirements.txt
 
 COPY deploy/app.py /app/app.py
+COPY deploy/strings /app/strings
 COPY site /app/site
 
 # Never runs as root. docker-compose.yml overrides this with the host uid that

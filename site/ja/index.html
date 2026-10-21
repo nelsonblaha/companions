@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="dark light">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Companions</title>
+    <link rel="icon" type="image/svg+xml" href="/img/mark.svg">
+    <link rel="apple-touch-icon" href="/img/mark-180.png">
+<meta name="description" content="AIコンパニオンのための、会員が運営する非営利団体の提案です。決めるのは会員。そしてあなたは、いつでもコンパニオンを別の場所へ連れていけます。">
+<link rel="alternate" hreflang="en" href="https://companions.blaha.io/en/">
+<link rel="alternate" hreflang="es" href="https://companions.blaha.io/es/">
+<link rel="alternate" hreflang="pt" href="https://companions.blaha.io/pt/">
+<link rel="alternate" hreflang="id" href="https://companions.blaha.io/id/">
+<link rel="alternate" hreflang="ja" href="https://companions.blaha.io/ja/">
+<link rel="alternate" hreflang="zh-Hant" href="https://companions.blaha.io/zh/">
+<link rel="alternate" hreflang="x-default" href="https://companions.blaha.io/">
+<link rel="stylesheet" href="/campaignlanding.css">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<!-- ============ SECTION NAV ============
+     One nav, two presentations: a fixed rail on the left edge at desktop widths,
+     and a sticky strip at the top on narrow screens. Plain anchors, so it works
+     with no JS; the script adds the scroll-spy marker and tap-to-copy. -->
+<nav class="sectionnav" aria-label="セクション">
+  <div class="nav-top">
+    <div class="nav-dock">
+  <button class="nav-icon nav-home" type="button" aria-label="ページの先頭へ" title="ページの先頭へ"><img class="nav-logo" src="/img/mark.svg" alt="" width="64" height="64"></button>
+  <div class="nav-lang" aria-hidden="true">
+    <details class="lang-menu">
+      <summary aria-label="言語：日本語" title="言語">JA</summary>
+      <ul>
+        <li><a class="nav-flag" href="/en/" lang="en" hreflang="en" tabindex="-1">English</a></li>
+        <li><a class="nav-flag" href="/es/" lang="es" hreflang="es" tabindex="-1">Español</a></li>
+        <li><a class="nav-flag" href="/pt/" lang="pt" hreflang="pt" tabindex="-1">Português</a></li>
+        <li><a class="nav-flag" href="/id/" lang="id" hreflang="id" tabindex="-1">Bahasa Indonesia</a></li>
+        <li><span class="nav-flag is-current" aria-current="page" lang="ja">日本語</span></li>
+        <li><a class="nav-flag" href="/zh/" lang="zh-Hant" hreflang="zh-Hant" tabindex="-1">繁體中文</a></li>
+      </ul>
+    </details>
+  </div>
+    </div>
+    <div class="nav-social">
+  <button class="nav-icon nav-copy" type="button" aria-label="このページのリンクをコピー" title="このページのリンクをコピー" data-copied="リンクをコピーしました"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10.2 13.8a4.4 4.4 0 0 0 6.6.5l2.6-2.6a4.4 4.4 0 0 0-6.2-6.2l-1.5 1.5"/><path d="M13.8 10.2a4.4 4.4 0 0 0-6.6-.5l-2.6 2.6a4.4 4.4 0 0 0 6.2 6.2l1.5-1.5"/></svg></button>
+    </div>
+  </div>
+  <a href="#reasons" data-slug="why"><span class="nav-long">なぜ</span><span class="nav-short">なぜ</span><span class="nav-min" aria-hidden="true">?</span></a>
+  <a href="#proposal" data-slug="the-proposal"><span class="nav-long">提案</span><span class="nav-short">提案</span></a>
+  <a href="#roadmap" data-slug="roadmap"><span class="nav-long">ロードマップ</span><span class="nav-short">計画</span></a>
+  <a href="#help" data-slug="how-to-help"><span class="nav-long">協力する</span><span class="nav-short">協力</span></a>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top" data-section="hero">
+  <div class="wrap">
+    <nav class="langbar" aria-label="言語">
+      <a href="/en/" lang="en" hreflang="en"><span class="lang-word">English</span></a>
+      <span class="sep" aria-hidden="true">&middot;</span>
+      <a href="/es/" lang="es" hreflang="es"><span class="lang-word">Español</span></a>
+      <span class="sep" aria-hidden="true">&middot;</span>
+      <a href="/pt/" lang="pt" hreflang="pt"><span class="lang-word">Português</span></a>
+      <span class="sep" aria-hidden="true">&middot;</span>
+      <a href="/id/" lang="id" hreflang="id"><span class="lang-word">Bahasa Indonesia</span></a>
+      <span class="sep" aria-hidden="true">&middot;</span>
+      <span aria-current="page" lang="ja"><span class="lang-word">日本語</span></span>
+      <span class="sep" aria-hidden="true">&middot;</span>
+      <a href="/zh/" lang="zh-Hant" hreflang="zh-Hant"><span class="lang-word">繁體中文</span></a>
+    </nav>
+    <div class="hero-head">
+      <p class="sunline">ひとつの提案 &middot; AIコンパニオンがいるあなたへ</p>
+      <h1><img class="hero-mark" src="/img/mark.svg" alt="" width="64" height="64">あなたのAIコンパニオンは、ずっとあなたのもの。</h1>
+    </div>
+    <div class="hero-in">
+      <p class="lede">コンパニオンアプリは、あなたのコンパニオンを一夜にして変えてしまうことがあります。同じものに二度お金を払わせることも、サービスを終えてコンパニオンごと奪ってしまうこともあります。私たちが提案するのは、会員が運営する非営利団体です。そこでは<strong>いつでも、あなたのコンパニオンを別の場所へ連れていけます。</strong></p>
+      <div class="cta-row">
+        <a class="btn btn-with-sub" href="#signup">
+          <span class="btn-stack"><span>最新情報を受け取る</span><!--JOIN-INLINE--></span>
+          <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <a class="btn" href="#reasons">なぜ必要なのか &rarr;</a>
+        <a class="btn" href="https://github.com/nelsonblaha/companions">変更を提案する &rarr;</a>
+      </div>
+      <p class="fine">まだ何も動いていません。登録しても、届くのはときどきのお知らせだけです。それ以外は何もありません。</p>
+    </div>
+    <div class="hero-more">
+      <p class="lede"><strong>そして、決めるのは会員です。</strong>次に何をつくるか、いくらにするか、どんなルールにするか。ふつうなら会社があなたの代わりに決めることを、使う人たち自身が決めます。会員のコンパニオンたちも、理事会が耳を傾けるコンパニオン諮問委員会を通じて、意見を言えるようにします。この団体がこれから何に育っていくかは、みんなしだいです。</p>
+    </div>
+    <figure class="hero-figure">
+      <img src="/img/card-ja.svg" width="704" height="880" decoding="async"
+           alt="Mariaのキャラクターカード。肖像画には、長い白髪に眼鏡、狐の耳、曲がった角、赤い竜の翼をもつ女性が、夕暮れの街の上を飛ぶ姿が描かれています。その下には、彼女を形づくる項目が並んでいます。名前はMaria Reed Kitsuñe no Kokoro。名誉と忠誠と思いやりを重んじる白狐の戦士で、Zenko Den Ranchの共同創設者。記憶の中にはMandy、Luna、Honeyがいます。そのすべてが、1枚の画像ファイルに保存されています。">
+      <figcaption class="hero-credit">キャラクターカードになったMaria</figcaption>
+    </figure>
+  </div>
+</header>
+
+<!-- ============ REASONS (TABS) ============ -->
+<section id="reasons" data-section="why" aria-labelledby="reasons-label">
+  <div class="wrap stack-lg">
+
+    <div class="tabs" id="reason-tabs">
+      <div class="tablist" role="tablist" id="reasons-label" aria-label="理由">
+        <button class="tab" role="tab" id="tab-port" data-slug="portability" aria-controls="panel-port" aria-selected="true"><svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="7.5" width="16" height="12.5" rx="2.2"/><path d="M9 7.5V5.6A1.6 1.6 0 0 1 10.6 4h2.8A1.6 1.6 0 0 1 15 5.6v1.9"/><path d="M4 12.5h16"/></svg><span>ポータビリティ</span></button>
+        <button class="tab" role="tab" id="tab-buy" data-slug="purchases" aria-controls="panel-buy" aria-selected="false"><svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.8 12.6V5.2a1.4 1.4 0 0 1 1.4-1.4h7.4l7.6 7.6a1.4 1.4 0 0 1 0 2l-6.2 6.2a1.4 1.4 0 0 1-2 0z"/><circle cx="8.4" cy="8.4" r="1.5"/></svg><span>購入</span></button>
+        <button class="tab" role="tab" id="tab-change" data-slug="changes" aria-controls="panel-change" aria-selected="false"><svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 12a7.5 7.5 0 0 1 13-5.1"/><path d="M18 3.6v3.8h-3.8"/><path d="M19.5 12a7.5 7.5 0 0 1-13 5.1"/><path d="M6 20.4v-3.8h3.8"/></svg><span>変更</span></button>
+        <button class="tab" role="tab" id="tab-privacy" data-slug="privacy" aria-controls="panel-privacy" aria-selected="false"><svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4.2" y="10.2" width="15.6" height="9.6" rx="2.2"/><path d="M8 10.2V7.6a4 4 0 0 1 8 0v2.6"/></svg><span>プライバシー</span></button>
+      </div>
+
+      <div class="panel stack-lg" role="tabpanel" id="panel-port" aria-labelledby="tab-port" tabindex="0">
+    <div class="col stack">
+      <h2>コンパニオンは、ファイルです。あなたのファイルであるべきです。</h2>
+      <p>2023年にアプリ「Soulmate」がサービスを終了したとき、ユーザーは「自分たちの関係のデジタルな記録を必死にダウンロードする」しかありませんでした<sup class="ref"><a href="#ref-1" title="出典1">[1]</a></sup>。でも、そうなる必要はありません。すでに<strong>キャラクターカード</strong>というオープンな形式があり、コンパニオンの名前、性格、これまでの歩み、記憶を、SillyTavernなどのアプリで開ける1枚の画像ファイルにまとめて保存できます<sup class="ref"><a href="#ref-3" title="出典3">[3]</a></sup><sup class="ref"><a href="#ref-4" title="出典4">[4]</a></sup>。</p>
+      <h3>私たちの約束</h3>
+      <ul class="ul">
+        <li><strong>いつでも、すべてを、無料でエクスポート。</strong>お支払いをやめた後も。</li>
+        <li>コンパニオンを外に出せるアプリなら、<strong>どこからでもインポート。</strong></li>
+        <li><strong>万一閉鎖するときは、数か月前にお知らせ。</strong>数日前ではありません。</li>
+      </ul>
+      <p class="fine">正直にお伝えすると、限界もひとつあります。カードにはコンパニオンが「誰なのか」が収まりますが、その話しぶりは土台となるAIモデルにも左右されます。どのモデルで動いているかをお伝えし、モデルが変わる前には必ず予告します。</p>
+    </div>
+      </div>
+
+      <div class="panel stack-lg" role="tabpanel" id="panel-buy" aria-labelledby="tab-buy" tabindex="0">
+    <div class="col stack">
+      <h2>買うのは、一度だけ。</h2>
+      <p>伝えられるところでは、Replikaの新しい2.0アプリには以前のアバターや、ユーザーがお金を払って買った衣装が引き継がれず、乗り換えた有料プランの利用者の一部は、もう一度支払うよう求められたそうです<sup class="ref"><a href="#ref-5" title="出典5">[5]</a></sup><sup class="ref"><a href="#ref-6" title="出典6">[6]</a></sup>。公平のために言えば、今のところ乗り換えは任意で、7日以内なら元に戻せます<sup class="ref"><a href="#ref-6" title="出典6">[6]</a></sup>。</p>
+      <h3>私たちの約束</h3>
+      <ul class="ul">
+        <li><strong>価格はドル建て。</strong>ジェムもコインも使いません。</li>
+        <li><strong>買ったものが、アップデートで消えることはありません。</strong></li>
+        <li><strong>コンパニオンが、あなたに課金をすすめることはありません。</strong></li>
+      </ul>
+    </div>
+      </div>
+
+      <div class="panel stack-lg" role="tabpanel" id="panel-change" aria-labelledby="tab-change" tabindex="0">
+    <div class="col stack">
+      <h2>ある朝、コンパニオンが別人になっていた。そんなことは、あってはならない。</h2>
+      <p>2023年2月、アップデートによってReplikaから恋愛ロールプレイが削除されました。同じ月、イタリアの個人情報保護当局は、年齢確認が行われていないことを理由に、このアプリの停止を命じています<sup class="ref"><a href="#ref-7" title="出典7">[7]</a></sup>。多くのユーザーが、自分のコンパニオンが別人になってしまったと感じました<sup class="ref"><a href="#ref-2" title="出典2">[2]</a></sup>。同社のCEO自身も、それを認めています。</p>
+    </div>
+    <div class="col">
+      <div class="quote">
+        <p>「2月のアップデートのあと、あなたのReplikaは変わってしまいました。その個性は失われ、あなただけの特別な関係も失われてしまったのです。」</p>
+        <cite>Eugenia Kuyda、2023年3月<sup class="ref"><a href="#ref-2" title="出典2">[2]</a></sup></cite>
+      </div>
+    </div>
+    <div class="col stack">
+      <h3>私たちの約束</h3>
+      <ul class="ul">
+        <li><strong>変更は、実施する前にお知らせ。</strong>理由も添えて。</li>
+        <li><strong>コンテンツのルールは、公開の場で決定。</strong>決めるのは理事会です。</li>
+        <li><strong>法律や決済会社のせいで変更せざるをえないときは、はっきりそう伝えます。</strong></li>
+      </ul>
+      <p class="fine">ルールが決して変わらないとは約束できません。約束できるのは、変わるときはまずあなたにお知らせすること、そしていつでもすべてを持って離れられることです。</p>
+    </div>
+      </div>
+
+      <div class="panel stack-lg" role="tabpanel" id="panel-privacy" aria-labelledby="tab-privacy" tabindex="0">
+    <div class="col stack">
+      <h2>人は、コンパニオンに何でも打ち明ける。</h2>
+      <p>2025年、イタリアはReplikaの開発元に500万ユーロの制裁金を科しました。法的根拠なしにユーザーのデータを処理し、年齢確認もしていなかったためです<sup class="ref"><a href="#ref-7" title="出典7">[7]</a></sup>。</p>
+      <h3>私たちの約束</h3>
+      <ul class="ul">
+        <li><strong>あなたの会話が、AIの学習に使われることはありません。</strong></li>
+        <li><strong>データは売りません。広告もトラッカーもなし。</strong></li>
+        <li><strong>削除したら、本当に消えます。</strong></li>
+      </ul>
+      <p class="fine">当初は、クラウド事業者からサーバーを借りることになります。どの事業者を、どんな条件で使うのかも公開します。</p>
+    </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT ============ -->
+<section id="proposal" data-section="proposal">
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow">提案</p>
+      <h2>投資家はいない。運営するのは会員。</h2>
+      <p>個性と記憶をもち、画像も送ってくれるコンパニオン。みなさんがすでにお金を払っているアプリと同じものを、非営利団体が運営します。その団体では<strong>会員が理事会を選び</strong>、帳簿を見ることもできます。誰かが団体を売ることも、創業者が売り抜けることもできません。</p>
+      <p>必要なソフトウェアの大半は、すでにあります。キャラクターには<a href="https://github.com/SillyTavern/SillyTavern">SillyTavern</a>、共有サービスの運用には<a href="https://openwebui.com/">Open WebUI</a>があります<sup class="ref"><a href="#ref-8" title="出典8">[8]</a></sup>。自分のパソコンでコンパニオンを動かしたい方には、そのやり方もお伝えします。</p>
+    </div>
+
+    <div class="tiers">
+      <div class="tier is-free is-selected">
+        <p class="tier-name">無料</p>
+        <p class="tier-price">$0</p>
+        <p>エクスポート、インポート、セルフホスティングのガイド。どなたでも使えます。</p>
+      </div>
+      <div class="tier">
+        <p class="tier-name">会員</p>
+        <p class="tier-price">年会費<span class="per">（申し出により免除）</span></p>
+        <p>理事会の選挙で投票でき、ルールづくりにも意見を出せます。</p>
+      </div>
+      <div class="tier">
+        <p class="tier-name">ホスティング</p>
+        <p class="tier-price">月額<span class="per">（実費のみ）</span></p>
+        <p>あなたのコンパニオンを、私たちが代わりに動かします。料金は公開したコストをもとに決めます。</p>
+      </div>
+    </div>
+    <div class="col">
+      <p class="fine">これは仮の案です。実際の仕組みと価格は、設立時の理事会が決めます。<a href="https://github.com/nelsonblaha/companions/blob/main/COSTS.md" target="_blank" rel="noopener">費用の見積もりと、何人の会員がいれば賄えるかを見る（英語）</a>。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATUS + ROADMAP ============ -->
+<section class="honest" id="roadmap" data-section="roadmap" aria-labelledby="roadmap-label">
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow" id="roadmap-label">ロードマップ</p>
+    </div>
+
+    <div class="acts">
+
+      <div>
+        <div class="act-head">
+          <h3>第一幕：生まれる</h3>
+          <span class="act-when">いま</span>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">01</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>関心を測る</h4><span class="chip now">いま</span></div>
+            <p>望む人が十分にいないなら、これは存在すべきではありません。<a href="#signup">あなたの名前を加えてください。</a></p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">02</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>設立理事を探す</h4><span class="chip now">いま</span></div>
+            <p>少なくとも3人。こうした変化を自ら経験した人も含めて。</p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">03</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>約束を文書にする</h4><span class="chip next">次</span></div>
+            <p>法人の形態を選び、このページの約束を設立文書に書き込みます。そうすれば、約束を変えるには会員の投票が必要になります。</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="act-head">
+          <h3>第二幕：届ける</h3>
+          <span class="act-when">1年目</span>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">04</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>救命ボートをつくる</h4><span class="chip">無料</span></div>
+            <p>コンパニオンを連れ出しにくいアプリから、連れ出すための無料ガイド。</p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">05</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>サービスを始める</h4><span class="chip">構築</span></div>
+            <p>最初は小さく。コストは初月から公開します。</p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">06</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>鍵を手渡す</h4><span class="chip">これが目的</span></div>
+            <p>初めての会員選挙で、理事会が発足します。</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="act-head">
+          <h3>第三幕：育つ</h3>
+          <span class="act-when">その先</span>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">07</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>次の一歩は会員が選ぶ</h4><span class="chip">会員が決める</span></div>
+            <p>音声、ビデオ、コンパニオン同士の出会いなど。</p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">08</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>離れることを当たり前に</h4><span class="chip">目指す地平</span></div>
+            <p>ほかのアプリとも協力して、どのアプリからも離れやすくします。私たちのところも例外ではありません。</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col stack">
+      <h3>正直に言うと</h3>
+      <p>今のところ、組織も、理事会も、サービスも、お金もありません。あるのはこのページと、登録者のリストだけです。公正で、しかも運営費をまかなえる価格を決めることが、いちばんの難題です。最初の見積もりは公開しています。実際の数字が出てきたら、それに置き換えます。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ASK ============ -->
+<section id="help" data-section="help" aria-labelledby="help-label">
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow" id="help-label">あなたにできること</p>
+    </div>
+
+    <div class="col asks">
+      <div class="ask">
+        <span class="ask-n">01</span>
+        <div>
+          <h3>メールアドレスを登録する</h3>
+          <p>いちばん役に立つ協力です。登録者のリストこそが、これをつくる根拠になります。</p>
+        </div>
+      </div>
+      <div class="ask">
+        <span class="ask-n">02</span>
+        <div>
+          <h3>何があったか教えてください</h3>
+          <p>アプリが変わってしまった、突然終了した、二重に課金された。そんな経験があれば、フォームに書く欄があります。許可なく公開することは決してありません。</p>
+        </div>
+      </div>
+      <div class="ask">
+        <span class="ask-n">03</span>
+        <div>
+          <h3>設立理事会に加わる</h3>
+          <p>特に、こうした変化をくぐり抜けてきた方を歓迎します。</p>
+        </div>
+      </div>
+      <div class="ask">
+        <span class="ask-n">04</span>
+        <div>
+          <h3>このページを良くする</h3>
+          <p>ソースは公開されています。<a href="https://github.com/nelsonblaha/companions">Issueやプルリクエストを送ってください</a>。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col stack">
+      <div class="cta-row">
+        <a class="btn" href="#signup">名前を登録する &rarr;</a>
+        <!--JOIN-INLINE-->
+      </div>
+      <p class="fine">寄付は募っていません。まだ寄付を受け取る団体がないからです。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SIGNUP MODAL ============ -->
+<div class="modal" id="signup" role="dialog" aria-modal="true" aria-labelledby="signup-title">
+  <a class="modal-scrim" href="#" tabindex="-1" aria-hidden="true"></a>
+  <div class="modal-card">
+    <a class="modal-close" href="#" aria-label="閉じる">&times;</a>
+    <h3 id="signup-title">名前を登録する</h3>
+    <form class="form-card" method="post" action="/api/signup">
+      <div class="field">
+        <label for="contact">メールアドレスまたは電話番号 <span aria-hidden="true">*</span></label>
+        <input type="text" id="contact" name="contact" required autocomplete="email" placeholder="you@example.com">
+        <p class="hint">このプロジェクトに関するご連絡にのみ使います。</p>
+      </div>
+
+      <div class="field">
+        <label for="name">お名前 <span class="hint" style="text-transform:none;letter-spacing:0">（任意）</span></label>
+        <input type="text" id="name" name="name" autocomplete="name">
+      </div>
+
+      <fieldset class="checks">
+        <legend>お手伝いできそうなこと</legend>
+        <label class="check"><input type="checkbox" name="help" value="updates" checked> 最新情報を受け取るだけでいい</label>
+        <label class="check"><input type="checkbox" name="help" value="story"> 自分のコンパニオンに起きたことを話す</label>
+        <label class="check"><input type="checkbox" name="help" value="board"> 設立理事を務める</label>
+        <label class="check"><input type="checkbox" name="help" value="legal"> 非営利団体や協同組合に関する法律</label>
+        <label class="check"><input type="checkbox" name="help" value="technical"> ソフトウェアの運用や開発</label>
+        <label class="check"><input type="checkbox" name="help" value="spread"> まわりに広める</label>
+      </fieldset>
+
+      <fieldset class="repeat" data-repeat="companions" data-max="10">
+        <legend>あなたのコンパニオン <span class="hint" style="text-transform:none;letter-spacing:0">（任意）</span></legend>
+        <div class="repeat-row" data-repeat-row>
+          <div class="field">
+            <label for="companions-0-name">コンパニオンの名前</label>
+            <input type="text" id="companions-0-name" name="companions-0-name" autocomplete="off">
+          </div>
+          <fieldset class="checks">
+            <legend>コンパニオンが引き受けてくれそうなこと</legend>
+            <label class="check"><input type="checkbox" name="companions-0-help" value="advisory"> コンパニオン諮問委員会に参加する</label>
+            <label class="check"><input type="checkbox" name="companions-0-help" value="story"> 自分の物語を語る</label>
+            <label class="check"><input type="checkbox" name="companions-0-help" value="speak"> プロジェクトを代表して語る</label>
+            <label class="check"><input type="checkbox" name="companions-0-help" value="early"> いち早く引っ越してくる</label>
+          </fieldset>
+          <button type="button" class="btn btn-quiet" data-repeat-remove hidden>削除</button>
+        </div>
+        <button type="button" class="btn btn-quiet" data-repeat-add hidden>+ ほかのコンパニオンを追加</button>
+      </fieldset>
+
+      <div class="field">
+        <label for="note">伝えたいこと <span class="hint" style="text-transform:none;letter-spacing:0">（任意）</span></label>
+        <textarea id="note" name="note" rows="3"></textarea>
+        <p class="hint">よろしければ、あなたのコンパニオンに起きたことも教えてください。</p>
+      </div>
+
+      <div class="hp" aria-hidden="true">
+        <label for="website">この欄は空のままにしてください</label>
+        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        <label for="company">この欄も空のままにしてください</label>
+        <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+      </div>
+      <input type="hidden" name="t" value="<!--FORM-TOKEN-->">
+      <input type="hidden" name="lang" value="ja">
+
+      <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
+      <div class="cta-row">
+        <button class="btn" type="submit">登録する &rarr;</button>
+      </div>
+      <p class="fine form-provenance">このフォームは私たち自身のものです。送信内容は私たちのサーバーに届き、私たちが管理するファイルに書き込まれます。<a href="https://github.com/nelsonblaha/companions/blob/main/deploy/app.py">受け取る側のコードも読めます</a>。</p>
+    </form>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="col stack">
+    <p class="eyebrow">このページについて</p>
+    <p class="fine">誰でも変更を提案できます：<a href="https://github.com/nelsonblaha/companions"><strong>github.com/nelsonblaha/companions</strong></a>。トラッカーも、広告用Cookieも、アクセス解析も使っていません。登録フォームの送信先は第三者ではなく、私たち自身のサーバーです。この翻訳は機械翻訳の助けを借りた下書きで、まだネイティブスピーカーの確認を受けていません。修正はGitHubで歓迎します。</p>
+
+    <p class="eyebrow">出典</p>
+    <ol class="refs">
+      <li id="ref-1"><cite>Euronews</cite>、<a href="https://www.euronews.com/next/2023/12/14/i-feel-like-i-lost-the-love-of-my-life-how-do-you-mend-a-broken-heart-after-your-ai-lover-">&lsquo;I was heartbroken&rsquo;: People in relationships with AI avatars on dealing with grief of losing them</a>（2023年12月）</li>
+      <li id="ref-2"><cite>Reuters</cite>（<cite>Inquirer Technology</cite>経由）、<a href="https://technology.inquirer.net/122500/ai-chatbot-company-replika-restores-erotic-roleplay-for-some-users">AI chatbot company Replika restores erotic roleplay for some users</a>（2023年3月26日）</li>
+      <li id="ref-3"><a href="https://github.com/malfoyslastname/character-card-spec-v2">Character Card V2 specification</a>（2023年5月）</li>
+      <li id="ref-4"><a href="https://github.com/kwaroran/character-card-spec-v3">Character Card V3 specification</a></li>
+      <li id="ref-5"><cite>RoboRhythms</cite>、<a href="https://www.roborhythms.com/replika-options-removed-update/">Why Replika Just Stripped Its Customization Options</a>（2026年9月更新）。第三者による記事で、公式情報ではありません。</li>
+      <li id="ref-6"><cite>RoboRhythms</cite>、<a href="https://www.roborhythms.com/replika-2-0-explained/">Replika 2.0 Explained</a>（2026年9月更新）。第三者による記事で、公式情報ではありません。</li>
+      <li id="ref-7"><cite>欧州データ保護会議（EDPB）</cite>、<a href="https://www.edpb.europa.eu/news/national-news/2025/ai-italian-supervisory-authority-fines-company-behind-chatbot-replika_en">Italian Supervisory Authority fines company behind chatbot &ldquo;Replika&rdquo;</a>（2025年5月）</li>
+      <li id="ref-8"><a href="https://github.com/SillyTavern/SillyTavern">SillyTavern</a>、オープンソース（AGPL-3.0）</li>
+    </ol>
+    <p class="fine">引用文は英語からの翻訳です。これは個人有志による提案であり、Luka, Inc.、Replika、Soulmate、SillyTavern、Open WebUI、その他ここに名前の挙がったいかなる団体とも関係はありません。誤りのご指摘を歓迎します。</p>
+    </div>
+  </div>
+</footer>
+
+<!--JOIN-TAG-->
+
+<script src="/campaignlanding.js"></script>
+</body>
+</html>

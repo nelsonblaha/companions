@@ -1,0 +1,29 @@
+{
+  "_about": "What the server and the page's script say in this language. A machine-assisted draft that no native speaker has reviewed yet; corrections are welcome. review_notes lists the choices most worth checking.",
+  "review_notes": "Título «Tu compañero debería ser tuyo para siempre»; «Las apps de compañía» para «Companion apps»; usos latinoamericanos («lentes», «computadora»); «issue» y «pull request» sin traducir; formulario sin marca de género («Le podría interesar»); join igual a los valores por defecto; signedUp = «Listo».",
+  "strings": {
+    "too_fast": "Eso se envió más rápido de lo que una persona puede escribir. Inténtalo de nuevo.",
+    "rate": "Demasiados registros desde esta dirección. Inténtalo más tarde.",
+    "required": "Hace falta un correo electrónico o un número de teléfono.",
+    "invalid": "Eso no parece un correo electrónico ni un número de teléfono.",
+    "links": "Por favor, no incluyas enlaces en ese mensaje.",
+    "stale": "Ese formulario llevaba un buen rato abierto. Recarga la página e inténtalo de nuevo.",
+    "oops_title": "Algo salió mal",
+    "thanks_title": "Ya estás en la lista.",
+    "thanks_body": "Eso es todo. Te escribiremos cuando haya algo real que contar: una junta directiva, una decisión, un servicio que de verdad puedas usar.",
+    "back": "Volver a la propuesta",
+    "sending": "Enviando…",
+    "ok": "Ya estás en la lista. Te escribiremos cuando haya algo real que contar.",
+    "failed": "No se pudo enviar. Inténtalo de nuevo en un momento.",
+    "unreachable": "No se pudo conectar con el servidor. Inténtalo de nuevo en un momento.",
+    "signedUp": "Listo",
+    "tiers": "Niveles de acceso",
+    "close": "Cerrar",
+    "copied": "Copiado al portapapeles"
+  },
+  "join_words": {
+    "lead": "únete a",
+    "one": "persona",
+    "many": "personas"
+  }
+}

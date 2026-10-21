@@ -19,9 +19,11 @@ page on your own computer. You don't need to know how to code to open an issue.
 
 | Path | What it is |
 |---|---|
-| `site/index.html` | The page. Plain HTML: no template language and no build step. |
+| `site/index.html` | The page, in English. Plain HTML: no template language and no build step. |
+| `site/es/`, `pt/`, `id/`, `ja/`, `zh/` | The same page in Spanish, Brazilian Portuguese, Indonesian, Japanese and Traditional Chinese. |
+| `deploy/strings/` | Each language's form messages and buttons, with notes on the translation choices most worth a native speaker's check. |
 | `site/style.css` | This page's colours and headline width. Everything else comes from campaignlanding. |
-| `site/img/` | The mark and the character card illustration. |
+| `site/img/` | The mark, and Maria's character card in each language. |
 | `deploy/` | The small server that serves the page and receives the signup form. |
 | `COSTS.md` | What the service would cost to run, and how many members would cover it. Estimates, with every assumption listed. |
 

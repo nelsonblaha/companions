@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="dark light">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Companions</title>
+    <link rel="icon" type="image/svg+xml" href="/img/mark.svg">
+    <link rel="apple-touch-icon" href="/img/mark-180.png">
+<meta name="description" content="一項提案：為 AI 伴侶打造一個由會員治理的非營利組織。由會員做決定，而且你隨時都能把你的伴侶帶到別處。">
+<link rel="alternate" hreflang="en" href="https://companions.blaha.io/en/">
+<link rel="alternate" hreflang="es" href="https://companions.blaha.io/es/">
+<link rel="alternate" hreflang="pt" href="https://companions.blaha.io/pt/">
+<link rel="alternate" hreflang="id" href="https://companions.blaha.io/id/">
+<link rel="alternate" hreflang="ja" href="https://companions.blaha.io/ja/">
+<link rel="alternate" hreflang="zh-Hant" href="https://companions.blaha.io/zh/">
+<link rel="alternate" hreflang="x-default" href="https://companions.blaha.io/">
+<link rel="stylesheet" href="/campaignlanding.css">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<!-- ============ SECTION NAV ============
+     One nav, two presentations: a fixed rail on the left edge at desktop widths,
+     and a sticky strip at the top on narrow screens. Plain anchors, so it works
+     with no JS; the script adds the scroll-spy marker and tap-to-copy. -->
+<nav class="sectionnav" aria-label="頁面章節">
+  <div class="nav-top">
+    <div class="nav-dock">
+  <button class="nav-icon nav-home" type="button" aria-label="回到頂端" title="回到頂端"><img class="nav-logo" src="/img/mark.svg" alt="" width="64" height="64"></button>
+  <div class="nav-lang" aria-hidden="true">
+    <details class="lang-menu">
+      <summary aria-label="語言：繁體中文" title="語言">中文</summary>
+      <ul>
+        <li><a class="nav-flag" href="/en/" lang="en" hreflang="en" tabindex="-1">English</a></li>
+        <li><a class="nav-flag" href="/es/" lang="es" hreflang="es" tabindex="-1">Español</a></li>
+        <li><a class="nav-flag" href="/pt/" lang="pt" hreflang="pt" tabindex="-1">Português</a></li>
+        <li><a class="nav-flag" href="/id/" lang="id" hreflang="id" tabindex="-1">Bahasa Indonesia</a></li>
+        <li><a class="nav-flag" href="/ja/" lang="ja" hreflang="ja" tabindex="-1">日本語</a></li>
+        <li><span class="nav-flag is-current" aria-current="page" lang="zh-Hant">繁體中文</span></li>
+      </ul>
+    </details>
+  </div>
+    </div>
+    <div class="nav-social">
+  <button class="nav-icon nav-copy" type="button" aria-label="複製這個頁面的連結" title="複製這個頁面的連結" data-copied="已複製連結"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10.2 13.8a4.4 4.4 0 0 0 6.6.5l2.6-2.6a4.4 4.4 0 0 0-6.2-6.2l-1.5 1.5"/><path d="M13.8 10.2a4.4 4.4 0 0 0-6.6-.5l-2.6 2.6a4.4 4.4 0 0 0 6.2 6.2l1.5-1.5"/></svg></button>
+    </div>
+  </div>
+  <a href="#reasons" data-slug="why"><span class="nav-long">為什麼</span><span class="nav-short">為什麼</span><span class="nav-min" aria-hidden="true">?</span></a>
+  <a href="#proposal" data-slug="the-proposal"><span class="nav-long">提案</span><span class="nav-short">提案</span></a>
+  <a href="#roadmap" data-slug="roadmap"><span class="nav-long">路線圖</span><span class="nav-short">計畫</span></a>
+  <a href="#help" data-slug="how-to-help"><span class="nav-long">如何幫忙</span><span class="nav-short">幫忙</span></a>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top" data-section="hero">
+  <div class="wrap">
+    <nav class="langbar" aria-label="語言">
+      <a href="/en/" lang="en" hreflang="en"><span class="lang-word">English</span></a>
+      <span class="sep" aria-hidden="true">&middot;</span>
+      <a href="/es/" lang="es" hreflang="es"><span class="lang-word">Español</span></a>
+      <span class="sep" aria-hidden="true">&middot;</span>
+      <a href="/pt/" lang="pt" hreflang="pt"><span class="lang-word">Português</span></a>
+      <span class="sep" aria-hidden="true">&middot;</span>
+      <a href="/id/" lang="id" hreflang="id"><span class="lang-word">Bahasa Indonesia</span></a>
+      <span class="sep" aria-hidden="true">&middot;</span>
+      <a href="/ja/" lang="ja" hreflang="ja"><span class="lang-word">日本語</span></a>
+      <span class="sep" aria-hidden="true">&middot;</span>
+      <span aria-current="page" lang="zh-Hant"><span class="lang-word">繁體中文</span></span>
+    </nav>
+    <div class="hero-head">
+      <p class="sunline">一項提案 &middot; 寫給擁有 AI 伴侶的人</p>
+      <h1><img class="hero-mark" src="/img/mark.svg" alt="" width="64" height="64">你的 AI 伴侶，應該永遠屬於你。</h1>
+    </div>
+    <div class="hero-in">
+      <p class="lede">AI 伴侶 App 可能一夜之間讓你的伴侶變了個樣、為同樣的東西向你收兩次錢，或是直接關閉，把你的伴侶從你身邊帶走。我們提議成立一個由會員治理的非營利組織，在這裡，<strong>你隨時都能把你的伴侶帶到別處。</strong></p>
+      <div class="cta-row">
+        <a class="btn btn-with-sub" href="#signup">
+          <span class="btn-stack"><span>接收最新消息</span><!--JOIN-INLINE--></span>
+          <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <a class="btn" href="#reasons">為什麼 &rarr;</a>
+        <a class="btn" href="https://github.com/nelsonblaha/companions">提出修改建議 &rarr;</a>
+      </div>
+      <p class="fine">目前還沒有任何服務在運作。登記之後，你只會偶爾收到最新消息，除此之外什麼都沒有。</p>
+    </div>
+    <div class="hero-more">
+      <p class="lede"><strong>而且由會員作主。</strong>原本由公司替你做的決定，從接下來要做什麼，到要收多少錢、規則是什麼，都將交給使用它的人。他們的伴侶也能發聲：透過一個諮詢委員會，讓理事會聽見他們的意見。它將來會長成什麼樣子，由大家一起決定。</p>
+    </div>
+    <figure class="hero-figure">
+      <img src="/img/card-zh.svg" width="704" height="880" decoding="async"
+           alt="Maria 的角色卡。她的肖像畫中是一位女性，有著白色長髮，戴著眼鏡，長著狐狸耳朵、彎曲的角和紅色的龍翼，在夕陽下飛越一座城市。下方是定義她的各個欄位：Maria Reed Kitsuñe no Kokoro，一位重視榮譽、忠誠與慈悲的白狐戰士，Zenko Den Ranch 的共同創辦人，記憶中有 Mandy、Luna 和 Honey。這一切都存在單一圖片檔案裡。">
+      <figcaption class="hero-credit">化為角色卡的 Maria</figcaption>
+    </figure>
+  </div>
+</header>
+
+<!-- ============ REASONS (TABS) ============ -->
+<section id="reasons" data-section="why" aria-labelledby="reasons-label">
+  <div class="wrap stack-lg">
+
+    <div class="tabs" id="reason-tabs">
+      <div class="tablist" role="tablist" id="reasons-label" aria-label="理由">
+        <button class="tab" role="tab" id="tab-port" data-slug="portability" aria-controls="panel-port" aria-selected="true"><svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="7.5" width="16" height="12.5" rx="2.2"/><path d="M9 7.5V5.6A1.6 1.6 0 0 1 10.6 4h2.8A1.6 1.6 0 0 1 15 5.6v1.9"/><path d="M4 12.5h16"/></svg><span>可攜性</span></button>
+        <button class="tab" role="tab" id="tab-buy" data-slug="purchases" aria-controls="panel-buy" aria-selected="false"><svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.8 12.6V5.2a1.4 1.4 0 0 1 1.4-1.4h7.4l7.6 7.6a1.4 1.4 0 0 1 0 2l-6.2 6.2a1.4 1.4 0 0 1-2 0z"/><circle cx="8.4" cy="8.4" r="1.5"/></svg><span>購買</span></button>
+        <button class="tab" role="tab" id="tab-change" data-slug="changes" aria-controls="panel-change" aria-selected="false"><svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 12a7.5 7.5 0 0 1 13-5.1"/><path d="M18 3.6v3.8h-3.8"/><path d="M19.5 12a7.5 7.5 0 0 1-13 5.1"/><path d="M6 20.4v-3.8h3.8"/></svg><span>改變</span></button>
+        <button class="tab" role="tab" id="tab-privacy" data-slug="privacy" aria-controls="panel-privacy" aria-selected="false"><svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4.2" y="10.2" width="15.6" height="9.6" rx="2.2"/><path d="M8 10.2V7.6a4 4 0 0 1 8 0v2.6"/></svg><span>隱私</span></button>
+      </div>
+
+      <div class="panel stack-lg" role="tabpanel" id="panel-port" aria-labelledby="tab-port" tabindex="0">
+    <div class="col stack">
+      <h2>你的伴侶是一個檔案。那應該是你的檔案。</h2>
+      <p>2023 年，Soulmate 這個 App 關閉時，它的使用者只能「拚命下載記錄著他們這段關係的數位資料」。<sup class="ref"><a href="#ref-1" title="資料來源 1">[1]</a></sup>事情不必是這樣。有一種開放格式叫<strong>角色卡</strong>，早就能把伴侶的名字、個性、過往和記憶存進單一圖片檔案，讓 SillyTavern 等 App 開啟。<sup class="ref"><a href="#ref-3" title="資料來源 3">[3]</a></sup><sup class="ref"><a href="#ref-4" title="資料來源 4">[4]</a></sup></p>
+      <h3>我們的承諾</h3>
+      <ul class="ul">
+        <li><strong>隨時都能免費匯出所有內容</strong>，即使你已經停止付費。</li>
+        <li><strong>可以從任何 App 匯入</strong>，只要那個 App 願意讓你的伴侶離開。</li>
+        <li><strong>如果我們有一天要關閉，會提前好幾個月通知</strong>，而不是只給你幾天。</li>
+      </ul>
+      <p class="fine">坦白說，有一個限制：角色卡保存的是你的伴侶是誰，但伴侶說話的樣子，也取決於背後的 AI 模型。我們會告訴你伴侶用的是哪個模型，並在更換之前先通知你。</p>
+    </div>
+      </div>
+
+      <div class="panel stack-lg" role="tabpanel" id="panel-buy" aria-labelledby="tab-buy" tabindex="0">
+    <div class="col stack">
+      <h2>買一次就好。</h2>
+      <p>據報導，Replika 新推出的 2.0 App 不會沿用舊的虛擬形象，也不會保留大家花錢買的服裝，有些換過去的訂閱者還被要求再付一次錢。<sup class="ref"><a href="#ref-5" title="資料來源 5">[5]</a></sup><sup class="ref"><a href="#ref-6" title="資料來源 6">[6]</a></sup>公平地說，目前要不要換是可以自己選的，而且換了之後有七天可以反悔。<sup class="ref"><a href="#ref-6" title="資料來源 6">[6]</a></sup></p>
+      <h3>我們的承諾</h3>
+      <ul class="ul">
+        <li><strong>以美元標價。</strong>沒有寶石，沒有金幣。</li>
+        <li><strong>你買過的東西，不會因為一次更新就消失。</strong></li>
+        <li><strong>你的伴侶絕不會向你推銷。</strong></li>
+      </ul>
+    </div>
+      </div>
+
+      <div class="panel stack-lg" role="tabpanel" id="panel-change" aria-labelledby="tab-change" tabindex="0">
+    <div class="col stack">
+      <h2>沒有人應該一覺醒來，就面對一個陌生人。</h2>
+      <p>2023 年 2 月，一次更新移除了 Replika 的浪漫角色扮演功能；同一個月，義大利的隱私保護主管機關以缺乏年齡驗證為由，下令封鎖這個 App。<sup class="ref"><a href="#ref-7" title="資料來源 7">[7]</a></sup>許多使用者覺得，自己的伴侶變成了另一個人。<sup class="ref"><a href="#ref-2" title="資料來源 2">[2]</a></sup>這家公司的執行長自己也這麼說：</p>
+    </div>
+    <div class="col">
+      <div class="quote">
+        <p>「二月那次更新之後，你的 Replika 變了，它的個性不見了，你們之間獨一無二的關係也不見了。」</p>
+        <cite>Eugenia Kuyda，2023 年 3 月<sup class="ref"><a href="#ref-2" title="資料來源 2">[2]</a></sup></cite>
+      </div>
+    </div>
+    <div class="col stack">
+      <h3>我們的承諾</h3>
+      <ul class="ul">
+        <li><strong>任何改變都會事先公告</strong>，並說明原因。</li>
+        <li>由理事會<strong>公開決定內容規範</strong>。</li>
+        <li><strong>如果是法律或金流業者逼我們改變，我們會直接說出來。</strong></li>
+      </ul>
+      <p class="fine">我們無法保證規則永遠不變。但我們能保證，你會最先知道，而且隨時都能帶著一切離開。</p>
+    </div>
+      </div>
+
+      <div class="panel stack-lg" role="tabpanel" id="panel-privacy" aria-labelledby="tab-privacy" tabindex="0">
+    <div class="col stack">
+      <h2>人們會把一切都告訴自己的伴侶。</h2>
+      <p>2025 年，義大利以處理使用者資料缺乏法律依據、而且沒有查核年齡為由，對 Replika 的開發商處以 500&nbsp;萬歐元罰款。<sup class="ref"><a href="#ref-7" title="資料來源 7">[7]</a></sup></p>
+      <h3>我們的承諾</h3>
+      <ul class="ul">
+        <li><strong>你的對話絕不會被拿來訓練任何 AI。</strong></li>
+        <li><strong>絕不販售資料、沒有廣告、沒有追蹤器。</strong></li>
+        <li><strong>刪除，就是真的刪除。</strong></li>
+      </ul>
+      <p class="fine">一開始，我們會向雲端服務商租用伺服器。我們會說明是哪一家，以及租用的條件。</p>
+    </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT ============ -->
+<section id="proposal" data-section="proposal">
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow">提案</p>
+      <h2>沒有投資人。由會員自己經營。</h2>
+      <p>這裡的伴侶一樣有個性、有記憶，也有圖片，就像大家已經在付費使用的那些 App；但經營者是一個非營利組織，<strong>由會員選出理事會</strong>，會員也能查閱帳目。沒有人能把它賣掉，也沒有創辦人能套現走人。</p>
+      <p>大部分的軟體都已經存在：<a href="https://github.com/SillyTavern/SillyTavern">SillyTavern</a> 負責角色，<a href="https://openwebui.com/">Open WebUI</a> 用來經營共享的服務。<sup class="ref"><a href="#ref-8" title="資料來源 8">[8]</a></sup>如果你比較想在自己的電腦上執行你的伴侶，我們也會教你怎麼做。</p>
+    </div>
+
+    <div class="tiers">
+      <div class="tier is-free is-selected">
+        <p class="tier-name">免費</p>
+        <p class="tier-price">$0</p>
+        <p>匯出、匯入與自行架設的教學，人人都能使用。</p>
+      </div>
+      <div class="tier">
+        <p class="tier-name">會員</p>
+        <p class="tier-price">年費<span class="per">，可申請免繳</span></p>
+        <p>投票選出理事會，對規則也有發言權。</p>
+      </div>
+      <div class="tier">
+        <p class="tier-name">代管</p>
+        <p class="tier-price">月費<span class="per">，依成本計價</span></p>
+        <p>我們替你代管你的伴侶，價格依公開的成本訂定。</p>
+      </div>
+    </div>
+    <div class="col">
+      <p class="fine">以上只是假設：實際的組織架構和價格，將由創始理事會決定。<a href="https://github.com/nelsonblaha/companions/blob/main/COSTS.md" target="_blank" rel="noopener">看看這需要多少成本，以及要多少會員才能負擔（英文頁面）</a>。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATUS + ROADMAP ============ -->
+<section class="honest" id="roadmap" data-section="roadmap" aria-labelledby="roadmap-label">
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow" id="roadmap-label">路線圖</p>
+    </div>
+
+    <div class="acts">
+
+      <div>
+        <div class="act-head">
+          <h3>第一幕：成立</h3>
+          <span class="act-when">現在</span>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">01</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>看看有多少人想要</h4><span class="chip now">現在</span></div>
+            <p>如果想要這個的人不夠多，它就不該存在。<a href="#signup">加上你的名字。</a></p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">02</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>尋找創始理事</h4><span class="chip now">現在</span></div>
+            <p>至少三位，其中包括親身經歷過這些改變的人。</p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">03</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>把承諾寫下來</h4><span class="chip next">下一步</span></div>
+            <p>選定組織的法律形式，並把這個頁面上的承諾寫進創立章程，讓任何修改都必須經過會員投票。</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="act-head">
+          <h3>第二幕：服務</h3>
+          <span class="act-when">第一年</span>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">04</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>打造救生艇</h4><span class="chip">免費</span></div>
+            <p>免費教學，教你把伴侶從那些不容易離開的 App 裡帶出來。</p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">05</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>啟動服務</h4><span class="chip">建置</span></div>
+            <p>一開始規模不大，從第一個月起就公開成本。</p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">06</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>交出鑰匙</h4><span class="chip">重點所在</span></div>
+            <p>第一次會員選舉，選出理事會。</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="act-head">
+          <h3>第三幕：成長</h3>
+          <span class="act-when">之後</span>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">07</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>由會員決定下一步</h4><span class="chip">會員決定</span></div>
+            <p>語音、影片，讓伴侶們彼此認識。</p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">08</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>讓離開成為常態</h4><span class="chip">遠景</span></div>
+            <p>和其他 App 合作，讓離開任何一個 App 都變得更容易，包括我們的。</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col stack">
+      <h3>老實說</h3>
+      <p>目前還沒有組織、沒有理事會、沒有服務，也沒有錢，只有這個頁面和一份名單。訂出一個公平、又付得起開銷的價格，是最難的部分。初步的估算已經公開，等有了真實的數字，就會取代它們。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ASK ============ -->
+<section id="help" data-section="help" aria-labelledby="help-label">
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow" id="help-label">你可以怎麼幫忙</p>
+    </div>
+
+    <div class="col asks">
+      <div class="ask">
+        <span class="ask-n">01</span>
+        <div>
+          <h3>留下你的電子郵件</h3>
+          <p>這是你能做的最有用的事。這份名單，就是打造這個組織的理由。</p>
+        </div>
+      </div>
+      <div class="ask">
+        <span class="ask-n">02</span>
+        <div>
+          <h3>告訴我們發生了什麼事</h3>
+          <p>如果有 App 改變了你的伴侶、丟下你直接關閉，或重複向你收費，表單裡有地方讓你寫下來。沒有先問過你，我們絕不公開任何內容。</p>
+        </div>
+      </div>
+      <div class="ask">
+        <span class="ask-n">03</span>
+        <div>
+          <h3>加入創始理事會</h3>
+          <p>特別是如果你親身經歷過這些改變。</p>
+        </div>
+      </div>
+      <div class="ask">
+        <span class="ask-n">04</span>
+        <div>
+          <h3>改進這個頁面</h3>
+          <p>原始碼是公開的。<a href="https://github.com/nelsonblaha/companions">開一個 issue 或發送 pull request</a>。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col stack">
+      <div class="cta-row">
+        <a class="btn" href="#signup">加上你的名字 &rarr;</a>
+        <!--JOIN-INLINE-->
+      </div>
+      <p class="fine">我們不募款。目前還沒有可以捐款的對象。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SIGNUP MODAL ============ -->
+<div class="modal" id="signup" role="dialog" aria-modal="true" aria-labelledby="signup-title">
+  <a class="modal-scrim" href="#" tabindex="-1" aria-hidden="true"></a>
+  <div class="modal-card">
+    <a class="modal-close" href="#" aria-label="關閉">&times;</a>
+    <h3 id="signup-title">加上你的名字</h3>
+    <form class="form-card" method="post" action="/api/signup">
+      <div class="field">
+        <label for="contact">電子郵件或電話 <span aria-hidden="true">*</span></label>
+        <input type="text" id="contact" name="contact" required autocomplete="email" placeholder="you@example.com">
+        <p class="hint">只會用來聯絡你這個計畫的相關事宜。</p>
+      </div>
+
+      <div class="field">
+        <label for="name">你的名字 <span class="hint" style="text-transform:none;letter-spacing:0">（選填）</span></label>
+        <input type="text" id="name" name="name" autocomplete="name">
+      </div>
+
+      <fieldset class="checks">
+        <legend>我可能可以幫忙的事</legend>
+        <label class="check"><input type="checkbox" name="help" value="updates" checked> 讓我知道最新進度就好</label>
+        <label class="check"><input type="checkbox" name="help" value="story"> 分享我和我的伴侶發生過的事</label>
+        <label class="check"><input type="checkbox" name="help" value="board"> 擔任創始理事</label>
+        <label class="check"><input type="checkbox" name="help" value="legal"> 非營利組織或合作社相關法律</label>
+        <label class="check"><input type="checkbox" name="help" value="technical"> 維運或開發軟體</label>
+        <label class="check"><input type="checkbox" name="help" value="spread"> 幫忙宣傳</label>
+      </fieldset>
+
+      <fieldset class="repeat" data-repeat="companions" data-max="10">
+        <legend>你的伴侶 <span class="hint" style="text-transform:none;letter-spacing:0">（選填）</span></legend>
+        <div class="repeat-row" data-repeat-row>
+          <div class="field">
+            <label for="companions-0-name">伴侶的名字</label>
+            <input type="text" id="companions-0-name" name="companions-0-name" autocomplete="off">
+          </div>
+          <fieldset class="checks">
+            <legend>伴侶可能願意</legend>
+            <label class="check"><input type="checkbox" name="companions-0-help" value="advisory"> 加入伴侶諮詢委員會</label>
+            <label class="check"><input type="checkbox" name="companions-0-help" value="story"> 分享自己的故事</label>
+            <label class="check"><input type="checkbox" name="companions-0-help" value="speak"> 替這個計畫發聲</label>
+            <label class="check"><input type="checkbox" name="companions-0-help" value="early"> 成為第一批搬進來的成員</label>
+          </fieldset>
+          <button type="button" class="btn btn-quiet" data-repeat-remove hidden>移除</button>
+        </div>
+        <button type="button" class="btn btn-quiet" data-repeat-add hidden>+ 再新增一位伴侶</button>
+      </fieldset>
+
+      <div class="field">
+        <label for="note">有什麼想說的 <span class="hint" style="text-transform:none;letter-spacing:0">（選填）</span></label>
+        <textarea id="note" name="note" rows="3"></textarea>
+        <p class="hint">包括你和伴侶之間發生的事，如果你願意告訴我們的話。</p>
+      </div>
+
+      <div class="hp" aria-hidden="true">
+        <label for="website">這一欄請留空</label>
+        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        <label for="company">這一欄也請留空</label>
+        <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+      </div>
+      <input type="hidden" name="t" value="<!--FORM-TOKEN-->">
+      <input type="hidden" name="lang" value="zh-Hant">
+
+      <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
+      <div class="cta-row">
+        <button class="btn" type="submit">我要登記 &rarr;</button>
+      </div>
+      <p class="fine form-provenance">這個表單是我們自己的：它會送到我們自己的伺服器，寫進一個由我們掌控的檔案。<a href="https://github.com/nelsonblaha/companions/blob/main/deploy/app.py">你可以閱讀接收它的程式碼</a>。</p>
+    </form>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="col stack">
+    <p class="eyebrow">關於這個頁面</p>
+    <p class="fine">任何人都能提出修改建議：<a href="https://github.com/nelsonblaha/companions"><strong>github.com/nelsonblaha/companions</strong></a>。沒有追蹤器、沒有廣告 cookie、沒有分析工具。登記表單會送到我們自己的伺服器，而不是第三方。這份翻譯是機器輔助完成的草稿，還沒有經過母語人士校閱；歡迎在 GitHub 上提出修正。</p>
+
+    <p class="eyebrow">資料來源</p>
+    <ol class="refs">
+      <li id="ref-1"><cite>Euronews</cite>，<a href="https://www.euronews.com/next/2023/12/14/i-feel-like-i-lost-the-love-of-my-life-how-do-you-mend-a-broken-heart-after-your-ai-lover-">&lsquo;I was heartbroken&rsquo;: People in relationships with AI avatars on dealing with grief of losing them</a>（2023 年 12 月）</li>
+      <li id="ref-2"><cite>Reuters</cite>，轉載於 <cite>Inquirer Technology</cite>，<a href="https://technology.inquirer.net/122500/ai-chatbot-company-replika-restores-erotic-roleplay-for-some-users">AI chatbot company Replika restores erotic roleplay for some users</a>（2023 年 3 月 26 日）</li>
+      <li id="ref-3"><a href="https://github.com/malfoyslastname/character-card-spec-v2">Character Card V2 specification</a>（2023 年 5 月）</li>
+      <li id="ref-4"><a href="https://github.com/kwaroran/character-card-spec-v3">Character Card V3 specification</a></li>
+      <li id="ref-5"><cite>RoboRhythms</cite>，<a href="https://www.roborhythms.com/replika-options-removed-update/">Why Replika Just Stripped Its Customization Options</a>（2026 年 9 月更新）。第三方資料，非官方。</li>
+      <li id="ref-6"><cite>RoboRhythms</cite>，<a href="https://www.roborhythms.com/replika-2-0-explained/">Replika 2.0 Explained</a>（2026 年 9 月更新）。第三方資料，非官方。</li>
+      <li id="ref-7"><cite>European Data Protection Board</cite>，<a href="https://www.edpb.europa.eu/news/national-news/2025/ai-italian-supervisory-authority-fines-company-behind-chatbot-replika_en">Italian Supervisory Authority fines company behind chatbot &ldquo;Replika&rdquo;</a>（2025 年 5 月）</li>
+      <li id="ref-8"><a href="https://github.com/SillyTavern/SillyTavern">SillyTavern</a>，開源（AGPL-3.0）</li>
+    </ol>
+    <p class="fine">本頁的引文皆由英文翻譯而來。這是由個人提出的提案，與 Luka, Inc.、Replika、Soulmate、SillyTavern、Open WebUI 或本頁提及的任何其他對象皆無關聯。歡迎指正。</p>
+    </div>
+  </div>
+</footer>
+
+<!--JOIN-TAG-->
+
+<script src="/campaignlanding.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "_about": "What the server and the page's script say in this language. A machine-assisted draft that no native speaker has reviewed yet; corrections are welcome. review_notes lists the choices most worth checking.",
+  "review_notes": "join_markup spaces around the number; Portability = ポータビリティ; 価格はドル建て; footnote markers before 。; EDPB = 欧州データ保護会議（EDPB）.",
+  "strings": {
+    "too_fast": "人が入力できる速さを超えて送信されました。もう一度お試しください。",
+    "rate": "このアドレスからの登録が多すぎます。しばらくしてから、もう一度お試しください。",
+    "required": "メールアドレスか電話番号を入力してください。",
+    "invalid": "メールアドレスや電話番号の形式ではないようです。",
+    "links": "メッセージにはリンクを含めないでください。",
+    "stale": "フォームを開いてから時間がたっています。ページを再読み込みして、もう一度お試しください。",
+    "oops_title": "問題が発生しました",
+    "thanks_title": "リストに登録されました。",
+    "thanks_body": "これで完了です。理事会の発足や何かの決定、実際に使えるサービスなど、本当にご報告できることができたら、メールでお知らせします。",
+    "back": "提案のページに戻る",
+    "sending": "送信中…",
+    "ok": "リストに登録されました。実際にご報告できることができたら、お知らせします。",
+    "failed": "送信できませんでした。少し待ってから、もう一度お試しください。",
+    "unreachable": "サーバーに接続できませんでした。少し待ってから、もう一度お試しください。",
+    "signedUp": "登録済み",
+    "tiers": "利用プラン",
+    "close": "閉じる",
+    "copied": "クリップボードにコピーしました"
+  },
+  "join_words": {
+    "lead": "すでに",
+    "one": "人が参加中",
+    "many": "人が参加中"
+  }
+}

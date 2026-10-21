@@ -33,3 +33,14 @@
   --accent-soft: #ECE6FB;
   --btn-ink:     #FFFFFF;
 }
+
+/* Each language's headline and eyebrow, measured in headless Chrome at 1440px
+   with the text laid out on one line (2026-10-21), plus a little room for a font
+   that renders a hair wider elsewhere. English is above: 23.85 fits the system's
+   24.0. Japanese and Chinese characters are a full em in every common font, so
+   their numbers travel better than the Latin ones. */
+html[lang="es"]      { --h1-ratio: 26.5; --eyebrow-ratio: 37.5; }
+html[lang="pt"]      { --h1-ratio: 27.6; --eyebrow-ratio: 35.2; }
+html[lang="id"]      { --h1-ratio: 28.2; --eyebrow-ratio: 38.2; }
+html[lang="ja"]      { --h1-ratio: 24.6; --eyebrow-ratio: 23.4; }
+html[lang="zh-Hant"] { --h1-ratio: 17.0; --eyebrow-ratio: 17.4; }

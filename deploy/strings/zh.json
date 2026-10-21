@@ -1,0 +1,29 @@
+{
+  "_about": "What the server and the page's script say in this language. A machine-assisted draft that no native speaker has reviewed yet; corrections are welcome. review_notes lists the choices most worth checking.",
+  "review_notes": "Repeats 伴侶 instead of a singular pronoun; 它 only in Kuyda's quote; White Kitsuné = 白狐戰士; Act I 'Exist' = 成立; 'Prices in dollars' = 以美元標價; join reads 與其他 N 人一起加入.",
+  "strings": {
+    "too_fast": "送出的速度比人打字還快。請再試一次。",
+    "rate": "來自這個位址的登記次數太多了。請稍後再試。",
+    "required": "請填寫電子郵件地址或電話號碼。",
+    "invalid": "這看起來不像電子郵件地址或電話號碼。",
+    "links": "訊息中請不要附上連結。",
+    "stale": "這個表單已經開了一段時間。請重新整理頁面後再試一次。",
+    "oops_title": "出了點問題",
+    "thanks_title": "你已經在名單上了。",
+    "thanks_body": "就這樣，完成了。等有真正值得報告的事，我們會寄信給你：一個理事會、一項決定、一個你真的能使用的服務。",
+    "back": "回到提案",
+    "sending": "傳送中…",
+    "ok": "你已經在名單上了。等有真正值得報告的事，我們會再寫信給你。",
+    "failed": "沒有送出成功。請稍後再試一次。",
+    "unreachable": "無法連線到伺服器。請稍後再試一次。",
+    "signedUp": "已登記",
+    "tiers": "使用方案",
+    "close": "關閉",
+    "copied": "已複製到剪貼簿"
+  },
+  "join_words": {
+    "lead": "與其他",
+    "one": "人一起加入",
+    "many": "人一起加入"
+  }
+}

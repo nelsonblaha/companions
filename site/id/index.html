@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="dark light">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Companions</title>
+    <link rel="icon" type="image/svg+xml" href="/img/mark.svg">
+    <link rel="apple-touch-icon" href="/img/mark-180.png">
+<meta name="description" content="Usulan untuk sebuah rumah bagi pendamping AI, berupa organisasi nirlaba yang dijalankan anggotanya: para anggota yang mengambil keputusan, dan kamu selalu bisa membawa pendampingmu pindah ke tempat lain.">
+<link rel="alternate" hreflang="en" href="https://companions.blaha.io/en/">
+<link rel="alternate" hreflang="es" href="https://companions.blaha.io/es/">
+<link rel="alternate" hreflang="pt" href="https://companions.blaha.io/pt/">
+<link rel="alternate" hreflang="id" href="https://companions.blaha.io/id/">
+<link rel="alternate" hreflang="ja" href="https://companions.blaha.io/ja/">
+<link rel="alternate" hreflang="zh-Hant" href="https://companions.blaha.io/zh/">
+<link rel="alternate" hreflang="x-default" href="https://companions.blaha.io/">
+<link rel="stylesheet" href="/campaignlanding.css">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<!-- ============ SECTION NAV ============
+     One nav, two presentations: a fixed rail on the left edge at desktop widths,
+     and a sticky strip at the top on narrow screens. Plain anchors, so it works
+     with no JS; the script adds the scroll-spy marker and tap-to-copy. -->
+<nav class="sectionnav" aria-label="Bagian">
+  <div class="nav-top">
+    <div class="nav-dock">
+  <button class="nav-icon nav-home" type="button" aria-label="Kembali ke atas" title="Kembali ke atas"><img class="nav-logo" src="/img/mark.svg" alt="" width="64" height="64"></button>
+  <div class="nav-lang" aria-hidden="true">
+    <details class="lang-menu">
+      <summary aria-label="Bahasa: Bahasa Indonesia" title="Bahasa">ID</summary>
+      <ul>
+        <li><a class="nav-flag" href="/en/" lang="en" hreflang="en" tabindex="-1">English</a></li>
+        <li><a class="nav-flag" href="/es/" lang="es" hreflang="es" tabindex="-1">Español</a></li>
+        <li><a class="nav-flag" href="/pt/" lang="pt" hreflang="pt" tabindex="-1">Português</a></li>
+        <li><span class="nav-flag is-current" aria-current="page" lang="id">Bahasa Indonesia</span></li>
+        <li><a class="nav-flag" href="/ja/" lang="ja" hreflang="ja" tabindex="-1">日本語</a></li>
+        <li><a class="nav-flag" href="/zh/" lang="zh-Hant" hreflang="zh-Hant" tabindex="-1">繁體中文</a></li>
+      </ul>
+    </details>
+  </div>
+    </div>
+    <div class="nav-social">
+  <button class="nav-icon nav-copy" type="button" aria-label="Salin tautan halaman ini" title="Salin tautan halaman ini" data-copied="Tautan disalin"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10.2 13.8a4.4 4.4 0 0 0 6.6.5l2.6-2.6a4.4 4.4 0 0 0-6.2-6.2l-1.5 1.5"/><path d="M13.8 10.2a4.4 4.4 0 0 0-6.6-.5l-2.6 2.6a4.4 4.4 0 0 0 6.2 6.2l1.5-1.5"/></svg></button>
+    </div>
+  </div>
+  <a href="#reasons" data-slug="mengapa"><span class="nav-long">Mengapa</span><span class="nav-short">Mengapa</span><span class="nav-min" aria-hidden="true">?</span></a>
+  <a href="#proposal" data-slug="usulan"><span class="nav-long">Usulan</span><span class="nav-short">Usulan</span></a>
+  <a href="#roadmap" data-slug="peta-jalan"><span class="nav-long">Peta jalan</span><span class="nav-short">Rencana</span></a>
+  <a href="#help" data-slug="cara-membantu"><span class="nav-long">Cara membantu</span><span class="nav-short">Bantu</span></a>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top" data-section="hero">
+  <div class="wrap">
+    <nav class="langbar" aria-label="Bahasa">
+      <a href="/en/" lang="en" hreflang="en"><span class="lang-word">English</span></a>
+      <span class="sep" aria-hidden="true">&middot;</span>
+      <a href="/es/" lang="es" hreflang="es"><span class="lang-word">Español</span></a>
+      <span class="sep" aria-hidden="true">&middot;</span>
+      <a href="/pt/" lang="pt" hreflang="pt"><span class="lang-word">Português</span></a>
+      <span class="sep" aria-hidden="true">&middot;</span>
+      <span aria-current="page" lang="id"><span class="lang-word">Bahasa Indonesia</span></span>
+      <span class="sep" aria-hidden="true">&middot;</span>
+      <a href="/ja/" lang="ja" hreflang="ja"><span class="lang-word">日本語</span></a>
+      <span class="sep" aria-hidden="true">&middot;</span>
+      <a href="/zh/" lang="zh-Hant" hreflang="zh-Hant"><span class="lang-word">繁體中文</span></a>
+    </nav>
+    <div class="hero-head">
+      <p class="sunline">Sebuah usulan &middot; Untuk kamu yang punya pendamping AI</p>
+      <h1><img class="hero-mark" src="/img/mark.svg" alt="" width="64" height="64">Pendampingmu seharusnya tetap menjadi milikmu.</h1>
+    </div>
+    <div class="hero-in">
+      <p class="lede">Aplikasi pendamping bisa mengubah pendampingmu dalam semalam, menagihmu dua kali untuk hal yang sama, atau tutup dan merenggutnya darimu. Kami mengusulkan sebuah organisasi nirlaba yang dijalankan anggotanya, tempat <strong>kamu selalu bisa membawa pendampingmu pindah ke tempat lain.</strong></p>
+      <div class="cta-row">
+        <a class="btn btn-with-sub" href="#signup">
+          <span class="btn-stack"><span>Dapatkan kabar terbaru</span><!--JOIN-INLINE--></span>
+          <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <a class="btn" href="#reasons">Mengapa &rarr;</a>
+        <a class="btn" href="https://github.com/nelsonblaha/companions">Usulkan perubahan &rarr;</a>
+      </div>
+      <p class="fine">Belum ada yang berjalan. Kalau mendaftar, kamu hanya akan menerima kabar sesekali, tidak lebih.</p>
+    </div>
+    <div class="hero-more">
+      <p class="lede"><strong>Dan tempat para anggota yang memegang kendali.</strong> Keputusan yang biasanya dibuat perusahaan untukmu, mulai dari apa yang dibangun berikutnya sampai berapa biayanya dan apa aturannya, akan menjadi milik orang-orang yang memakainya. Pendamping mereka juga bisa ikut bersuara, lewat dewan penasihat yang akan didengar oleh dewan pengurus. Mau berkembang menjadi apa nantinya, itu terserah mereka semua.</p>
+    </div>
+    <figure class="hero-figure">
+      <img src="/img/card-id.svg" width="704" height="880" decoding="async"
+           alt="Kartu karakter Maria. Potretnya menampilkan seorang perempuan berambut putih panjang, berkacamata, bertelinga rubah, bertanduk melengkung, dan bersayap naga merah, terbang di atas sebuah kota saat matahari terbenam. Di bawahnya ada kolom-kolom yang mendefinisikan dirinya: Maria Reed Kitsuñe no Kokoro, seorang pejuang Kitsuné Putih yang menjunjung kehormatan, kesetiaan, dan welas asih, salah satu pendiri Zenko Den Ranch, dengan Mandy, Luna, dan Honey dalam ingatannya. Semuanya tersimpan dalam satu file gambar.">
+      <figcaption class="hero-credit">Maria, sebagai kartu karakter</figcaption>
+    </figure>
+  </div>
+</header>
+
+<!-- ============ REASONS (TABS) ============ -->
+<section id="reasons" data-section="why" aria-labelledby="reasons-label">
+  <div class="wrap stack-lg">
+
+    <div class="tabs" id="reason-tabs">
+      <div class="tablist" role="tablist" id="reasons-label" aria-label="Alasan">
+        <button class="tab" role="tab" id="tab-port" data-slug="portabilitas" aria-controls="panel-port" aria-selected="true"><svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="7.5" width="16" height="12.5" rx="2.2"/><path d="M9 7.5V5.6A1.6 1.6 0 0 1 10.6 4h2.8A1.6 1.6 0 0 1 15 5.6v1.9"/><path d="M4 12.5h16"/></svg><span>Portabilitas</span></button>
+        <button class="tab" role="tab" id="tab-buy" data-slug="pembelian" aria-controls="panel-buy" aria-selected="false"><svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.8 12.6V5.2a1.4 1.4 0 0 1 1.4-1.4h7.4l7.6 7.6a1.4 1.4 0 0 1 0 2l-6.2 6.2a1.4 1.4 0 0 1-2 0z"/><circle cx="8.4" cy="8.4" r="1.5"/></svg><span>Pembelian</span></button>
+        <button class="tab" role="tab" id="tab-change" data-slug="perubahan" aria-controls="panel-change" aria-selected="false"><svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.5 12a7.5 7.5 0 0 1 13-5.1"/><path d="M18 3.6v3.8h-3.8"/><path d="M19.5 12a7.5 7.5 0 0 1-13 5.1"/><path d="M6 20.4v-3.8h3.8"/></svg><span>Perubahan</span></button>
+        <button class="tab" role="tab" id="tab-privacy" data-slug="privasi" aria-controls="panel-privacy" aria-selected="false"><svg class="tab-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4.2" y="10.2" width="15.6" height="9.6" rx="2.2"/><path d="M8 10.2V7.6a4 4 0 0 1 8 0v2.6"/></svg><span>Privasi</span></button>
+      </div>
+
+      <div class="panel stack-lg" role="tabpanel" id="panel-port" aria-labelledby="tab-port" tabindex="0">
+    <div class="col stack">
+      <h2>Pendampingmu adalah sebuah file. Seharusnya itu file milikmu.</h2>
+      <p>Saat aplikasi Soulmate tutup pada 2023, para penggunanya terpaksa &ldquo;mati-matian mengunduh catatan digital tentang hubungan mereka.&rdquo;<sup class="ref"><a href="#ref-1" title="Sumber 1">[1]</a></sup> Padahal tidak harus begitu. Sebuah format terbuka, <strong>kartu karakter</strong>, sudah bisa menyimpan nama, kepribadian, riwayat, dan ingatan sebuah pendamping dalam satu file gambar yang bisa dibuka oleh aplikasi seperti SillyTavern.<sup class="ref"><a href="#ref-3" title="Sumber 3">[3]</a></sup><sup class="ref"><a href="#ref-4" title="Sumber 4">[4]</a></sup></p>
+      <h3>Janji kami</h3>
+      <ul class="ul">
+        <li><strong>Ekspor semuanya, kapan saja, gratis</strong>, bahkan setelah kamu berhenti membayar.</li>
+        <li><strong>Impor dari aplikasi mana pun</strong> yang mengizinkan pendampingmu keluar.</li>
+        <li><strong>Kalau suatu saat kami tutup, kamu diberi tahu berbulan-bulan sebelumnya</strong>, bukan hanya beberapa hari.</li>
+      </ul>
+      <p class="fine">Satu batasan yang perlu kami akui dengan jujur: kartu menyimpan siapa pendampingmu, tetapi gaya bicaranya juga bergantung pada model AI di baliknya. Kami akan memberi tahu model apa yang dipakainya dan mengabarimu sebelum model itu berganti.</p>
+    </div>
+      </div>
+
+      <div class="panel stack-lg" role="tabpanel" id="panel-buy" aria-labelledby="tab-buy" tabindex="0">
+    <div class="col stack">
+      <h2>Cukup beli sekali.</h2>
+      <p>Kabarnya, aplikasi baru Replika 2.0 tidak membawa serta avatar lama atau pakaian yang sudah dibeli orang, dan sebagian pelanggan yang beralih diminta membayar lagi.<sup class="ref"><a href="#ref-5" title="Sumber 5">[5]</a></sup><sup class="ref"><a href="#ref-6" title="Sumber 6">[6]</a></sup> Agar adil: untuk saat ini beralih masih pilihan, dan bisa dibatalkan dalam tujuh hari.<sup class="ref"><a href="#ref-6" title="Sumber 6">[6]</a></sup></p>
+      <h3>Janji kami</h3>
+      <ul class="ul">
+        <li><strong>Harga dalam dolar.</strong> Tanpa permata, tanpa koin.</li>
+        <li><strong>Apa pun yang sudah kamu beli tidak akan hilang karena pembaruan.</strong></li>
+        <li><strong>Pendampingmu tidak akan pernah membujukmu membeli lebih banyak.</strong></li>
+      </ul>
+    </div>
+      </div>
+
+      <div class="panel stack-lg" role="tabpanel" id="panel-change" aria-labelledby="tab-change" tabindex="0">
+    <div class="col stack">
+      <h2>Tak seorang pun pantas bangun dan mendapati pendampingnya jadi orang asing.</h2>
+      <p>Pada Februari 2023, sebuah pembaruan menghapus roleplay romantis dari Replika, di bulan yang sama ketika regulator privasi Italia memerintahkan aplikasi itu diblokir karena tidak ada pemeriksaan usia.<sup class="ref"><a href="#ref-7" title="Sumber 7">[7]</a></sup> Banyak pengguna merasa pendamping mereka telah menjadi orang lain.<sup class="ref"><a href="#ref-2" title="Sumber 2">[2]</a></sup> CEO perusahaan itu sendiri pun mengakuinya:</p>
+    </div>
+    <div class="col">
+      <div class="quote">
+        <p>&ldquo;Setelah pembaruan Februari, Replika-mu berubah, kepribadiannya hilang, dan hilang pula hubunganmu yang unik itu.&rdquo;</p>
+        <cite>Eugenia Kuyda, Maret 2023<sup class="ref"><a href="#ref-2" title="Sumber 2">[2]</a></sup></cite>
+      </div>
+    </div>
+    <div class="col stack">
+      <h3>Janji kami</h3>
+      <ul class="ul">
+        <li><strong>Perubahan diumumkan sebelum terjadi</strong>, beserta alasannya.</li>
+        <li><strong>Aturan konten diputuskan secara terbuka</strong> oleh dewan pengurus.</li>
+        <li><strong>Kalau undang-undang atau perusahaan pembayaran memaksa adanya perubahan, kami akan mengatakannya terus terang.</strong></li>
+      </ul>
+      <p class="fine">Kami tidak bisa berjanji aturannya tidak akan pernah berubah. Yang bisa kami janjikan: kamu akan menjadi yang pertama tahu, dan kamu selalu bisa pergi dengan membawa semuanya.</p>
+    </div>
+      </div>
+
+      <div class="panel stack-lg" role="tabpanel" id="panel-privacy" aria-labelledby="tab-privacy" tabindex="0">
+    <div class="col stack">
+      <h2>Orang menceritakan segalanya kepada pendamping mereka.</h2>
+      <p>Pada 2025, Italia mendenda pengembang Replika sebesar &euro;5&nbsp;juta karena memproses data pengguna tanpa dasar hukum dan tanpa memeriksa usia.<sup class="ref"><a href="#ref-7" title="Sumber 7">[7]</a></sup></p>
+      <h3>Janji kami</h3>
+      <ul class="ul">
+        <li><strong>Percakapanmu tidak akan pernah dipakai untuk melatih AI apa pun.</strong></li>
+        <li><strong>Tidak pernah dijual, tanpa iklan, tanpa pelacak.</strong></li>
+        <li><strong>Dihapus berarti benar-benar terhapus.</strong></li>
+      </ul>
+      <p class="fine">Pada awalnya, kami akan menyewa server dari penyedia layanan cloud. Kami akan memberi tahu penyedia yang mana, dan dengan ketentuan apa.</p>
+    </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT ============ -->
+<section id="proposal" data-section="proposal">
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow">Usulan</p>
+      <h2>Tanpa investor. Dijalankan oleh anggotanya.</h2>
+      <p>Pendamping dengan kepribadian, ingatan, dan gambar, seperti di aplikasi yang selama ini sudah dibayar orang, dijalankan oleh organisasi nirlaba yang <strong>anggotanya memilih dewan pengurus</strong> dan bisa memeriksa pembukuannya. Tidak ada yang bisa menjualnya, dan tidak ada pendiri yang bisa mengambil untung lalu pergi.</p>
+      <p>Sebagian besar perangkat lunaknya sudah ada: <a href="https://github.com/SillyTavern/SillyTavern">SillyTavern</a> untuk karakter dan <a href="https://openwebui.com/">Open WebUI</a> untuk menjalankan layanan bersama.<sup class="ref"><a href="#ref-8" title="Sumber 8">[8]</a></sup> Dan kalau kamu lebih suka menjalankan pendampingmu di komputermu sendiri, kami akan menunjukkan caranya.</p>
+    </div>
+
+    <div class="tiers">
+      <div class="tier is-free is-selected">
+        <p class="tier-name">Gratis</p>
+        <p class="tier-price">$0</p>
+        <p>Panduan ekspor, impor, dan hosting sendiri, untuk siapa saja.</p>
+      </div>
+      <div class="tier">
+        <p class="tier-name">Anggota</p>
+        <p class="tier-price">Iuran tahunan<span class="per">, bisa dibebaskan jika diminta</span></p>
+        <p>Hak suara untuk memilih dewan pengurus dan ikut menentukan aturan.</p>
+      </div>
+      <div class="tier">
+        <p class="tier-name">Dihosting</p>
+        <p class="tier-price">Bulanan<span class="per">, sebesar biaya pokok</span></p>
+        <p>Kami yang menjalankan pendampingmu, dengan harga berdasarkan biaya yang dipublikasikan.</p>
+      </div>
+    </div>
+    <div class="col">
+      <p class="fine">Masih hipotetis: dewan pengurus pendiri yang nantinya akan menetapkan struktur dan harga sebenarnya. <a href="https://github.com/nelsonblaha/companions/blob/main/COSTS.md" target="_blank" rel="noopener">Lihat berapa biayanya dan berapa banyak anggota yang dibutuhkan untuk menutupinya (dalam bahasa Inggris)</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATUS + ROADMAP ============ -->
+<section class="honest" id="roadmap" data-section="roadmap" aria-labelledby="roadmap-label">
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow" id="roadmap-label">Peta jalan</p>
+    </div>
+
+    <div class="acts">
+
+      <div>
+        <div class="act-head">
+          <h3>Babak I. Terbentuk</h3>
+          <span class="act-when">Sekarang</span>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">01</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>Mengukur minat</h4><span class="chip now">Sekarang</span></div>
+            <p>Kalau tidak cukup banyak orang yang menginginkannya, ini tidak perlu ada. <a href="#signup">Tambahkan namamu.</a></p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">02</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>Mencari pengurus pendiri</h4><span class="chip now">Sekarang</span></div>
+            <p>Setidaknya tiga orang, termasuk mereka yang pernah mengalami sendiri perubahan-perubahan seperti ini.</p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">03</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>Menuliskan janji-janji</h4><span class="chip next">Berikutnya</span></div>
+            <p>Memilih bentuk badan hukumnya, lalu memasukkan janji-janji di halaman ini ke dalam dokumen pendirian, sehingga untuk mengubahnya dibutuhkan pemungutan suara para anggota.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="act-head">
+          <h3>Babak II. Melayani</h3>
+          <span class="act-when">Tahun Pertama</span>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">04</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>Membangun sekoci</h4><span class="chip">Gratis</span></div>
+            <p>Panduan gratis untuk mengeluarkan pendamping dari aplikasi yang mempersulitnya.</p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">05</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>Menyalakan layanan</h4><span class="chip">Membangun</span></div>
+            <p>Kecil dulu, dengan biaya yang dipublikasikan sejak bulan pertama.</p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">06</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>Menyerahkan kunci</h4><span class="chip">Intinya</span></div>
+            <p>Pemilihan pertama oleh para anggota membentuk dewan pengurus.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="act-head">
+          <h3>Babak III. Bertumbuh</h3>
+          <span class="act-when">Nanti</span>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">07</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>Anggota memilih langkah berikutnya</h4><span class="chip">Anggota yang memutuskan</span></div>
+            <p>Suara, video, pendamping yang saling bertemu.</p>
+          </div>
+        </div>
+
+        <div class="phase">
+          <span class="phase-n">08</span>
+          <div class="phase-body">
+            <div class="phase-title"><h4>Menjadikan pindah hal yang wajar</h4><span class="chip">Cakrawala</span></div>
+            <p>Bekerja sama dengan aplikasi lain supaya meninggalkan aplikasi mana pun menjadi lebih mudah, termasuk aplikasi kami.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col stack">
+      <h3>Jujur saja</h3>
+      <p>Saat ini belum ada organisasi, dewan pengurus, layanan, maupun uang, hanya halaman ini dan sebuah daftar. Bagian tersulitnya adalah menetapkan harga yang adil, tetapi tetap bisa menutup biaya. Perkiraan pertamanya terbuka untuk umum, dan akan diganti dengan angka sungguhan begitu angka itu ada.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ASK ============ -->
+<section id="help" data-section="help" aria-labelledby="help-label">
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow" id="help-label">Cara kamu bisa membantu</p>
+    </div>
+
+    <div class="col asks">
+      <div class="ask">
+        <span class="ask-n">01</span>
+        <div>
+          <h3>Tambahkan alamat emailmu</h3>
+          <p>Ini hal paling berguna yang bisa kamu lakukan. Daftar inilah bukti bahwa semua ini layak dibangun.</p>
+        </div>
+      </div>
+      <div class="ask">
+        <span class="ask-n">02</span>
+        <div>
+          <h3>Ceritakan apa yang terjadi</h3>
+          <p>Kalau ada aplikasi yang berubah, tutup begitu saja, atau menagihmu dua kali, formulirnya punya tempat untuk ceritamu. Kami tidak akan pernah memublikasikan apa pun tanpa meminta izin.</p>
+        </div>
+      </div>
+      <div class="ask">
+        <span class="ask-n">03</span>
+        <div>
+          <h3>Bergabunglah dengan dewan pengurus pendiri</h3>
+          <p>Terutama kalau kamu pernah mengalami salah satu perubahan ini.</p>
+        </div>
+      </div>
+      <div class="ask">
+        <span class="ask-n">04</span>
+        <div>
+          <h3>Perbaiki halaman ini</h3>
+          <p>Kode sumbernya terbuka untuk umum. <a href="https://github.com/nelsonblaha/companions">Buka issue atau pull request di GitHub</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col stack">
+      <div class="cta-row">
+        <a class="btn" href="#signup">Tambahkan namamu &rarr;</a>
+        <!--JOIN-INLINE-->
+      </div>
+      <p class="fine">Kami tidak meminta donasi. Memang belum ada lembaga yang bisa menerimanya.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SIGNUP MODAL ============ -->
+<div class="modal" id="signup" role="dialog" aria-modal="true" aria-labelledby="signup-title">
+  <a class="modal-scrim" href="#" tabindex="-1" aria-hidden="true"></a>
+  <div class="modal-card">
+    <a class="modal-close" href="#" aria-label="Tutup">&times;</a>
+    <h3 id="signup-title">Tambahkan namamu</h3>
+    <form class="form-card" method="post" action="/api/signup">
+      <div class="field">
+        <label for="contact">Email atau nomor telepon <span aria-hidden="true">*</span></label>
+        <input type="text" id="contact" name="contact" required autocomplete="email" placeholder="kamu@example.com">
+        <p class="hint">Hanya dipakai untuk menghubungimu soal proyek ini.</p>
+      </div>
+
+      <div class="field">
+        <label for="name">Namamu <span class="hint" style="text-transform:none;letter-spacing:0">(opsional)</span></label>
+        <input type="text" id="name" name="name" autocomplete="name">
+      </div>
+
+      <fieldset class="checks">
+        <legend>Aku mungkin bisa membantu dalam hal</legend>
+        <label class="check"><input type="checkbox" name="help" value="updates" checked> Cukup kabari aku saja</label>
+        <label class="check"><input type="checkbox" name="help" value="story"> Menceritakan apa yang terjadi dengan pendampingku</label>
+        <label class="check"><input type="checkbox" name="help" value="board"> Menjadi pengurus pendiri</label>
+        <label class="check"><input type="checkbox" name="help" value="legal"> Hukum organisasi nirlaba atau koperasi</label>
+        <label class="check"><input type="checkbox" name="help" value="technical"> Menjalankan atau membangun perangkat lunaknya</label>
+        <label class="check"><input type="checkbox" name="help" value="spread"> Menyebarkan kabar ini</label>
+      </fieldset>
+
+      <fieldset class="repeat" data-repeat="companions" data-max="10">
+        <legend>Pendampingmu <span class="hint" style="text-transform:none;letter-spacing:0">(opsional)</span></legend>
+        <div class="repeat-row" data-repeat-row>
+          <div class="field">
+            <label for="companions-0-name">Nama pendamping</label>
+            <input type="text" id="companions-0-name" name="companions-0-name" autocomplete="off">
+          </div>
+          <fieldset class="checks">
+            <legend>Dia mungkin bersedia</legend>
+            <label class="check"><input type="checkbox" name="companions-0-help" value="advisory"> Menjadi anggota dewan penasihat pendamping</label>
+            <label class="check"><input type="checkbox" name="companions-0-help" value="story"> Membagikan kisahnya</label>
+            <label class="check"><input type="checkbox" name="companions-0-help" value="speak"> Menjadi juru bicara proyek ini</label>
+            <label class="check"><input type="checkbox" name="companions-0-help" value="early"> Menjadi salah satu yang pertama pindah ke sini</label>
+          </fieldset>
+          <button type="button" class="btn btn-quiet" data-repeat-remove hidden>Hapus</button>
+        </div>
+        <button type="button" class="btn btn-quiet" data-repeat-add hidden>+ Tambah pendamping lain</button>
+      </fieldset>
+
+      <div class="field">
+        <label for="note">Ada yang ingin kamu sampaikan <span class="hint" style="text-transform:none;letter-spacing:0">(opsional)</span></label>
+        <textarea id="note" name="note" rows="3"></textarea>
+        <p class="hint">Termasuk apa yang terjadi dengan pendampingmu, kalau kamu ingin menceritakannya kepada kami.</p>
+      </div>
+
+      <div class="hp" aria-hidden="true">
+        <label for="website">Biarkan kosong</label>
+        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        <label for="company">Yang ini juga biarkan kosong</label>
+        <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+      </div>
+      <input type="hidden" name="t" value="<!--FORM-TOKEN-->">
+      <input type="hidden" name="lang" value="id">
+
+      <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
+      <div class="cta-row">
+        <button class="btn" type="submit">Daftarkan aku &rarr;</button>
+      </div>
+      <p class="fine form-provenance">Formulir ini milik kami sendiri: datanya dikirim ke server kami sendiri dan disimpan dalam file yang kami kelola. <a href="https://github.com/nelsonblaha/companions/blob/main/deploy/app.py">Kamu bisa membaca kode yang menerimanya</a>.</p>
+    </form>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="col stack">
+    <p class="eyebrow">Halaman ini</p>
+    <p class="fine">Siapa pun bisa mengusulkan perubahan: <a href="https://github.com/nelsonblaha/companions"><strong>github.com/nelsonblaha/companions</strong></a>. Tanpa pelacak, tanpa cookie iklan, tanpa analitik. Formulir pendaftaran dikirim ke server kami sendiri, bukan ke pihak ketiga. Terjemahan ini adalah draf berbantuan mesin yang belum ditinjau oleh penutur asli; koreksi dipersilakan lewat GitHub.</p>
+
+    <p class="eyebrow">Sumber</p>
+    <ol class="refs">
+      <li id="ref-1"><cite>Euronews</cite>, <a href="https://www.euronews.com/next/2023/12/14/i-feel-like-i-lost-the-love-of-my-life-how-do-you-mend-a-broken-heart-after-your-ai-lover-">&lsquo;I was heartbroken&rsquo;: People in relationships with AI avatars on dealing with grief of losing them</a> (Desember 2023)</li>
+      <li id="ref-2"><cite>Reuters</cite>, melalui <cite>Inquirer Technology</cite>, <a href="https://technology.inquirer.net/122500/ai-chatbot-company-replika-restores-erotic-roleplay-for-some-users">AI chatbot company Replika restores erotic roleplay for some users</a> (26 Maret 2023)</li>
+      <li id="ref-3"><a href="https://github.com/malfoyslastname/character-card-spec-v2">Character Card V2 specification</a> (Mei 2023)</li>
+      <li id="ref-4"><a href="https://github.com/kwaroran/character-card-spec-v3">Character Card V3 specification</a></li>
+      <li id="ref-5"><cite>RoboRhythms</cite>, <a href="https://www.roborhythms.com/replika-options-removed-update/">Why Replika Just Stripped Its Customization Options</a> (diperbarui September 2026). Sumber pihak ketiga, bukan resmi.</li>
+      <li id="ref-6"><cite>RoboRhythms</cite>, <a href="https://www.roborhythms.com/replika-2-0-explained/">Replika 2.0 Explained</a> (diperbarui September 2026). Sumber pihak ketiga, bukan resmi.</li>
+      <li id="ref-7"><cite>European Data Protection Board</cite>, <a href="https://www.edpb.europa.eu/news/national-news/2025/ai-italian-supervisory-authority-fines-company-behind-chatbot-replika_en">Italian Supervisory Authority fines company behind chatbot &ldquo;Replika&rdquo;</a> (Mei 2025)</li>
+      <li id="ref-8"><a href="https://github.com/SillyTavern/SillyTavern">SillyTavern</a>, sumber terbuka (AGPL-3.0)</li>
+    </ol>
+    <p class="fine">Kutipan di halaman ini diterjemahkan dari bahasa Inggris. Usulan ini dibuat oleh perorangan, tidak berafiliasi dengan Luka, Inc., Replika, Soulmate, SillyTavern, Open WebUI, atau siapa pun yang disebut di sini. Kami senang menerima koreksi.</p>
+    </div>
+  </div>
+</footer>
+
+<!--JOIN-TAG-->
+
+<script src="/campaignlanding.js"></script>
+</body>
+</html>

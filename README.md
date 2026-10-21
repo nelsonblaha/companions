@@ -1,8 +1,8 @@
 # Companions
 
-The source of <https://companions.blaha.io/>, a proposal for a nonprofit,
-member-governed home for AI companions, built on one promise: you can always
-take your companion somewhere else.
+The source of <https://companions.blaha.io/>, a proposal for a cooperative for AI
+companions, owned and governed by its members, built on one promise: you can
+always take your companion somewhere else.
 
 Nothing is running yet. No organization is formed and no board exists. The page
 is here to find out whether people want this, and this repository is here so that

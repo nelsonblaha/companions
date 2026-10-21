@@ -96,6 +96,9 @@ fees. Measured against what people already pay Replika, as a yardstick:
 | A mix: 10% heavy, 30% Plus, 60% free | ~$4.75 on average | ~$57 | ~375 | ~150 |
 | A worse mix: 3% heavy, 12% Plus, 85% free | ~$1.62 on average | ~$19 | ~1,100 | ~165 |
 
+A member's one-time share isn't counted here: it's their stake in the cooperative,
+not payment for the service.
+
 A heavy spender pays about four times what a Plus subscriber does, so it takes
 about a quarter as many of them. All four fit on the one server, so the $1,709
 doesn't grow before break-even in any of them.
@@ -132,7 +135,7 @@ would probably charge by usage rather than one flat fee.
 ## Not included
 
 Legal formation, paid staff if the board ever hires any, voice and video, a
-mobile app, age and ID checks, support, chargebacks, and tax on any surplus.
+mobile app, age and ID checks, support, chargebacks, and tax on any surplus that isn't returned to members.
 
 ## Sources
 

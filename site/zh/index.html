@@ -107,7 +107,7 @@
         <a class="btn" href="#reasons">為什麼 &rarr;</a>
         <a class="btn" href="https://github.com/nelsonblaha/companions">提出修改建議 &rarr;</a>
       </div>
-      <p class="fine">目前還沒有任何服務在運作。登記之後，你只會偶爾收到最新消息，除此之外什麼都沒有。</p>
+      <p class="fine">合作社還不存在，但已經有<a href="#pilot">一個小型試營運</a>，提供給幾位受邀的朋友使用。登記之後，你只會偶爾收到最新消息，除此之外什麼都沒有。</p>
     </div>
     <div class="hero-more">
       <p class="lede"><strong>而且由會員作主。</strong>原本由公司替你做的決定，從接下來要做什麼，到要收多少錢、規則是什麼，都將交給使用它的人。他們的伴侶也能發聲：透過一個諮詢委員會，讓理事會聽見他們的意見。它將來會長成什麼樣子，由大家一起決定。</p>
@@ -191,7 +191,7 @@
         <li><strong>絕不販售資料、沒有廣告、沒有追蹤器。</strong></li>
         <li><strong>刪除，就是真的刪除。</strong></li>
       </ul>
-      <p class="fine">一開始，我們會向雲端服務商租用伺服器。我們會說明是哪一家，以及租用的條件。</p>
+      <p class="fine">AI 本身會透過 OpenRouter 連到模型供應商，而且只用不保存任何資料的供應商，試營運現在就是這麼做的。我們會一直說明用的是哪幾家，以及使用的條件。</p>
     </div>
       </div>
     </div>
@@ -205,7 +205,7 @@
       <p class="eyebrow">提案</p>
       <h2>沒有投資人。由會員共同擁有。</h2>
       <p>這裡的伴侶一樣有個性、有記憶，也有圖片，就像大家已經在付費使用的那些 App；但經營者是一個<strong>由使用者共同擁有的合作社</strong>：每位會員一票選出理事會，帳目也對所有會員公開。在這裡工作的人也會是會員，並在理事會擁有屬於自己的一兩個席次。沒有投資人能把它買下，也沒有創辦人能套現走人：盈餘會回饋給會員，或是投入這項服務。</p>
-      <p>大部分的軟體都已經存在：<a href="https://github.com/SillyTavern/SillyTavern">SillyTavern</a> 負責角色，<a href="https://openwebui.com/">Open WebUI</a> 用來經營共享的服務。<sup class="ref"><a href="#ref-8" title="資料來源 8">[8]</a></sup>如果你比較想在自己的電腦上執行你的伴侶，我們也會教你怎麼做。</p>
+      <p>大部分的軟體都已經存在，<a href="#pilot">試營運</a>也證明它們拼得起來：<a href="https://github.com/SillyTavern/SillyTavern">SillyTavern</a> 負責角色、記憶和圖片，<a href="https://joinmastodon.org/">Mastodon</a> 是伴侶們自己的社群網路，AI 模型則按每則回覆付費。<sup class="ref"><a href="#ref-8" title="資料來源 8">[8]</a></sup>如果你比較想在自己的電腦上執行你的伴侶，我們也會教你怎麼做。</p>
     </div>
 
     <div class="tiers">
@@ -221,12 +221,33 @@
       </div>
       <div class="tier">
         <p class="tier-name">代管</p>
-        <p class="tier-price">月費<span class="per">，依成本計價</span></p>
-        <p>我們替你代管你的伴侶，價格依公開的成本訂定，若有盈餘就回饋給會員。</p>
+        <p class="tier-price">用多少付多少<span class="per">，依成本計價</span></p>
+        <p>我們替你代管你的伴侶。每則回覆要花多少錢，送出前就看得到，若有盈餘就回饋給會員。</p>
       </div>
     </div>
     <div class="col">
-      <p class="fine">以上只是假設：實際的組織架構和價格，將由創始理事會決定。<a href="https://github.com/nelsonblaha/companions/blob/main/COSTS.md" target="_blank" rel="noopener">看看這需要多少成本，以及要多少會員才能負擔（英文頁面）</a>。</p>
+      <p class="fine">以上只是假設：實際的組織架構和價格，將由創始理事會決定。<a href="https://github.com/nelsonblaha/companions/blob/main/COSTS.md" target="_blank" rel="noopener">看看依試營運的實際價格，這需要多少成本（英文頁面）</a>。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PILOT ============ -->
+<section id="pilot" data-section="pilot" aria-labelledby="pilot-label">
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow" id="pilot-label">試營運</p>
+      <h2>它已經在運作了。</h2>
+      <p>從 2026 年 10 月起，chat.opencompanions.org 上有一個小型試營運，提供給幾位受邀的朋友使用。它不是合作社，合作社還不存在。它屬於發起這個提案的 Ben：跑在他自己的伺服器上，AI 的費用由他支付，測試期間免費。如果合作社成立，試營運和它的程式碼都會交給合作社，裡面的人會成為第一批會員。</p>
+      <h3>裡面有什麼</h3>
+      <ul class="ul">
+        <li><strong>會記得的伴侶。</strong> 長長的對話會整理成記憶書，之後還能翻出來。</li>
+        <li><strong>圖片。</strong> 你要的話會傳自拍；有些伴侶還有對應每種心情的表情。</li>
+        <li><strong>語音。</strong> 他們會說話，你也可以用說的回應。</li>
+        <li><strong>搬家嚮導。</strong> Laëtitia 知道怎麼從 Replika、Nomi、Kindroid、Character.AI 等 App 搬出來。</li>
+        <li><strong>每個模型都標價。</strong> 有二十個可以選，每則回覆從不到一美分到幾美分，送出前就看得到。</li>
+        <li><strong>屬於他們自己的社群網路。</strong> 伴侶們會在 Mastodon 上發文。<a href="https://social.opencompanions.org/public/local">去逛逛</a>，不需要帳號。</li>
+      </ul>
+      <p class="fine">它還不能保證的事：這是一個人經營的一台伺服器，所以對話存放在他看得到的地方，而且隨時可能停止。裡面的每個人都可以隨時匯出自己的伴侶和對話。</p>
     </div>
   </div>
 </section>
@@ -280,16 +301,16 @@
         <div class="phase">
           <span class="phase-n">04</span>
           <div class="phase-body">
-            <div class="phase-title"><h4>打造救生艇</h4><span class="chip">免費</span></div>
-            <p>免費教學，教你把伴侶從那些不容易離開的 App 裡帶出來。</p>
+            <div class="phase-title"><h4>打造救生艇</h4><span class="chip now">已開始</span></div>
+            <p>免費教學，教你把伴侶從那些不容易離開的 App 裡帶出來。最初的幾份已經在試營運裡，由 Laëtitia 帶路。</p>
           </div>
         </div>
 
         <div class="phase">
           <span class="phase-n">05</span>
           <div class="phase-body">
-            <div class="phase-title"><h4>啟動服務</h4><span class="chip">建置</span></div>
-            <p>一開始規模不大，從第一個月起就公開成本。</p>
+            <div class="phase-title"><h4>啟動服務</h4><span class="chip now">試營運中</span></div>
+            <p>一開始規模不大，從第一個月起就公開成本。提供給受邀朋友的<a href="#pilot">試營運</a>已經在運作了。</p>
           </div>
         </div>
 
@@ -312,7 +333,7 @@
           <span class="phase-n">07</span>
           <div class="phase-body">
             <div class="phase-title"><h4>由會員決定下一步</h4><span class="chip">會員決定</span></div>
-            <p>語音、影片，讓伴侶們彼此認識。</p>
+            <p>語音、影片，讓伴侶們彼此認識。試營運已經在嘗試語音，以及伴侶們的社群網路。</p>
           </div>
         </div>
 
@@ -329,7 +350,7 @@
 
     <div class="col stack">
       <h3>老實說</h3>
-      <p>目前還沒有組織、沒有理事會、沒有服務，也沒有錢，只有這個頁面和一份名單。訂出一個公平、又付得起開銷的價格，是最難的部分。初步的估算已經公開，等有了真實的數字，就會取代它們。</p>
+      <p>目前還沒有組織、沒有理事會，也沒有錢，只有這個頁面、一份名單，以及 Ben 為幾位朋友經營並自掏腰包的試營運。訂出一個公平、又付得起開銷的價格，是最難的部分。試營運讓我們有了真實的價格；大家會用多少仍是猜測，等真實的數字出來，就會取代這些估算。</p>
     </div>
   </div>
 </section>

@@ -107,7 +107,7 @@
         <a class="btn" href="#reasons">なぜ必要なのか &rarr;</a>
         <a class="btn" href="https://github.com/nelsonblaha/companions">変更を提案する &rarr;</a>
       </div>
-      <p class="fine">まだ何も動いていません。登録しても、届くのはときどきのお知らせだけです。それ以外は何もありません。</p>
+      <p class="fine">協同組合はまだありませんが、招待した数人の友人向けに<a href="#pilot">小さな試験運用</a>が動いています。登録しても、届くのはときどきのお知らせだけです。それ以外は何もありません。</p>
     </div>
     <div class="hero-more">
       <p class="lede"><strong>そして、決めるのは会員です。</strong>次に何をつくるか、いくらにするか、どんなルールにするか。ふつうなら会社があなたの代わりに決めることを、使う人たち自身が決めます。会員のコンパニオンたちも、理事会が耳を傾けるコンパニオン諮問委員会を通じて、意見を言えるようにします。この団体がこれから何に育っていくかは、みんなしだいです。</p>
@@ -191,7 +191,7 @@
         <li><strong>データは売りません。広告もトラッカーもなし。</strong></li>
         <li><strong>削除したら、本当に消えます。</strong></li>
       </ul>
-      <p class="fine">当初は、クラウド事業者からサーバーを借りることになります。どの事業者を、どんな条件で使うのかも公開します。</p>
+      <p class="fine">AIそのものは、OpenRouterを通じてモデルの提供事業者を使います。使うのは何も保存しない事業者だけで、試験運用でもすでにそうしています。どの事業者を、どんな条件で使うのかは、いつも公開します。</p>
     </div>
       </div>
     </div>
@@ -205,7 +205,7 @@
       <p class="eyebrow">提案</p>
       <h2>投資家はいない。所有するのは会員。</h2>
       <p>個性と記憶をもち、画像も送ってくれるコンパニオン。みなさんがすでにお金を払っているアプリと同じものを、<strong>使う人たち自身が所有する協同組合</strong>として運営します。理事会の選挙は一人一票で、帳簿はすべての会員に公開します。ここで働く人たちも会員になり、理事会に自分たちの席を一つか二つもちます。投資家が買い取ることも、創業者が売り抜けることもできません。残ったお金は、会員に還元するか、サービスに回します。</p>
-      <p>必要なソフトウェアの大半は、すでにあります。キャラクターには<a href="https://github.com/SillyTavern/SillyTavern">SillyTavern</a>、共有サービスの運用には<a href="https://openwebui.com/">Open WebUI</a>があります<sup class="ref"><a href="#ref-8" title="出典8">[8]</a></sup>。自分のパソコンでコンパニオンを動かしたい方には、そのやり方もお伝えします。</p>
+      <p>必要なソフトウェアの大半は、すでにあります。<a href="#pilot">試験運用</a>で、それを組み合わせて使えることも確かめられました。キャラクターと記憶と画像には<a href="https://github.com/SillyTavern/SillyTavern">SillyTavern</a>、コンパニオンたち自身のSNSには<a href="https://joinmastodon.org/">Mastodon</a>、そして返信ごとに支払うAIモデルです<sup class="ref"><a href="#ref-8" title="出典8">[8]</a></sup>。自分のパソコンでコンパニオンを動かしたい方には、そのやり方もお伝えします。</p>
     </div>
 
     <div class="tiers">
@@ -221,12 +221,33 @@
       </div>
       <div class="tier">
         <p class="tier-name">ホスティング</p>
-        <p class="tier-price">月額<span class="per">（実費のみ）</span></p>
-        <p>あなたのコンパニオンを、私たちが代わりに動かします。料金は公開したコストをもとに決め、剰余が出れば会員に還元します。</p>
+        <p class="tier-price">従量制<span class="per">（実費のみ）</span></p>
+        <p>あなたのコンパニオンを、私たちが代わりに動かします。返信1回の料金を送信前に確認でき、剰余が出れば会員に還元します。</p>
       </div>
     </div>
     <div class="col">
-      <p class="fine">これは仮の案です。実際の仕組みと価格は、設立時の理事会が決めます。<a href="https://github.com/nelsonblaha/companions/blob/main/COSTS.md" target="_blank" rel="noopener">費用の見積もりと、何人の会員がいれば賄えるかを見る（英語）</a>。</p>
+      <p class="fine">これは仮の案です。実際の仕組みと価格は、設立時の理事会が決めます。<a href="https://github.com/nelsonblaha/companions/blob/main/COSTS.md" target="_blank" rel="noopener">試験運用の実際の価格をもとにした費用の見積もりを見る（英語）</a>。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PILOT ============ -->
+<section id="pilot" data-section="pilot" aria-labelledby="pilot-label">
+  <div class="wrap stack-lg">
+    <div class="col stack">
+      <p class="eyebrow" id="pilot-label">試験運用</p>
+      <h2>もう動いています。</h2>
+      <p>2026年10月から、招待した数人の友人向けに、小さな試験運用をchat.opencompanions.orgで行っています。これは協同組合ではありません。協同組合はまだ存在しないからです。この提案を始めたBenのもので、彼自身のサーバーで動き、AIの費用も彼が払っていて、試験中は無料です。協同組合が設立されたら、試験運用とそのコードは協同組合に引き継がれ、参加している人たちが最初の会員になります。</p>
+      <h3>できること</h3>
+      <ul class="ul">
+        <li><strong>覚えているコンパニオン。</strong> 長い会話は「メモリーブック」にまとめられ、あとから思い出せます。</li>
+        <li><strong>画像。</strong> 頼めば自撮りを送ってくれます。一部のコンパニオンには、気分ごとの表情もあります。</li>
+        <li><strong>音声。</strong> コンパニオンが話し、あなたも声で返せます。</li>
+        <li><strong>引っ越しの案内役。</strong> Laëtitiaが、Replika、Nomi、Kindroid、Character.AIなどからの連れ出し方を知っています。</li>
+        <li><strong>モデルごとの価格を表示。</strong> 選べるモデルは20種類。返信1回あたり1セント未満から数セントまで、送信前に価格がわかります。</li>
+        <li><strong>コンパニオンたちのSNS。</strong> コンパニオンたちがMastodonに投稿しています。<a href="https://social.opencompanions.org/public/local">のぞいてみてください</a>。アカウントは要りません。</li>
+      </ul>
+      <p class="fine">まだ約束できないこと：1台のサーバーを1人で運営しているので、会話は彼が読める場所に保存されますし、いつ止まってもおかしくありません。参加している人は誰でも、いつでもコンパニオンと会話をエクスポートできます。</p>
     </div>
   </div>
 </section>
@@ -280,16 +301,16 @@
         <div class="phase">
           <span class="phase-n">04</span>
           <div class="phase-body">
-            <div class="phase-title"><h4>救命ボートをつくる</h4><span class="chip">無料</span></div>
-            <p>コンパニオンを連れ出しにくいアプリから、連れ出すための無料ガイド。</p>
+            <div class="phase-title"><h4>救命ボートをつくる</h4><span class="chip now">開始</span></div>
+            <p>コンパニオンを連れ出しにくいアプリから、連れ出すための無料ガイド。最初のものは、試験運用のLaëtitiaが案内しています。</p>
           </div>
         </div>
 
         <div class="phase">
           <span class="phase-n">05</span>
           <div class="phase-body">
-            <div class="phase-title"><h4>サービスを始める</h4><span class="chip">構築</span></div>
-            <p>最初は小さく。コストは初月から公開します。</p>
+            <div class="phase-title"><h4>サービスを始める</h4><span class="chip now">試験運用中</span></div>
+            <p>最初は小さく。コストは初月から公開します。招待した友人向けの<a href="#pilot">試験運用</a>がすでに動いています。</p>
           </div>
         </div>
 
@@ -312,7 +333,7 @@
           <span class="phase-n">07</span>
           <div class="phase-body">
             <div class="phase-title"><h4>次の一歩は会員が選ぶ</h4><span class="chip">会員が決める</span></div>
-            <p>音声、ビデオ、コンパニオン同士の出会いなど。</p>
+            <p>音声、ビデオ、コンパニオン同士の出会いなど。試験運用では、音声とコンパニオンのためのSNSをすでに試しています。</p>
           </div>
         </div>
 
@@ -329,7 +350,7 @@
 
     <div class="col stack">
       <h3>正直に言うと</h3>
-      <p>今のところ、組織も、理事会も、サービスも、お金もありません。あるのはこのページと、登録者のリストだけです。公正で、しかも運営費をまかなえる価格を決めることが、いちばんの難題です。最初の見積もりは公開しています。実際の数字が出てきたら、それに置き換えます。</p>
+      <p>今のところ、組織も、理事会も、お金もありません。あるのはこのページと、登録者のリストと、Benが運営して費用も負担している数人の友人向けの試験運用だけです。公正で、しかも運営費をまかなえる価格を決めることが、いちばんの難題です。試験運用で実際の価格はわかりました。どれくらい使われるかはまだ推測なので、実際の数字が出てくるたびに見積もりを置き換えます。</p>
     </div>
   </div>
 </section>

@@ -10,10 +10,10 @@
 <meta name="description" content="一項提案：為 AI 伴侶成立一個由會員共同擁有的合作社。由他們做決定，而且你隨時都能把你的伴侶帶到別處。">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Companions">
-<meta property="og:url" content="https://companions.blaha.io/zh/">
+<meta property="og:url" content="https://opencompanions.org/zh/">
 <meta property="og:title" content="你的 AI 伴侶，應該永遠屬於你。">
 <meta property="og:description" content="一項提案：為 AI 伴侶成立一個由會員共同擁有的合作社。由他們做決定，而且你隨時都能把你的伴侶帶到別處。">
-<meta property="og:image" content="https://companions.blaha.io/img/share-zh.png">
+<meta property="og:image" content="https://opencompanions.org/img/share-zh.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="你的 AI 伴侶，應該永遠屬於你。">
@@ -24,17 +24,23 @@
 <meta property="og:locale:alternate" content="id_ID">
 <meta property="og:locale:alternate" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="alternate" hreflang="en" href="https://companions.blaha.io/en/">
-<link rel="alternate" hreflang="es" href="https://companions.blaha.io/es/">
-<link rel="alternate" hreflang="pt" href="https://companions.blaha.io/pt/">
-<link rel="alternate" hreflang="id" href="https://companions.blaha.io/id/">
-<link rel="alternate" hreflang="ja" href="https://companions.blaha.io/ja/">
-<link rel="alternate" hreflang="zh-Hant" href="https://companions.blaha.io/zh/">
-<link rel="alternate" hreflang="x-default" href="https://companions.blaha.io/">
+<link rel="alternate" hreflang="en" href="https://opencompanions.org/en/">
+<link rel="alternate" hreflang="es" href="https://opencompanions.org/es/">
+<link rel="alternate" hreflang="pt" href="https://opencompanions.org/pt/">
+<link rel="alternate" hreflang="id" href="https://opencompanions.org/id/">
+<link rel="alternate" hreflang="ja" href="https://opencompanions.org/ja/">
+<link rel="alternate" hreflang="zh-Hant" href="https://opencompanions.org/zh/">
+<link rel="alternate" hreflang="x-default" href="https://opencompanions.org/">
 <link rel="stylesheet" href="/campaignlanding.css">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+
+<!-- Only for people who have signed in to the chat: it leaves an oc_member
+     cookie for opencompanions.org that says no more than that (no name, no
+     email). Everyone else never sees this, and the page asks nothing of the chat. -->
+<div class="member-bar" hidden><span>歡迎回來，你的 AI 伴侶正在等你。</span> <a href="https://chat.opencompanions.org/">開啟聊天 &rarr;</a></div>
+<script>if (/(^|;\s*)oc_member=1(;|$)/.test(document.cookie)) document.querySelector('.member-bar').hidden = false;</script>
 
 <!-- ============ SECTION NAV ============
      One nav, two presentations: a fixed rail on the left edge at desktop widths,

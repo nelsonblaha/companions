@@ -44,3 +44,20 @@ html[lang="pt"]      { --h1-ratio: 27.6; --eyebrow-ratio: 35.2; }
 html[lang="id"]      { --h1-ratio: 28.2; --eyebrow-ratio: 38.2; }
 html[lang="ja"]      { --h1-ratio: 24.6; --eyebrow-ratio: 23.4; }
 html[lang="zh-Hant"] { --h1-ratio: 17.0; --eyebrow-ratio: 17.4; }
+
+/* The link back to the chat for people who have signed in there (the
+   member-bar markup at the top of each page explains how it knows). It scrolls
+   away with the page; the section nav below it is what sticks. */
+.member-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 0.75rem;
+  padding: 0.65rem 1rem;
+  background: var(--accent-soft);
+  color: var(--ink);
+  font-size: 0.95rem;
+  text-align: center;
+}
+.member-bar[hidden] { display: none; }
+.member-bar a { color: var(--accent); font-weight: 600; }

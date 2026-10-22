@@ -1,6 +1,6 @@
 # Companions
 
-The source of <https://companions.blaha.io/>, a proposal for a cooperative for AI
+The source of <https://opencompanions.org/>, a proposal for a cooperative for AI
 companions, owned and governed by its members, built on one promise: you can
 always take your companion somewhere else.
 

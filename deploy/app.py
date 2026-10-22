@@ -64,7 +64,10 @@ app = create_app(
             # name the ones that read Traditional characters.
             translated("zh-Hant", "zh", "thanks", accepts=("zh-TW", "zh-HK", "zh-MO")),
         ],
-        canonical_host="companions.blaha.io",
+        canonical_host="opencompanions.org",
+        legacy_hosts=frozenset({"www.opencompanions.org", "companions.blaha.io"}),
+        # On only once https://opencompanions.org/ answers: a 301 is cached hard.
+        redirect_legacy_hosts=False,
         help_choices=frozenset(
             {"updates", "story", "board", "legal", "technical", "spread"}
         ),

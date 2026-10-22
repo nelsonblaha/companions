@@ -1,6 +1,7 @@
-# companions.blaha.io, on the same pattern as chucodata.org: join infra-net,
+# opencompanions.org, on the same pattern as chucodata.org: join infra-net,
 # declare VIRTUAL_HOST, and nginx-proxy + acme-companion handle routing and TLS.
-# *.blaha.io already wildcards to Cloudflare, so no DNS record is needed.
+# opencompanions.org's records are in its own Cloudflare zone; companions.blaha.io,
+# the first name, rides the *.blaha.io wildcard and redirects here (deploy/app.py).
 #
 # Deploy from the repo root:
 #   docker compose -f deploy/docker-compose.yml up -d --build
@@ -24,9 +25,9 @@ services:
     networks:
       - infra-net
     environment:
-      - VIRTUAL_HOST=companions.blaha.io
+      - VIRTUAL_HOST=opencompanions.org,www.opencompanions.org,companions.blaha.io
       - VIRTUAL_PORT=8100
-      - LETSENCRYPT_HOST=companions.blaha.io
+      - LETSENCRYPT_HOST=opencompanions.org,www.opencompanions.org,companions.blaha.io
       - LETSENCRYPT_EMAIL=nelson.blaha@gmail.com
     # Admin credentials, if any, live in deploy/.env on the host, which is
     # gitignored. Absent the file's values, /login and /admin 404.

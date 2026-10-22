@@ -1,4 +1,4 @@
-"""Companions: the site and its signup list.
+"""OpenCompanions: the site and its signup list.
 
 The machinery is campaignlanding, https://github.com/nelsonblaha/campaignlanding,
 the same package chucodata.org runs on. What is in this file is only what is
@@ -37,7 +37,7 @@ def translated(code: str, prefix: str, thanks: str, **extra) -> Language:
 
 app = create_app(
     Config(
-        name="Companions",
+        name="OpenCompanions",
         site_dir=SITE_DIR,
         data_dir=DATA_DIR,
         # English at "/", which negotiates, and at "/en/", which does not. The

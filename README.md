@@ -1,4 +1,4 @@
-# Companions
+# OpenCompanions
 
 The source of <https://opencompanions.org/>, a proposal for a cooperative for AI
 companions, owned and governed by its members, built on one promise: you can

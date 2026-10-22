@@ -66,8 +66,9 @@ app = create_app(
         ],
         canonical_host="opencompanions.org",
         legacy_hosts=frozenset({"www.opencompanions.org", "companions.blaha.io"}),
-        # On only once https://opencompanions.org/ answers: a 301 is cached hard.
-        redirect_legacy_hosts=False,
+        # On since 2026-10-22, once https://opencompanions.org/ answered with its
+        # own certificate: a 301 is cached hard, so never point one at a name first.
+        redirect_legacy_hosts=True,
         help_choices=frozenset(
             {"updates", "story", "board", "legal", "technical", "spread"}
         ),

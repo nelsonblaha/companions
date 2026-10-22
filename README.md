@@ -4,9 +4,11 @@ The source of <https://opencompanions.org/>, a proposal for a cooperative for AI
 companions, owned and governed by its members, built on one promise: you can
 always take your companion somewhere else.
 
-Nothing is running yet. No organization is formed and no board exists. The page
-is here to find out whether people want this, and this repository is here so that
-anyone can suggest a change to it, the people it's written for most of all.
+No organization is formed and no board exists yet. A small pilot for invited
+friends runs at chat.opencompanions.org, on Ben's own server and at his expense;
+its code isn't in this repository. The page is here to find out whether people
+want this, and this repository is here so that anyone can suggest a change to it,
+the people it's written for most of all.
 
 ## Suggesting a change
 
@@ -25,7 +27,7 @@ page on your own computer. You don't need to know how to code to open an issue.
 | `site/style.css` | This page's colours and headline width. Everything else comes from campaignlanding. |
 | `site/img/` | The mark, and Maria's character card in each language. |
 | `deploy/` | The small server that serves the page and receives the signup form. |
-| `COSTS.md` | What the service would cost to run, and how many members would cover it. Estimates, with every assumption listed. |
+| `COSTS.md` | What the service would cost to run, from the pilot's real prices, and what a member would pay at cost. Estimates, with every assumption listed. |
 
 The machinery behind the page is
 [campaignlanding](https://github.com/nelsonblaha/campaignlanding), which this

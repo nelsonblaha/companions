@@ -36,13 +36,13 @@
 </head>
 <body>
 
-<!-- Only for people who have signed in to the chat, which leaves an oc_member
-     cookie for opencompanions.org that says no more than that (no name, no
-     email), and for anyone sent here as opencompanions.org/?chat, the link for
-     a member's first visit. Everyone else never sees it, and the page asks
-     nothing of the chat. -->
+<!-- Only while this browser is signed in to the chat. The chat leaves an
+     oc_member cookie for opencompanions.org (no name, no email); where it's
+     set, the page loads a 1-pixel image from the chat that only a signed-in
+     member gets, and shows the bar if it arrives. Without the cookie the page
+     asks nothing of the chat. -->
 <div class="member-bar" hidden><span>Pendampingmu sudah menunggu.</span> <a class="btn" href="https://chat.opencompanions.org/">Buka obrolan &rarr;</a></div>
-<script>if (/(^|;\s*)oc_member=1(;|$)/.test(document.cookie) || /[?&]chat(=|&|$)/.test(location.search)) document.querySelector('.member-bar').hidden = false;</script>
+<script>if (/(^|;\s*)oc_member=1(;|$)/.test(document.cookie)) { var probe = new Image(); probe.onload = function () { document.querySelector('.member-bar').hidden = false; }; probe.src = 'https://chat.opencompanions.org/oc-session.svg?' + Date.now(); }</script>
 
 <!-- ============ SECTION NAV ============
      One nav, two presentations: a fixed rail on the left edge at desktop widths,

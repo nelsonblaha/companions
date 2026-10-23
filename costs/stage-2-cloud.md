@@ -46,7 +46,9 @@ a free and open-source forge, has the rule built in at no cost:
 - clearing approvals when the change is edited;
 - applying the rule to administrators too.
 
-It also needs much less memory. So stage 2 would run Forgejo. Sign-in moves
+It also needs much less memory (about 0.1 GB, measured). So stage 2 would run
+Forgejo. A preview of it, with these rules, runs for the pilot's members at
+code.opencompanions.org. Sign-in moves
 too: the pilot signs people in through blaha.io, Ben's own service, and the
 cooperative needs its own.
 
@@ -57,8 +59,8 @@ for, and **comfortable**, with room to spare and fuller insurance.
 
 | Per month | Lean | Comfortable | Notes |
 |---|---|---|---|
-| Server, up to ~250 members | $48–96 | $168 | Lean: 4 to 8 shared processors, 8 to 16 GB. Comfortable: 8 dedicated processors, 16 GB |
-| Backups | $10–19 | $34 | About 20% of the server, at the big providers |
+| Server, up to ~100 members | $90 | $160 | Lean: 16 GB, shared processors. Comfortable: 8 dedicated processors, 16 GB. Sizes are worked out below |
+| Backups | $18 | $32 | About 20% of the server, at the big providers |
 | Storage for Mastodon's pictures | $0 | $15 | Cloudflare R2: first 10 GB free, then $15 a terabyte |
 | Email (Mastodon's and the forge's notices) | $0 | $15 | A free tier, or Postmark's 10,000 a month |
 | Domain | $2 | $2 | opencompanions.org renews at about $19 a year |
@@ -68,16 +70,63 @@ for, and **comfortable**, with room to spare and fuller insurance.
 | Tax return, by an accountant | $63 | $104 | $750 to $1,250 a year |
 | Insurance | $157 | $306 | Lean: directors' and officers', and cyber. Comfortable: adds professional liability |
 | Registered agent | $0 | $15 | $0 when a director in Texas serves |
-| **Total** | **~$300–360** | **~$730** | |
+| **Total** | **~$350** | **~$720** | |
 
-Every member has their own copy of SillyTavern, the chat program, because
-it's made for one person and isn't safe to share. Each uses about 120 MB of
-memory while idle, so the server sizes assume a copy runs only while its
-member is signed in. That's about 12 GB for 100 people at once.
+With more members the server grows, and so do the totals:
 
-At around 1,000 members the server grows to 16 processors and 64 GB, about
-$320 to $384 before backups. That puts the totals at about **$625 lean** and
-**$990 comfortable**.
+| Members | Server, lean / comfortable | Total a month, lean / comfortable |
+|---|---|---|
+| Up to ~100 | 16 GB: $90 / $160 | ~$350 / ~$720 |
+| ~250 | 16 GB / 32 GB: $96 / $250 | ~$360 / ~$830 |
+| ~1,000 | 64 GB: $320 / $500 | ~$625 / ~$1,130 |
+
+### How big a server: measured on the pilot
+
+The pilot measured what each piece uses, on 23 October 2026:
+
+| | Memory |
+|---|---|
+| Voice (Kokoro, which reads replies aloud) | 2.1 GB |
+| Mastodon, with its database | 0.6 GB |
+| The forge (Forgejo) | 0.1 GB |
+| Everything else: sign-in, the relay to the AI, the pages | 0.2 GB |
+| **The server's own share, before any member is signed in** | **about 4 GB**, with the system itself |
+
+Then there's SillyTavern, the chat program. It's made for one person and isn't
+safe to share between people, so every member has their own copy. A copy runs
+only while its member is using it: it stops after 30 minutes without use, and
+starts again in about 4 seconds when they come back. Within half an hour of the
+pilot switching this on, eight of its nine copies had stopped. While a copy is
+running it uses:
+
+- **about 0.12 GB**, measured;
+- **about 0.7 to 0.9 GB** once it has loaded the two small AI models SillyTavern
+  runs for itself, for the companion's moods (the pictures that change with
+  their feelings) and for its long memory (finding earlier messages like the
+  latest ones). Measured: 0.68 GB on a member's copy in use, and 0.87 GB on a
+  fresh copy with both loaded.
+
+So it matters where those two models run. In every copy, as the pilot runs them
+today, each member using the chat costs most of a gigabyte. In one shared
+service for everyone, a copy costs a tenth of that. The model itself takes
+about 1 GB once. SillyTavern can already get its long memory from a shared
+service. Moods can come from one too, or from the chat model.
+
+How many copies run at once is the part not yet measured. Assuming 15% of
+members use it in the same half hour at the busiest time of day:
+
+| Members | Copies running | Models in every copy (as now) | Models shared (planned) |
+|---|---|---|---|
+| 50 | 8 | ~12 GB: 16 GB server | ~7 GB: 16 GB server |
+| 100 | 15 | ~19 GB: 32 GB server | ~9 GB: 16 GB server |
+| 250 | 38 | ~41 GB: 64 GB server | ~13 GB: 16 to 32 GB server |
+| 1,000 | 150 | ~149 GB: three 64 GB servers | ~33 GB: 64 GB server |
+
+The sizes include 20% headroom. **Sharing the models is worth doing before stage
+2:** at 250 members it's the difference between a $96 to $250 server and a $320
+to $500 one, and at 1,000 members, between one server and three. The tables
+above assume it's done. The pilot will measure how many copies really run at
+once, which is the number this most depends on.
 
 **Insurance is the biggest line**, larger than the server. The figures are
 brokers' published averages, not quotes; a real quote is one of the founding
@@ -97,16 +146,16 @@ The kinds of user are defined in [the overview](../COSTS.md#what-one-person-uses
 
 | Members | Fixed costs each, lean / comfortable | Typical member on Kimi K2.6 | Typical member on DeepSeek V4.1 Flash | Light member |
 |---|---|---|---|---|
-| 25 | $12 / $29 | $21 / $39 | $18 / $35 | $14 / $32 |
-| 50 | $6 / $15 | $15 / $24 | $11 / $20 | $8 / $17 |
-| 100 | $3.60 / $7.30 | $12 / $16 | $8.75 / $12.60 | $5.30 / $9.20 |
-| 250 | $1.40 / $2.90 | $10 / $11.60 | $6.50 / $8 | $3.05 / $4.60 |
-| 1,000 | $0.65 / $1 | $9.20 / $9.55 | $5.70 / $6.05 | $2.20 / $2.60 |
+| 25 | $14 / $29 | $23 / $39 | $20 / $35 | $16 / $32 |
+| 50 | $7 / $14 | $16 / $24 | $12 / $20 | $9 / $17 |
+| 100 | $3.50 / $7.20 | $12 / $16 | $8.70 / $12.50 | $5.20 / $9.10 |
+| 250 | $1.45 / $3.30 | $10 / $12 | $6.50 / $8.50 | $3.05 / $5 |
+| 1,000 | $0.65 / $1.15 | $9.20 / $9.70 | $5.70 / $6.20 | $2.20 / $2.75 |
 
 For comparison, Replika's Plus plan is about $6.67 a month, billed yearly.
 
 **Past about 250 members, the AI is nearly the whole bill.** Fixed costs fall
-below $3 a member, and what's left is each person's own replies and pictures.
+to about $3 a member or less, and what's left is each person's own replies and pictures.
 That's the only part stages 3 and 4 could make cheaper.
 
 ## How break-even is worked out
@@ -119,16 +168,18 @@ their own replies cost.
 >
 > The 0.956 leaves out card fees.
 
-| Monthly share | Lean (~$300–360) | Comfortable (~$730) |
+| Monthly share | Lean (~$350, more past 250 members) | Comfortable (~$720 to $1,130) |
 |---|---|---|
-| $2 | ~190 members | ~520 |
-| $3 | ~125 | ~345 |
-| $5 | ~75 | ~155 |
-| $8 | ~40 | ~95 |
+| $2 | ~190 members | ~590 |
+| $3 | ~125 | ~395 |
+| $5 | ~75 | ~175 |
+| $8 | ~45 | ~95 |
 
 So **with about 125 members paying $3 a month on top of their own use, a lean
-stage 2 pays for itself.** A comfortable one needs about 345 at that share, or
-about 155 at $5.
+stage 2 pays for itself.** A comfortable one needs about 395 at that share, or
+about 175 at $5. Both assume the models are shared (above); with a copy of
+them in every member's SillyTavern, the comfortable server alone costs $250 more
+a month at 250 members.
 
 ## One-time costs at the start
 
@@ -157,6 +208,9 @@ would raise $2,500.
 
 Prices seen on the vendors' own pages on 23 October 2026 unless noted.
 
+- Memory: measured on the pilot (paul and nelnet), 23 October 2026: each
+  service with `docker stats`, and a member's SillyTavern idle, in use, and on
+  a fresh copy with its two local models loaded.
 - Servers:
   - [DigitalOcean](https://www.digitalocean.com/pricing/droplets)
   - [Linode](https://www.linode.com/pricing/)

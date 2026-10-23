@@ -16,6 +16,7 @@ much Ben could be out of pocket, and when the pilot has to move on.
 |---|---|---|
 | The chat: SillyTavern, the relay to OpenRouter, voice, sign-in | paul, Ben's workstation at home | Nothing extra: it runs anyway |
 | Mastodon (social.opencompanions.org) and the git forge (git.blaha.io) | nelnet, Ben's server at home | Nothing extra: it runs anyway |
+| A preview of stage 2's forge (code.opencompanions.org, Forgejo) | paul | Nothing extra: about 0.1 GB of memory |
 | Reaching them from the internet | Cloudflare Tunnel, free plan | $0 |
 | Signing in | blaha.io, Ben's own sign-in service | $0 |
 | The AI: every reply and picture | OpenRouter, paid by use | See below |

@@ -27,7 +27,7 @@ page on your own computer. You don't need to know how to code to open an issue.
 | `site/style.css` | This page's colours and headline width. Everything else comes from campaignlanding. |
 | `site/img/` | The mark, and Maria's character card in each language. |
 | `deploy/` | The small server that serves the page and receives the signup form. |
-| `COSTS.md` | What the service would cost to run, from the pilot's real prices, and what a member would pay at cost. Estimates, with every assumption listed. |
+| `COSTS.md`, `costs/` | What the service would cost to run, from the pilot's real prices, in four stages: Ben paying, the cooperative's own cloud server, our own models on rented GPUs, and our own hardware. Each stage's page works out its break-even. Estimates, with every assumption listed. |
 
 The machinery behind the page is
 [campaignlanding](https://github.com/nelsonblaha/campaignlanding), which this

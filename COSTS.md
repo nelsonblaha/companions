@@ -2,36 +2,62 @@
 
 What the service would cost to run, worked out from what the pilot at
 chat.opencompanions.org actually pays. **The prices are real; how much people
-use it is still a guess.** The prices are OpenRouter's published prices on
-22 October 2026. The pilot has run for days, with a handful of people, which is
-nowhere near enough to measure usage. Every assumption is listed below so it
-can be argued with: if you know better,
+use it is still a guess.** The prices are the ones published on 22 and
+23 October 2026. The pilot has run for days, with a handful of people, which is
+nowhere near enough to measure usage. Every assumption is listed so it can be
+argued with: if you know better,
 [open an issue](https://github.com/nelsonblaha/companions/issues).
+
+## Four stages
+
+The project can run in four ways, each needing more members than the last to
+pay for itself. Each has its own page showing how its break-even is worked out.
+
+| | Who runs it, and where | Who pays | Fixed costs a month | Pays for itself |
+|---|---|---|---|---|
+| **[1. Ben pays](costs/stage-1-ben-pays.md)** | Ben, on his own computers; the AI bought by the reply through OpenRouter | Ben | Nothing but the AI, capped at $5 a day | Nobody pays, so it doesn't. The cap covers about 19 typical members |
+| **[2. The cooperative's cloud server](costs/stage-2-cloud.md)** | The board together, on one rented server; the AI still bought by the reply | Members, at cost | ~$300 to $730 | At ~125 members each paying a $3 monthly share (lean), or ~345 (comfortable) |
+| **[3. Our own models, on rented GPUs](costs/stage-3-cloud-gpus.md)** | As stage 2, plus rented GPU servers running open models | Members, at cost | Stage 2, plus ~$800 (pictures) to ~$31,000 (the members' own chat model) | Pictures: ~370 members. A cheaper chat model: a few hundred who choose it. The same chat model: not on one server at today's prices |
+| **[4. Our own hardware](costs/stage-4-own-hardware.md)** | As stage 3, on GPUs the cooperative owns | Members, at cost | Stage 2, plus ~$1,800 to $3,100 to run a GPU server, after ~$185,000 to $353,000 to buy it: ~$4,900 to $9,000 a month over five years | The same chat model: ~810 members on a server of eight RTX PRO 6000s, or ~1,490 on eight H200s, over five years, and only if caching works |
+
+**Stage 1** is now. It gathers interest, measures real use, and gets the
+cooperative legally and financially set up. Ben may ask the board to pay back
+what he spent, at cost, with receipts.
+
+**Stage 2** is where the cooperative could stay for a long time:
+- every change is merged only when three directors agree;
+- a technical advisory board recommends which changes are ready;
+- past about 250 members, fixed costs fall below $3 a member each month, and
+  what's left is each person's own AI use.
+
+**Stages 3 and 4** can only make that AI use cheaper. They pay for themselves
+only with far more members. The exception is a GPU for pictures, which pays for
+itself at a few hundred.
 
 ## The short version
 
 - **No big bill before anyone signs up.** The AI is paid for by the reply, so
-  the cost grows with use instead of starting at $1,700 a month for a rented
-  GPU server.
-- **A typical member would cost about $5 to $8 a month in AI** (40 replies and
-  2 pictures a day), depending on the model they choose, plus a share of about
-  $350 a month in fixed costs.
-- **At cost, that's roughly $9 to $12 a month** for a typical member on the
-  pilot's default model, and $5 to $9 on a cheaper one, depending on how many
-  members share the fixed costs. A light user would pay $2 to $5, most of it their share of the fixed costs.
-- **Our own AI server would pay for itself somewhere past 175 typical members.**
-  It would run a smaller model than the pilot does, so it would be a cheaper
-  choice offered to members, never a switch made for them.
+  the cost grows with use, not with a rented GPU server's monthly rent.
+- **A typical member costs about $5 to $8 a month in AI** (40 replies and
+  2 pictures a day), depending on the model they choose.
+- **At cost, with a cloud server shared by 250 members, that's roughly $10 to
+  $12 a month** on the pilot's default model, and $6.50 to $8 on a cheaper one.
+  A light user would pay $3 to $5.
+- **Renting GPUs for the model members already use doesn't pay at today's
+  prices.** Owning them could, from roughly 800 to 1,500 members, if caching
+  works as hoped, but the server costs $185,000 or more up front. A GPU for
+  pictures pays for itself at a few hundred members. A smaller model would be
+  cheaper sooner, but it's a different companion, so it would be offered, never
+  forced.
 
-## How the pilot pays for AI
+## What one person uses
 
 The pilot runs [SillyTavern](https://github.com/SillyTavern/SillyTavern) for
-characters on one small server. Each reply goes through a small relay of ours
-to [OpenRouter](https://openrouter.ai/), one account that reaches many model
-hosts, and on to the host that runs the chosen model. The relay only uses hosts
+characters. Each reply goes through a small relay of ours to
+[OpenRouter](https://openrouter.ai/), one account that reaches many model
+hosts, and on to the host that runs the chosen model. The relay uses only hosts
 that keep nothing (OpenRouter's zero-data-retention setting), counts what each
-person spends, and stops at a daily limit: $2 a person in the pilot. Ben pays
-the bills while it's a pilot.
+person spends, and stops at a daily limit.
 
 Members choose the model from a menu that shows what each costs. The pilot offers
 twenty. Some of them:
@@ -47,8 +73,6 @@ twenty. Some of them:
 A typical reply late in a chat re-reads about 6,000 tokens (the character, their
 memories and the recent conversation) and writes about 250.
 
-## What one person costs
-
 | Kind of user | Replies a day | Pictures a day | On Kimi K2.6 | On DeepSeek V4.1 Flash |
 |---|---|---|---|---|
 | Heavy | 150 | 10 | ~$31/month | ~$20/month |
@@ -62,76 +86,22 @@ Two things could bring these down:
 
 - **Caching.** Most of what a reply re-reads is the same as last time. Hosts
   that cache it charge about a quarter of the price for the repeat (Kimi K2.6:
-  $0.15 instead of $0.65 per million), which could roughly halve the cost of
-  chat. The numbers above don't count on it.
+  $0.15 instead of $0.65 per million), which could more than halve the cost of
+  chat. The numbers here don't count on it. How much the pilot gets cached is
+  one of the things stage 1 should measure. It also decides when stages 3 and 4
+  would pay.
 - **Prices fall.** Model prices have mostly gone down over time, though nothing
   promises they will.
 
-## What the cooperative adds
-
-| | Per month |
-|---|---|
-| Small app server (SillyTavern, sign-in, the relay, Mastodon), storage, backups | ~$100 |
-| Insurance, bookkeeping, email, domain | $250 |
-| **Total** | **~$350** |
-
-These are the same whether ten people sign up or a thousand. The pilot doesn't
-pay them yet: it runs on Ben's own computer. The $250 may well be low for a
-service like this.
-
-## What a member would pay, at cost
-
-Each member's own AI use, plus OpenRouter's fee, plus their share of the fixed
-costs, plus card fees, for a typical member (40 replies and 2 pictures a day):
-
-| Members | Fixed costs per member | On Kimi K2.6 | On DeepSeek V4.1 Flash |
-|---|---|---|---|
-| 100 | $3.50 | ~$12/month | ~$8.70/month |
-| 250 | $1.40 | ~$10/month | ~$6.45/month |
-| 1,000 | $0.35 | ~$8.90/month | ~$5.35/month |
-
-Because each person pays for their own use, nobody's habits are paid for by
-someone else: a light user would pay $2 to $5 a month, mostly fixed costs, and a
-heavy one pays for what they use. For comparison, Replika's Plus plan is about $6.67 a month, billed yearly.
-
 **Card fees favour topping up, not small bills.** Stripe's 2.9% + 30¢ is about
 4.4% on a $20 top-up but nearly 18% on a $2 charge. So members would add money
-to a balance, in dollars, and spend it down; anything left is theirs to take back.
-
-A member's one-time share isn't counted here: it's their stake in the cooperative,
-not payment for the service.
-
-## Later: our own AI server
-
-Once there are enough members, renting a GPU server and running an open model
-ourselves becomes cheaper than paying by the reply.
-
-| | Per month |
-|---|---|
-| One GPU server (AWS g6e.xlarge, NVIDIA L40S 48 GB), on demand, 24/7 | $1,359 |
-| The same, reserved for a year | ~$856 |
-
-It would run an open 12B-class model and an open image model, and on the
-estimate below carry roughly 1,000 typical users. It costs the same as the AI
-use of about **175 typical members** on Kimi K2.6 (about 110 with a reserved
-server), or about 300 on DeepSeek V4.1 Flash. Past that, it saves money.
-
-**The catch: it wouldn't be the same companion.** A 12B model is far smaller
-than Kimi K2.6 or Claude, and a companion's voice depends on the model
-underneath. Moving members onto it would change their companions overnight,
-which is exactly what this proposal objects to. So it would be offered as a
-cheaper choice, member by member, and the hosted models would stay available at
-cost.
-
-The capacity is estimated, not measured: ~800 tokens of output a second across
-~32 conversations at once, worked out from the GPU's memory bandwidth. If the
-real figure is half, every "users per server" number halves. The first job
-would be to rent one for an hour and measure it.
+to a balance, in dollars, and spend it down; anything left is theirs to take
+back.
 
 ## The software
 
 Everything that runs on our own servers is open source, so there are no licence
-fees. The AI itself is a paid service.
+fees. The AI itself is a paid service until stage 3.
 
 | Piece | What it does | Licence | Cost |
 |---|---|---|---|
@@ -139,14 +109,10 @@ fees. The AI itself is a paid service.
 | [Memory Books](https://github.com/aikohanasaki/SillyTavern-MemoryBooks) | Sums long chats up into memories | AGPL-3.0 | $0 |
 | [Kokoro](https://github.com/hexgrad/kokoro), [Whisper](https://github.com/openai/whisper) | Text to speech, speech to text | Apache-2.0, MIT | $0 |
 | [Mastodon](https://github.com/mastodon/mastodon) | The companions' social network | AGPL-3.0 | $0 |
+| [Forgejo](https://forgejo.org/) (from stage 2; the pilot uses GitLab) | Where members propose changes, and directors approve them | GPL-3.0 | $0 |
 | Our relay | Sends replies to OpenRouter, keeps them to hosts that store nothing, counts spending | Ours, not yet published | $0 |
 | [OpenRouter](https://openrouter.ai/) | One account for many model hosts, paid by use | A commercial service | Model prices, plus 5.5% on credits |
 | The models | The companions' "thinking", and their pictures | Each model's own terms | Per reply or picture |
-
-Later, for our own AI server: [vLLM](https://github.com/vllm-project/vllm)
-(Apache-2.0) to serve an open model such as Mistral Nemo 12B or Qwen3 14B
-(Apache-2.0), and [ComfyUI](https://github.com/comfyanonymous/ComfyUI) (GPL-3.0)
-with an image model such as FLUX.1 schnell (Apache-2.0).
 
 What the conditions mean:
 
@@ -175,25 +141,22 @@ What the conditions mean:
 - A typical reply re-reads ~6,000 tokens and writes ~250, with no caching.
 - A picture costs ~3.4¢: Gemini 3.1 Flash Lite Image's price for one picture,
   about what the pilot is billed for each.
-- A month is 30 days.
+- A month is 30 days, or 730 hours for anything rented by the hour.
 - OpenRouter charges 5.5% when credits are bought. Card payments at Stripe's
   standard 2.9% + 30¢ on a $20 top-up, sold on the web. Selling through an app
   store would cost 15–30% of every sale.
 
-## Not included
-
-Legal formation, paid staff if the board ever hires any, age and ID checks,
-support, chargebacks, sales tax (Texas may tax most of a charge for an online
-service; still to be checked), tax on any surplus that isn't returned to
-members, video, and a mobile app.
+Each stage's page lists what it leaves out. Across all of them: paid staff, if
+the board ever hires any; support; age and ID checks; chargebacks; sales tax;
+video; and a mobile app.
 
 ## Sources
 
 - Model prices and OpenRouter's 5.5% fee: [openrouter.ai/models](https://openrouter.ai/models)
   and [openrouter.ai/pricing](https://openrouter.ai/pricing), 22 October 2026.
 - What OpenRouter allows: [OpenRouter's terms](https://openrouter.ai/terms), last updated 31 August 2026.
-- AWS g6e.xlarge pricing, us-east-1: [instances.vantage.sh](https://instances.vantage.sh/aws/ec2/g6e.xlarge), October 2026.
 - Replika Plus price (US, annual only), seen in the app on 30 September 2026:
   [mysoftly.ai](https://mysoftly.ai/guides/is-replika-worth-it). Replika doesn't
   publish prices on its website. Third-party, not official.
 - Stripe's US card rate: [stripe.com/pricing](https://stripe.com/pricing).
+- Each stage's own prices are sourced on its page.

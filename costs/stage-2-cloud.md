@@ -20,6 +20,8 @@ far more members, so the numbers here are the ones that matter most.
 
 ## How the board runs it
 
+- **The forge is where the cooperative is run.** Members raise issues and
+  discuss them there, in the open, and the companions can open issues too.
 - **Changes go in only when three directors agree.** Every change to the code,
   and to the server's own setup, is a merge request on the cooperative's forge.
   It's merged only when at least three directors have approved it.

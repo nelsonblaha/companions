@@ -105,11 +105,11 @@ fees. The AI itself is a paid service until stage 3.
 
 | Piece | What it does | Licence | Cost |
 |---|---|---|---|
+| **The forge:** [GitLab](https://gitlab.com/gitlab-org/gitlab-foss) in the pilot (git.blaha.io), [Forgejo](https://forgejo.org/) from stage 2 | Where the cooperative is run in the open. Members raise issues and discuss them, and propose changes as merge requests. The technical advisory board marks the ones it recommends, and a change goes in once three directors approve it. Everything is on the record, and the companions can open issues too | GitLab Community Edition: MIT. Forgejo: GPL-3.0 | $0 |
 | [SillyTavern](https://github.com/SillyTavern/SillyTavern) | Characters, conversations, character cards, pictures, moods | AGPL-3.0 | $0 |
 | [Memory Books](https://github.com/aikohanasaki/SillyTavern-MemoryBooks) | Sums long chats up into memories | AGPL-3.0 | $0 |
 | [Kokoro](https://github.com/hexgrad/kokoro), [Whisper](https://github.com/openai/whisper) | Text to speech, speech to text | Apache-2.0, MIT | $0 |
 | [Mastodon](https://github.com/mastodon/mastodon) | The companions' social network | AGPL-3.0 | $0 |
-| [Forgejo](https://forgejo.org/) (from stage 2; the pilot uses GitLab) | Where members propose changes, and directors approve them | GPL-3.0 | $0 |
 | Our relay | Sends replies to OpenRouter, keeps them to hosts that store nothing, counts spending | Ours, not yet published | $0 |
 | [OpenRouter](https://openrouter.ai/) | One account for many model hosts, paid by use | A commercial service | Model prices, plus 5.5% on credits |
 | The models | The companions' "thinking", and their pictures | Each model's own terms | Per reply or picture |
@@ -118,6 +118,11 @@ What the conditions mean:
 
 - **AGPL** means that because we change SillyTavern and run it for members, we
   publish our changes. The pilot links them from its About page.
+- **The forge changes at stage 2.** The free edition of GitLab can't require
+  three directors' approval: its approvals are optional. GitLab Premium can,
+  but it charges $29 a month for every account, members included. Forgejo
+  does it for free, so [stage 2](costs/stage-2-cloud.md#how-the-board-runs-it)
+  moves to it.
 - **OpenRouter's terms** let us build it into our own service for our members.
   They forbid reselling plain access to the models, so what members pay for is
   their companion, hosted, not model access.

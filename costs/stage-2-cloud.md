@@ -70,6 +70,11 @@ for, and **comfortable**, with room to spare and fuller insurance.
 | Registered agent | $0 | $15 | $0 when a director in Texas serves |
 | **Total** | **~$300–360** | **~$730** | |
 
+Every member has their own copy of SillyTavern, the chat program, because
+it's made for one person and isn't safe to share. Each uses about 120 MB of
+memory while idle, so the server sizes assume a copy runs only while its
+member is signed in. That's about 12 GB for 100 people at once.
+
 At around 1,000 members the server grows to 16 processors and 64 GB, about
 $320 to $384 before backups. That puts the totals at about **$625 lean** and
 **$990 comfortable**.

@@ -6,6 +6,8 @@ COPY deploy/requirements.txt /app/requirements.txt
 RUN pip install --no-cache-dir -r /app/requirements.txt
 
 COPY deploy/app.py /app/app.py
+COPY deploy/admin_users.py /app/admin_users.py
+COPY deploy/templates /app/templates
 COPY deploy/strings /app/strings
 COPY site /app/site
 

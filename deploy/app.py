@@ -15,6 +15,7 @@ import os
 from pathlib import Path
 
 from campaignlanding import Config, Language, Repeat, create_app
+from admin_users import register as register_admin_users
 
 SITE_DIR = Path(os.environ.get("COMPANIONS_SITE", "/app/site"))
 DATA_DIR = Path(os.environ.get("COMPANIONS_DATA", "/data"))
@@ -133,3 +134,5 @@ app = create_app(
         env_prefix="COMPANIONS",
     )
 )
+
+register_admin_users(app, DATA_DIR)

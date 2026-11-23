@@ -1,0 +1,94 @@
+{% macro money(value) %}${{ '%.2f'|format(value) }}{% endmacro %}
+<style>
+main{max-width:78rem}
+.users-head,.filters,.actions{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.users-head h1{margin-right:auto;font-size:1.6rem}.users-head .primary{padding:.45rem .8rem;background:var(--sun);color:#15171e;border-radius:.35rem;text-decoration:none;font-weight:650}
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(10rem,1fr));gap:.75rem}
+.metric{background:var(--card);border:1px solid var(--line);padding:.8rem 1rem;border-radius:.4rem}
+.metric strong{display:block;font-size:1.45rem;font-variant-numeric:tabular-nums}
+.metric span,.muted,.account small{color:var(--dim)}.filters{align-items:end}.filters label{font-size:.85rem;letter-spacing:0;text-transform:none}
+.filters input,.filters select{padding:.5rem .65rem;font:inherit;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:.35rem;max-width:100%}
+.filters input{width:19rem}.filters output{margin-left:auto;font-variant-numeric:tabular-nums}.roster{min-width:48rem}
+.roster th{font-size:.85rem;letter-spacing:0;text-transform:none}.roster th button,.account{background:none;color:inherit;padding:.25rem 0;text-align:inherit;font:inherit}
+.roster th button:hover,.account:hover{text-decoration:underline}.roster .number{text-align:right;font-variant-numeric:tabular-nums}
+.roster th[aria-sort=ascending] button::after{content:' ↑'}.roster th[aria-sort=descending] button::after{content:' ↓'}
+.roster>tbody>tr:first-child{cursor:pointer}.account{display:grid;grid-template-columns:.8rem 1fr;column-gap:.3rem;font-weight:650}.account::before{content:'▸';color:var(--dim)}.account[aria-expanded=true]::before{content:'▾'}.account small{grid-column:2;font-weight:400}
+.details>td{background:var(--card);padding:1rem}.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:.65rem 1.25rem;margin:0 0 1rem}
+.facts dt{color:var(--dim);font-size:.875rem}.facts dd{margin:0;font-variant-numeric:tabular-nums}.actions a{border:1px solid var(--line);border-radius:.3rem;padding:.3rem .65rem;text-decoration:none}.actions a:hover{text-decoration:underline}
+.details details{margin:.55rem 0}.details table{width:auto}.details summary{cursor:pointer}.attention{border-left:3px solid var(--sun);padding:.4rem .75rem}
+@media(max-width:40rem){body{padding:.75rem}.filters input{width:14rem}.filters output{margin-left:0}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.users-head{gap:.65rem}}
+</style>
+<section class="users-head"><h1>Users</h1><a class="primary" href="https://chat.opencompanions.org/oc/invites">Create invitation</a>
+<form class="inline" method="post" action="/logout"><button>Sign out</button></form></section>
+{% if not snapshot %}
+<p class="attention">The chat roster is unavailable. <a href="https://chat.opencompanions.org/oc/invites">Open member management in chat</a>.</p>
+{% else %}
+{% if stale %}<p class="attention">The chat report is delayed. Figures below are from {{ snapshot.updated[:16]|replace('T',' ') }} UTC.</p>{% endif %}
+<section class="metrics" aria-label="Pilot totals">
+<div class="metric"><span>Users with access</span><strong>{{ snapshot.users|length }}</strong></div>
+<div class="metric"><span>Pilot spend this month</span><strong>{{ money(snapshot.month_spend) }}</strong></div>
+<div class="metric"><span>Spent today</span><strong>{{ money(snapshot.today_spend) }}</strong></div>
+<div class="metric"><span>Pilot daily limit</span><strong>{{ money(snapshot.limits.daily) }}</strong></div>
+</section>
+<div class="filters">
+<div><label for="find">Search users</label><input id="find" type="search" placeholder="Name, handle or inviter" autocomplete="off"></div>
+<div><label for="activity">Recorded usage</label><select id="activity"><option value="">All users</option><option value="used">Has usage</option><option value="unused">No usage yet</option></select></div>
+<output id="count" aria-live="polite"></output></div>
+<div class="scroll"><table class="roster"><thead><tr>
+{% for key,label in [('name','User'),('total','Total spend'),('week','Avg / week'),('characters','Characters'),('requests','Requests'),('last','Last usage')] %}
+<th scope="col" class="{{ 'number' if key not in ['name','last'] else '' }}"><button type="button" data-key="{{ key }}" aria-label="{{ label }}">{{ label }}</button></th>{% endfor %}
+</tr></thead>
+{% for u in snapshot.users %}
+<tbody data-user data-name="{{ u.name }}" data-handle="{{ u.handle }}" data-inviter="{{ u.inviter or '' }}" data-total="{{ u.total }}" data-week="{{ u.week }}" data-characters="{{ u.characters if u.characters is not none else '' }}" data-requests="{{ u.requests }}" data-last="{{ u.last or '' }}">
+<tr><td><button class="account" aria-expanded="false" aria-controls="details-{{ u.handle }}">{{ u.name }}<small>@{{ u.handle }}</small></button></td>
+<td class="number">{{ money(u.total) }}</td><td class="number">{{ money(u.week) }}</td><td class="number">{{ u.characters if u.characters is not none else '—' }}</td><td class="number">{{ u.requests }}</td><td>{{ u.last or 'No usage yet' }}</td></tr>
+<tr class="details" id="details-{{ u.handle }}" hidden><td colspan="6"><dl class="facts">
+{% for label,value in [('Joined (UTC)',u.joined[:10] if u.joined else 'Unrecorded'),('Invited by',u.inviter or 'Added directly'),('Sign-in',u.signins|join(', ')),('First metered use',u.first or 'No usage yet'),('Spend this month',money(u.monthly)),('Daily limit',money(snapshot.limits.person)),('Pictures',u.images),('18+ features','On' if u.adult else 'Off'),('Invites issued',u.invited),('Invites available',('From ' ~ u.eligible[:16]|replace('T',' ') ~ ' UTC') if u.eligible else ('Unlimited' if u.remaining is none else u.remaining))] %}
+<div><dt>{{ label }}</dt><dd>{{ value }}</dd></div>{% endfor %}</dl>
+{% if u.recent %}<details><summary>Daily spending over the last 28 days</summary><table><thead><tr><th>UTC date</th><th>Spend</th><th>Requests</th><th>Pictures</th></tr></thead><tbody>{% for d in u.recent %}<tr><td>{{ d.day }}</td><td>{{ money(d.cost) }}</td><td>{{ d.requests }}</td><td>{{ d.images }}</td></tr>{% endfor %}</tbody></table></details>{% endif %}
+{% if u.invitations %}<details><summary>Invitation history</summary><ul>{% for i in u.invitations %}<li>{{ i.name }} · {{ i.status }} · {{ i.date[:10] if i.date else '' }}</li>{% endfor %}</ul></details>{% endif %}
+<div class="actions">{% if u.member_record %}<a href="https://chat.opencompanions.org/oc/invites#member-{{ u.handle }}">Manage access settings</a>{% endif %}
+{% if u.issued %}<a href="https://chat.opencompanions.org/oc/invites#invite-{{ u.handle }}">View sign-in link</a>{% endif %}
+{% if u.draft_thread %}<a href="https://mail.google.com/mail/u/0/#all/{{ u.draft_thread }}">Open invitation email</a>{% endif %}</div></td></tr></tbody>
+{% endfor %}</table></div>
+<p id="empty" hidden>No users match these filters. <button type="button" id="clear">Clear filters</button></p>
+<p class="muted">Average per week is spending in the last 28 UTC days divided by four. Characters include the cards supplied with the account. Pilot totals include service and setup charges. Last refreshed {{ snapshot.updated[:16]|replace('T',' ') }} UTC.</p>
+<script>
+const table=document.querySelector('.roster'), rows=Array.from(table.querySelectorAll('tbody[data-user]'));
+const find=document.getElementById('find'), activity=document.getElementById('activity');
+const fold=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+function filter(){
+  const query=fold(find.value.trim()); let shown=0;
+  for(const row of rows){
+    const d=row.dataset;
+    row.hidden=!fold([d.name,d.handle,d.inviter].join(' ')).includes(query) || (activity.value==='used'&&!d.last) || (activity.value==='unused'&&!!d.last);
+    if(!row.hidden) shown++;
+  }
+  document.getElementById('count').textContent=shown+' of '+rows.length+' users';
+  document.getElementById('empty').hidden=shown!==0;
+}
+find.addEventListener('input',filter);activity.addEventListener('change',filter);
+document.getElementById('clear').addEventListener('click',()=>{find.value='';activity.value='';filter();find.focus()});
+for(const button of table.querySelectorAll('.account')) {
+  button.closest('tr').addEventListener('click',()=>{
+    const detail=document.getElementById(button.getAttribute('aria-controls'));
+    detail.hidden=!detail.hidden;button.setAttribute('aria-expanded',String(!detail.hidden));
+  });
+}
+let sorted='',dir=1;
+function sort(button){
+  const key=button.dataset.key;dir=sorted===key?-dir:key==='name'?1:-1;sorted=key;
+  for(const th of table.querySelectorAll('thead th[aria-sort]'))th.removeAttribute('aria-sort');
+  button.parentNode.setAttribute('aria-sort',dir===1?'ascending':'descending');
+  rows.sort((a,b)=>{
+    const x=a.dataset[key],y=b.dataset[key];
+    if((x==='')!==(y===''))return x===''?1:-1;
+    const delta=(key==='name'||key==='last')?x.localeCompare(y):Number(x)-Number(y);
+    return dir*delta||a.dataset.handle.localeCompare(b.dataset.handle);
+  });
+  for(const row of rows)table.appendChild(row);
+}
+for(const b of table.tHead.querySelectorAll('button'))b.addEventListener('click',()=>sort(b));
+sort(table.tHead.querySelector('[data-key=name]'));filter();
+</script>
+{% endif %}

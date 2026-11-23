@@ -1,0 +1,9 @@
+<nav class="admin-tabs" aria-label="Administration">
+  <a href="/admin" {% if active=='users' %}aria-current="page"{% endif %}>Users</a>
+  <a href="/admin/mailing-list" {% if active=='mailing' %}aria-current="page"{% endif %}>Mailing list</a>
+</nav>
+<style>
+.admin-tabs{display:flex;gap:1.5rem;border-bottom:1px solid var(--line)}
+.admin-tabs a{padding:.45rem .1rem .65rem;color:var(--dim);text-decoration:none}
+.admin-tabs [aria-current]{border-bottom:3px solid var(--sun);color:var(--fg);font-weight:650}
+</style>

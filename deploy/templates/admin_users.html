@@ -1,4 +1,6 @@
-{% macro money(value) %}${{ '%.2f'|format(value) }}{% endmacro %}
+{% macro money(value) -%}
+{% if 0 < value < 0.0001 %}&lt;0.01¢{% elif 0 < value < 0.01 %}{{ '%.2f'|format(value*100) }}¢{% else %}${{ '%.2f'|format(value) }}{% endif %}
+{%- endmacro %}
 <style>
 main{max-width:78rem}
 .users-head,.filters,.actions{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
@@ -43,7 +45,7 @@ main{max-width:78rem}
 <tr><td><button class="account" aria-expanded="false" aria-controls="details-{{ u.handle }}">{{ u.name }}<small>@{{ u.handle }}</small></button></td>
 <td class="number">{{ money(u.total) }}</td><td class="number">{{ money(u.week) }}</td><td class="number">{{ u.characters if u.characters is not none else '—' }}</td><td class="number">{{ u.requests }}</td><td>{{ u.last or 'No usage yet' }}</td></tr>
 <tr class="details" id="details-{{ u.handle }}" hidden><td colspan="6"><dl class="facts">
-{% for label,value in [('Joined (UTC)',u.joined[:10] if u.joined else 'Unrecorded'),('Invited by',u.inviter or 'Added directly'),('Sign-in',u.signins|join(', ')),('First metered use',u.first or 'No usage yet'),('Spend this month',money(u.monthly)),('Daily limit',money(snapshot.limits.person)),('Pictures',u.images),('18+ features','On' if u.adult else 'Off'),('Invites issued',u.invited),('Invites available',('From ' ~ u.eligible[:16]|replace('T',' ') ~ ' UTC') if u.eligible else ('Unlimited' if u.remaining is none else u.remaining))] %}
+{% for label,value in [('Joined (UTC)',u.joined[:10] if u.joined else 'Unrecorded'),('Invited by',u.inviter or 'Added directly'),('Sign-in',u.signins|join(', ')),('First metered use',u.first or 'No usage yet'),('Spend this month',money(u.monthly)),('Daily chat limit',money(snapshot.limits.person)),('Pictures',u.images),('18+ features','On' if u.adult else 'Off'),('Invites issued',u.invited),('Invites available',('From ' ~ u.eligible[:16]|replace('T',' ') ~ ' UTC') if u.eligible else ('Unlimited' if u.remaining is none else u.remaining))] %}
 <div><dt>{{ label }}</dt><dd>{{ value }}</dd></div>{% endfor %}</dl>
 {% if u.recent %}<details><summary>Daily spending over the last 28 days</summary><table><thead><tr><th>UTC date</th><th>Spend</th><th>Requests</th><th>Pictures</th></tr></thead><tbody>{% for d in u.recent %}<tr><td>{{ d.day }}</td><td>{{ money(d.cost) }}</td><td>{{ d.requests }}</td><td>{{ d.images }}</td></tr>{% endfor %}</tbody></table></details>{% endif %}
 {% if u.invitations %}<details><summary>Invitation history</summary><ul>{% for i in u.invitations %}<li>{{ i.name }} · {{ i.status }} · {{ i.date[:10] if i.date else '' }}</li>{% endfor %}</ul></details>{% endif %}

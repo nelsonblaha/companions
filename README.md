@@ -4,11 +4,11 @@ The source of <https://opencompanions.org/>, a proposal for a cooperative for AI
 companions, owned and governed by its members, built on one promise: you can
 always take your companion somewhere else.
 
-No organization is formed and no board exists yet. A small pilot for invited
-friends runs at chat.opencompanions.org, on Ben's own server and at his expense;
-its code isn't in this repository. The page is here to find out whether people
-want this, and this repository is here so that anyone can suggest a change to it,
-the people it's written for most of all.
+Ben hosts the invite-only chat pilot and covers its costs. He is inviting people
+who signed up earlier. New signups receive project updates, including when chat
+invitation requests open. The cooperative is still a proposal. Once it is legally
+formed, the plan is to open membership to everyone who wants to join at the same
+time. This repository holds the public site and welcomes suggested changes.
 
 ## Suggesting a change
 

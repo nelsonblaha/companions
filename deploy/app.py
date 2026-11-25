@@ -20,6 +20,10 @@ from admin_users import register as register_admin_users
 SITE_DIR = Path(os.environ.get("COMPANIONS_SITE", "/app/site"))
 DATA_DIR = Path(os.environ.get("COMPANIONS_DATA", "/data"))
 STRINGS_DIR = Path(__file__).resolve().parent / "strings"
+SIGNUP_CONFIRMATION = (
+    "You’re on the mailing list. We’ll send occasional project news, "
+    "including when requests for a chat invitation open."
+)
 
 
 def translated(code: str, prefix: str, thanks: str, **extra) -> Language:
@@ -49,11 +53,8 @@ app = create_app(
                 code="en",
                 page="index.html",
                 strings={
-                    "thanks_body": (
-                        "That's the whole thing. We'll email when there's something "
-                        "real to report: a board, a decision, a service you can "
-                        "actually use."
-                    ),
+                    "thanks_body": SIGNUP_CONFIRMATION,
+                    "ok": SIGNUP_CONFIRMATION,
                     "back": "Back to the proposal",
                 },
             ),

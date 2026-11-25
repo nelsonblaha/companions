@@ -3,8 +3,7 @@
 What the service would cost to run, worked out from what the pilot at
 chat.opencompanions.org actually pays. **The prices are real; how much people
 use it is still a guess.** The prices are the ones published on 22 and
-23 October 2026. The pilot has run for days, with a handful of people, which is
-nowhere near enough to measure usage. Every assumption is listed so it can be
+23 October 2026. At the time we had only a few days of usage, too little to estimate what a member would spend. Every assumption is listed so it can be
 argued with: if you know better,
 [open an issue](https://github.com/nelsonblaha/companions/issues).
 
@@ -15,7 +14,7 @@ pay for itself. Each has its own page showing how its break-even is worked out.
 
 | | Who runs it, and where | Who pays | Fixed costs a month | Pays for itself |
 |---|---|---|---|---|
-| **[1. Ben pays](costs/stage-1-ben-pays.md)** | Ben, on his own computers; the AI bought by the reply through OpenRouter | Ben | Nothing but the AI, capped at $5 a day | Nobody pays, so it doesn't. The cap covers about 19 typical members |
+| **[1. Ben pays](costs/stage-1-ben-pays.md)** | Ben, on his own computers; the AI bought by the reply through OpenRouter | Ben | Ben covers AI usage up to $2 a day across the pilot (November 2026) | Free to invited testers. The October usage estimate of 26¢ per person per day would cover about seven people on a typical day |
 | **[2. The cooperative's cloud server](costs/stage-2-cloud.md)** | The board together, on one rented server; the AI still bought by the reply | Members, at cost | ~$350 to $720, more past 250 members | At ~125 members each paying a $3 monthly share (lean), or ~395 (comfortable) |
 | **[3. Our own models, on rented GPUs](costs/stage-3-cloud-gpus.md)** | As stage 2, plus rented GPU servers running open models | Members, at cost | Stage 2, plus ~$800 (pictures) to ~$31,000 (the members' own chat model) | Pictures: ~370 members. A cheaper chat model: a few hundred who choose it. The same chat model: not on one server at today's prices |
 | **[4. Our own hardware](costs/stage-4-own-hardware.md)** | As stage 3, on GPUs the cooperative owns | Members, at cost | Stage 2, plus ~$1,800 to $3,100 to run a GPU server, after ~$185,000 to $353,000 to buy it: ~$4,900 to $9,000 a month over five years | The same chat model: ~810 members on a server of eight RTX PRO 6000s, or ~1,490 on eight H200s, over five years, and only if caching works |

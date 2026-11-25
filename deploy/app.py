@@ -72,7 +72,7 @@ app = create_app(
         # own certificate: a 301 is cached hard, so never point one at a name first.
         redirect_legacy_hosts=True,
         help_choices=frozenset(
-            {"updates", "story", "board", "legal", "technical", "spread"}
+            {"updates", "testing", "story", "board", "legal", "technical", "spread"}
         ),
         # A row per companion, each with what they might be willing to do. The
         # data-max on the form's group matches max_rows.

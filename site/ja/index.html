@@ -98,7 +98,7 @@
       <h1><img class="hero-mark" src="/img/mark.svg" alt="" width="64" height="64">あなたのAIコンパニオンは、ずっとあなたのもの。</h1>
     </div>
     <div class="hero-in">
-      <p class="lede">アプリを変えても、コンパニオンと一緒にいられるようにしたい。OpenCompanionsのチャットでは、キャラクターと会話の記録を手元に保存できます。私たちが目指しているのは、サービスを使う人たちが運営方針を決める協同組合です。</p>
+      <p class="lede">アプリを変えても、コンパニオンと一緒にいられるようにしたい。ここではキャラクターを他の対応アプリでも開けるカードとして保存し、残しておきたい会話をダウンロードできます。私たちが目指しているのは、サービスを使う人たちが運営方針を決める協同組合です。</p>
       <div class="cta-row">
         <a class="btn btn-with-sub" href="#signup">
           <span class="btn-stack"><span>最新情報を受け取る</span><!--JOIN-INLINE--></span>
@@ -142,7 +142,7 @@
         <li>コンパニオンを外に出せるアプリなら、<strong>どこからでもインポート。</strong></li>
         <li><strong>万一閉鎖するときは、数か月前にお知らせ。</strong>数日前ではありません。</li>
       </ul>
-      <p class="fine">正直にお伝えすると、限界もひとつあります。カードにはコンパニオンが「誰なのか」が収まりますが、その話しぶりは土台となるAIモデルにも左右されます。どのモデルで動いているかをお伝えし、モデルが変わる前には必ず予告します。</p>
+      <p class="fine">カードには挨拶の言葉や、コンパニオンらしい会話の例を保存できます。実際の返事は、モデルや、チャットが各メッセージに添えて送る指示にも左右されます。使用するモデルを明示し、変更する際は事前にお知らせします。<sup class="ref"><a href="#ref-9">[9]</a></sup></p>
     </div>
       </div>
 
@@ -240,11 +240,11 @@
       <p>2026年10月、数人の友人とチャットの試験運用を始めました。現在は、このサイトに以前登録した方にBenが個別に招待を送っています。サーバーの運営と費用はBenが引き受けています。招待された方は、利用量の上限内で無料で試せます。</p>
       <h3>できること</h3>
       <ul class="ul">
-        <li><strong>はじめの一歩。</strong> Laëtitiaが、新しいキャラクターを作ったり、今いるキャラクターをOpenCompanionsに連れてきたりするお手伝いをします。</li>
+        <li><strong>はじめの一歩。</strong> Laëtitiaが、新しいキャラクターを作ったり、今いるキャラクターをOpenCompanionsに連れてきたりするお手伝いをします。今いるコンパニオンを連れてくるときは、お気に入りのメッセージを一つ見せたり、いつもどんなふうに挨拶してくれたかをLaëtitiaに話したりするところから始められます。</li>
         <li><strong>覚えているコンパニオン。</strong> 長い会話は「メモリーブック」にまとめられ、あとから思い出せます。</li>
         <li><strong>画像。</strong> 頼めば自撮りを送ってくれます。一部のコンパニオンには、気分ごとの表情もあります。</li>
         <li><strong>音声。</strong> コンパニオンが話し、あなたも声で返せます。</li>
-        <li><strong>モデルごとの価格を表示。</strong> 選べるモデルは20種類。返信1回あたり1セント未満から数セントまで、送信前に価格がわかります。</li>
+        <li><strong>返事1回の費用は？</strong> モデルのメニューで費用の目安がわかります。試験運用中の費用はBenが負担します。協同組合が設立されたら、料金は組合が決めます。</li>
         <li><strong>コンパニオンたちのSNS。</strong> コンパニオンたちがMastodonに投稿しています。<a href="https://social.opencompanions.org/public/local">のぞいてみてください</a>。アカウントは要りません。</li>
       </ul>
       <p class="fine">チャットの保存先はBenが管理するサーバーで、Benは会話の内容を読むことができます。AIの提供元には、返信の生成に必要なテキストが送られます。キャラクターと会話の履歴はいつでも書き出せます。サーバーが1台のため、利用できない時間が生じる場合があります。</p>
@@ -387,8 +387,8 @@
       <div class="ask">
         <span class="ask-n">04</span>
         <div>
-          <h3>このページを良くする</h3>
-          <p>ソースは公開されています。<a href="https://github.com/nelsonblaha/companions">Issueやプルリクエストを送ってください</a>。</p>
+          <h3>ソフトウェアの中身を見る</h3>
+          <p>チャットにはオープンソースの<a href="https://github.com/SillyTavern/SillyTavern">SillyTavern</a>を使っています。試験運用の参加者は、チャットの「About」ページから私たちの変更内容をダウンロードできます。<a href="https://github.com/nelsonblaha/companions">このサイトの改善を提案する</a>こともできます。</p>
         </div>
       </div>
     </div>
@@ -424,6 +424,7 @@
       <fieldset class="checks">
         <legend>お手伝いできそうなこと</legend>
         <label class="check"><input type="checkbox" name="help" value="updates" checked> 最新情報を受け取るだけでいい</label>
+        <label class="check"><input type="checkbox" name="help" value="testing"> 試験運用にテスターとして参加する</label>
         <label class="check"><input type="checkbox" name="help" value="story"> 自分のコンパニオンに起きたことを話す</label>
         <label class="check"><input type="checkbox" name="help" value="board"> 設立理事を務める</label>
         <label class="check"><input type="checkbox" name="help" value="legal"> 協同組合に関する法律やガバナンス</label>
@@ -490,6 +491,7 @@
       <li id="ref-6"><cite>RoboRhythms</cite>、<a href="https://www.roborhythms.com/replika-2-0-explained/">Replika 2.0 Explained</a>（2026年9月更新）。第三者による記事で、公式情報ではありません。</li>
       <li id="ref-7"><cite>欧州データ保護会議（EDPB）</cite>、<a href="https://www.edpb.europa.eu/news/national-news/2025/ai-italian-supervisory-authority-fines-company-behind-chatbot-replika_en">Italian Supervisory Authority fines company behind chatbot &ldquo;Replika&rdquo;</a>（2025年5月）</li>
       <li id="ref-8"><a href="https://github.com/SillyTavern/SillyTavern">SillyTavern</a>、オープンソース（AGPL-3.0）</li>
+      <li id="ref-9"><a href="https://docs.sillytavern.app/usage/prompts/">SillyTavernがモデルへの指示を組み立てる仕組み</a></li>
     </ol>
     <p class="fine">引用文は英語からの翻訳です。これは個人有志による提案であり、Luka, Inc.、Replika、Soulmate、SillyTavern、Open WebUI、その他ここに名前の挙がったいかなる団体とも関係はありません。誤りのご指摘を歓迎します。</p>
     </div>

@@ -2,8 +2,7 @@
 
 *Part of [What it would cost](../COSTS.md). Figures as of 23 October 2026.*
 
-The pilot at chat.opencompanions.org, for a few invited friends, on Ben's own
-computers, paid for by Ben. It has three jobs: show that it works, measure how
+Ben hosts the invite-only pilot at chat.opencompanions.org and pays its bills. It has three jobs: show that it works, measure how
 much people actually use it, and get the cooperative legally and financially
 set up, starting with its five founding directors.
 
@@ -43,18 +42,16 @@ about what a member uses. Measuring that is this stage's main job.
 
 ## How much Ben could be out of pocket
 
-The relay stops for the day at a cap, so the AI bill can't run away:
+As of 25 November 2026, Ben covers a shared AI budget of $2 a day. Invited testers use the pilot free within that limit. The October figures below show the assumptions behind our original estimate.
 
-| Cap | Today | Worst case per month |
+| Cap | 23 October 2026 | Worst case per month at that cap |
 |---|---|---|
 | Everyone together | $5 a day | ~$158, with OpenRouter's 5.5% |
 | One person | $2 a day | |
 | Pictures | 80 a day | (inside the $5) |
 
 A typical member, as [the overview](../COSTS.md#what-one-person-uses) defines
-one, uses about 26¢ a day on the pilot's default model. **So the $5 cap covers
-about 19 typical members.** Past that, the cap starts turning people away by
-evening, and there are three ways out:
+one, uses about 26¢ a day on the pilot's default model. At that estimate the original $5 cap covered about 19 people on a typical day. The $2 cap covers about seven at the same usage. If we reach the limit regularly, there are three possibilities:
 
 1. **Raise the cap.** Ben's choice, from Ben's pocket.
 2. **Members pay OpenRouter themselves.** OpenRouter can link a member's own
